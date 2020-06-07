@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.33pt}
+\select@language {british}
+\beamer@sectionintoc {1}{Self Introduction}{3}{0}{1}
+\beamer@sectionintoc {2}{Panoramica Text Encoding Initiative}{7}{0}{2}
+\beamer@sectionintoc {3}{Panoramica eXtensible Markup Language}{8}{0}{3}
+\beamer@sectionintoc {4}{TEI: Codifica Apparato Critico}{9}{0}{4}
+\beamer@sectionintoc {5}{Strumenti per edizioni critiche}{10}{0}{5}
+\beamer@sectionintoc {6}{Considerazioni Finali}{11}{0}{6}
+\beamer@sectionintoc {7}{References}{12}{0}{7}

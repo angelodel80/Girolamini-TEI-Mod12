@@ -1,0 +1,61 @@
+\documentclass{book}
+\usepackage[landscape, b4paper, top=15mm, left=15mm, right=15mm, bottom=20mm]{geometry}
+
+\usepackage{paracol}		% to devide the page in multiple columns
+
+\usepackage[ruled,para*,perpage]{manyfoot}		% for multiple groups of footnotes
+\DeclareNewFootnote[para]{A}[arabic]		% group A - parallel arranged footnotes with Arabic numbering
+\DeclareNewFootnote[plain]{B}[roman]		% group B - footnotes arranged line-by-line with Roman numbering
+\maxdeadcycles=1000
+
+\newlength{\durchschuss}		% vertical space between two footnotes
+\durchschuss=-5pt
+
+\usepackage[usenames,dvipsnames]{xcolor}		% define own colors
+\fontdimen2\font=0.3em	% interword space
+\fontdimen3\font=0.3em	% interword stretch
+\fontdimen4\font=0.1em	% interword shrink
+\fontdimen7\font=0.1em	% extra space
+
+\usepackage[normalem]{ulem}		% for colored markings of the text
+\newcommand\marker[1][yellow]{\bgroup\markoverwith{\textcolor{#1}{\rule[-.5ex]{2pt}{2.5ex}}}\ULon}		% markings with assigned color
+\definecolor{copy}{gray}{0.92}
+\definecolor{add}{rgb}{0.6, 1, 0.6}
+\definecolor{del}{rgb}{1, 0.67, 0.67}
+\definecolor{sub}{rgb}{0.73, 0.73, 1}
+
+\usepackage{polyglossia}
+\setdefaultlanguage{french}
+\setmainfont[Mapping=tex-text]{Linux Libertine O}		% free font with many special characters
+
+\begin{document}
+	\thispagestyle{empty}           % no pagenumbers
+	\setlength{\columnsep}{3em}		% space between two columns
+
+	\newpage
+	\columnratio{0.1, 0.1, 0.7}
+	\begin{paracol}{4}
+		\noindent
+		\centerline{\textbf{H70}}\\
+		\switchcolumn
+		\noindent
+		\centerline{\textbf{H74}}\\
+		\switchcolumn
+		\noindent
+		\centerline{\textbf{H80}}\\
+		\switchcolumn
+		\noindent
+		\centerline{\textbf{H20}}\\
+		\switchcolumn*
+		\emph{[missing]}
+		\switchcolumn
+		\emph{[missing]}
+		\switchcolumn
+		\noindent
+L’éloignement où étoient les anciennes \& les nouvelles conquêtes du centre de l’autorité , fit juger qu’elles languiroient juſqu’à ce qu’on leur eût accordé une adminiſtration indépendante. On leur donna donc un commandant particulier, qui, avec un titre moins impoſant que celui du vice-roi de la nouvelle-espagne , jouit des mêmes prérogatives.		\switchcolumn
+		\emph{[missing]}
+		\switchcolumn
+	\end{paracol}
+
+	% variant apparatus
+\end{document}

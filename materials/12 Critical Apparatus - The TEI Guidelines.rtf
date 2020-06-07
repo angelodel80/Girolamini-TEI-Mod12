@@ -1,0 +1,1203 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\froman\fcharset0 Times-Roman;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\info
+{\title 12 Critical Apparatus - The TEI Guidelines}
+{\author Angelo}
+{\creatim\yr2020\mo5\dy31\hr18\min22\sec9\timesinceref612634929}}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \'95 Evidenziazione, page 1\
+Scholarly editions of texts\
+\
+\'95 Evidenziazione, page 1\
+record some or all of the known variations among different witnesses to the text\
+\
+\'95 Evidenziazione, page 1\
+Witnesses to a text may include authorial or other manuscripts, printed editions of the work, early translations, or quotations of a work in other texts\
+\
+\'95 Evidenziazione, page 1\
+variant readings of a text may be accumulated in highly structured form in a critical apparatus of variants.\
+\
+\'95 Evidenziazione, page 1\
+encoding such an apparatus of variants\
+\
+\'95 Evidenziazione, page 1\
+provides extra attributes for some elements of the core tag set when this module is selected\
+\
+\'95 Evidenziazione, page 1\
+In printed critical editions, the apparatus takes the form of highly-compressed notes at the bottom of each page.\
+\
+\'95 Evidenziazione, page 1\
+such notes may be generated,\
+\
+\'95 Evidenziazione, page 1\
+interactive editions\
+\
+\'95 Evidenziazione, page 1\
+variant readings\
+\
+\'95 Evidenziazione, page 1\
+may be recorded in a series of apparatus entries\
+\
+\'95 Evidenziazione, page 1\
+documentation of the witnesses whose readings are included in the apparatus\
+\
+\'95 Evidenziazione, page 1\
+fragmentary witnesses\
+\
+\'95 Evidenziazione, page 1\
+methods for embedding the apparatus in the rest of the text\
+\
+\'95 Evidenziazione, page 1\
+linking an external apparatus to the base text\
+\
+\'95 Evidenziazione, page 1\
+several extra attributes for some tags of the core tag set\
+\
+\'95 Evidenziazione, page 1\
+Chaucer's Wife of Bath's Prologue\
+\
+\'95 Evidenziazione, page 1\
+four different manuscripts\
+\
+\'95 Evidenziazione, page 1\
+El\
+\
+\'95 Evidenziazione, page 1\
+Hg\
+\
+\'95 Evidenziazione, page 1\
+La\
+\
+\'95 Evidenziazione, page 1\
+Ra2\
+\
+\'95 Evidenziazione, page 1\
+Apparatus\
+\
+\'95 Evidenziazione, page 1\
+Readings\
+\
+\'95 Evidenziazione, page 1\
+Witnesses\
+\
+\'95 Evidenziazione, page 1\
+fundamental markup methods used to encode textual variations\
+\
+\'95 Evidenziazione, page 2\
+the app element for entries in the critical apparatus\
+\
+\'95 Evidenziazione, page 2\
+identifying individual readings\
+\
+\'95 Evidenziazione, page 2\
+ways of grouping readings together\
+\
+\'95 Evidenziazione, page 2\
+identifying which witnesses support a particular reading\
+\
+\'95 Evidenziazione, page 2\
+describing the witnesses included in the apparatus\
+\
+\'95 Evidenziazione, page 2\
+which portions of a text are covered by fragmentary witnesses\
+\
+\'95 Evidenziazione, page 2\
+The app element\
+\
+\'95 Evidenziazione, page 2\
+a way of marking points where the encoding of a passage in a single source may be carried out in more than one way\
+\
+\'95 Evidenziazione, page 2\
+the app element allows for the representation of many different versions of the same passage taken from different sources.\
+\
+\'95 Evidenziazione, page 2\
+Individual textual variations are encoded using the app element\
+\
+\'95 Evidenziazione, page 2\
+which groups together all the readings constituting the variation\
+\
+\'95 Evidenziazione, page 2\
+is not a purely mechanical process\
+\
+\'95 Evidenziazione, page 2\
+No rules are given here as to how to group readings into apparatus entries\
+\
+\'95 Evidenziazione, page 2\
+The individual apparatus entry is encoded with the app element\
+\
+\'95 Evidenziazione, page 2\
+<app> (apparatus entry) contains one entry in a critical apparatus, with an optional lemma and usually one or more readings or notes on the relevant passage.\
+\
+\'95 Evidenziazione, page 2\
+@type\
+\
+\'95 Evidenziazione, page 2\
+classifies the variation contained in this element according to some convenient typology\
+\
+\'95 Evidenziazione, page 2\
+@from\
+\
+\'95 Evidenziazione, page 2\
+identifies the beginning of the lemma in the base text.\
+\
+\'95 Evidenziazione, page 2\
+@to\
+\
+\'95 Evidenziazione, page 2\
+identifies the endpoint of the lemma in the base text.\
+\
+\'95 Evidenziazione, page 2\
+@loc\
+\
+\'95 Evidenziazione, page 2\
+location\
+\
+\'95 Evidenziazione, page 2\
+indicates the location of the variation\
+\
+\'95 Evidenziazione, page 2\
+The attributes @loc, @from, and @to, are used to link the apparatus entry to the base text\
+\
+\'95 Evidenziazione, page 2\
+several methods may be used for such linkage\
+\
+\'95 Evidenziazione, page 2\
+Each app element usually comprises one or more readings\
+\
+\'95 Evidenziazione, page 2\
+A very simple partial apparatus\
+\
+\'95 Evidenziazione, page 3\
+in practice the apparatus will be somewhat more complex\
+\
+\'95 Evidenziazione, page 3\
+Specifically, it may be desired to record more obviously that manuscripts El and La agree\
+\
+\'95 Evidenziazione, page 3\
+readings\
+\
+\'95 Evidenziazione, page 3\
+subvariation\
+\
+\'95 Evidenziazione, page 3\
+witness information\
+\
+\'95 Evidenziazione, page 3\
+Individual readings are the crucial elements in any critical apparatus of variants\
+\
+\'95 Evidenziazione, page 3\
+tag individual readings within an apparatus entry:\
+\
+\'95 Evidenziazione, page 3\
+<lem>\
+\
+\'95 Evidenziazione, page 3\
+lemma\
+\
+\'95 Evidenziazione, page 3\
+contains the lemma, or base text, of a textual variation\
+\
+\'95 Evidenziazione, page 3\
+<rdg>\
+\
+\'95 Evidenziazione, page 3\
+reading\
+\
+\'95 Evidenziazione, page 3\
+contains a single reading within a textual variation.\
+\
+\'95 Evidenziazione, page 3\
+the term lemma is used here in the text-critical sense of \'91the reading accepted as that of the original or of the base text\'92\
+\
+\'95 Evidenziazione, page 3\
+In recording readings within an apparatus entry, the rdg element should always be used; each app usually contains at least one rdg, though it may contain only notes.\
+\
+\'95 Evidenziazione, page 3\
+The lem element may also be used to record the base text of the source edition\
+\
+\'95 Evidenziazione, page 3\
+mark the readings of a base witness, to indicate the preference of an editor or encoder for a particular reading, or (e.g. in the case of an external apparatus) to indicate precisely to which portion of the main text the variation applies.\
+\
+\'95 Evidenziazione, page 3\
+may prefer not to use it at all\
+\
+\'95 Evidenziazione, page 3\
+How it is used depends in part on the method chosen for linking the apparatus to the text\
+\
+\'95 Evidenziazione, page 3\
+Readings may be encoded individually, or grouped for perspicuity using the rdgGrp element\
+\
+\'95 Evidenziazione, page 3\
+attribute classes att.witnessed and att.textCritical,\
+\
+\'95 Evidenziazione, page 3\
+attributes\
+\
+\'95 Evidenziazione, page 3\
+attribute used to identify the witnesses supporting a particular reading in a critical apparatus.\
+\
+\'95 Evidenziazione, page 4\
+@wit\
+\
+\'95 Evidenziazione, page 4\
+witness\
+\
+\'95 Evidenziazione, page 4\
+witnesses\
+\
+\'95 Evidenziazione, page 4\
+contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading.\
+\
+\'95 Evidenziazione, page 4\
+set of attributes common to all elements representing variant readings in text critical work\
+\
+\'95 Evidenziazione, page 4\
+type\
+\
+\'95 Evidenziazione, page 4\
+classifies the reading according to some useful typology\
+\
+\'95 Evidenziazione, page 4\
+substantive\
+\
+\'95 Evidenziazione, page 4\
+orthographic\
+\
+\'95 Evidenziazione, page 4\
+cause\
+\
+\'95 Evidenziazione, page 4\
+he cause for the variant reading\
+\
+\'95 Evidenziazione, page 4\
+homeoteleuton\
+\
+\'95 Evidenziazione, page 4\
+homeoarchy\
+\
+\'95 Evidenziazione, page 4\
+paleographicConfusion\
+\
+\'95 Evidenziazione, page 4\
+haplography\
+\
+\'95 Evidenziazione, page 4\
+dittography\
+\
+\'95 Evidenziazione, page 4\
+falseEmendation\
+\
+\'95 Evidenziazione, page 4\
+varSeq\
+\
+\'95 Evidenziazione, page 4\
+variant sequence\
+\
+\'95 Evidenziazione, page 4\
+number indicating the position of this reading in a sequence\
+\
+\'95 Evidenziazione, page 4\
+hand\
+\
+\'95 Evidenziazione, page 4\
+points to a handNote element describing the hand considered responsible\
+\
+\'95 Evidenziazione, page 4\
+att.written\
+\
+\'95 Evidenziazione, page 4\
+nherit the following attributes from the att.global.responsibility class\
+\
+\'95 Evidenziazione, page 4\
+attributes indicating the agent responsible for some aspect of the text\
+\
+\'95 Evidenziazione, page 4\
+resp\
+\
+\'95 Evidenziazione, page 4\
+esponsible party\
+\
+\'95 Evidenziazione, page 4\
+agency responsible for the intervention or interpretation, for example an editor or transcriber\
+\
+\'95 Evidenziazione, page 4\
+cert\
+\
+\'95 Evidenziazione, page 4\
+certainty\
+\
+\'95 Evidenziazione, page 4\
+the degree of certainty associated with the intervention or interpretation\
+\
+\'95 Evidenziazione, page 4\
+these attributes may be used to indicate the person responsible for the editorial decision being recorded\
+\
+\'95 Evidenziazione, page 4\
+also the degree of certainty associated with that decision by the person carrying out the encoding\
+\
+\'95 Evidenziazione, page 4\
+The @wit attribute identifies the witnesses which have the reading in question\
+\
+\'95 Evidenziazione, page 4\
+It is required if the apparatus gathers together readings from different witnesses\
+\
+\'95 Evidenziazione, page 4\
+The @type attribute allows the encoder to classify readings in any convenient way\
+\
+\'95 Evidenziazione, page 4\
+substantive variants of the lemma\
+\
+\'95 Evidenziazione, page 5\
+substantive\
+\
+\'95 Evidenziazione, page 5\
+or as orthographic variants:\
+\
+\'95 Evidenziazione, page 5\
+The @varSeq and @cause attributes may be used to convey information on the sequence and cause of variation.\
+\
+\'95 Evidenziazione, page 5\
+the reading Eryment is tagged as sequential to (derived from) the reading Experiment, and the cause is given as loss of the abbreviation for per.\
+\
+\'95 Evidenziazione, page 5\
+<app> <rdg wit="#La" varSeq="1">Experiment</rdg> <rdg wit="#Ra2" cause="abbreviation_loss" varSeq="2">Eryment</rdg> </app>\
+\
+\'95 Evidenziazione, page 5\
+cause\
+\
+\'95 Evidenziazione, page 5\
+If a manuscript is written in several hands, and it is desired to report which hand wrote a particular reading, the @hand attribute should be used.\
+\
+\'95 Evidenziazione, page 5\
+in the Munich manuscript containing the Carmina Burana, the word alle has been changed to allen:\
+\
+\'95 Evidenziazione, page 5\
+<app> <rdg wit="#Mu" varSeq="1" hand="#m1">alle</rdg> <rdg wit="#Mu" cause="nachgetragen" varSeq="2" hand="#m2">allen</rdg> </app>\
+\
+\'95 Evidenziazione, page 5\
+Similarly, if a witness is hard to decipher, it may be desired to indicate responsibility for the claim that a particular reading is supported by a particular witness.\
+\
+\'95 Evidenziazione, page 5\
+the manuscript is read in different ways by different scholars\
+\
+\'95 Evidenziazione, page 5\
+records in the apparatus two different accounts of the manuscript reading\
+\
+\'95 Evidenziazione, page 5\
+<rdg wit="#ms" source="#Z">hea\'f0o hl\'e6we</rdg> <rdg wit="#ms" source="#Cha">heaum hope</rdg>\
+\
+\'95 Evidenziazione, page 6\
+@hand attribute indicates a particular manuscript hand\
+\
+\'95 Evidenziazione, page 6\
+Where there is a greater weight of editorial discussion and interpretation\
+\
+\'95 Evidenziazione, page 6\
+this information can be attached to the apparatus in a note.\
+\
+\'95 Evidenziazione, page 6\
+The note element may also be used to record the specific wording of notes in the apparatus of the source edition\
+\
+\'95 Evidenziazione, page 6\
+<note source="#Kl">\
+\
+\'95 Evidenziazione, page 6\
+Notes providing details of the reading of one particular witness should be encoded using the specialized witDetail element\
+\
+\'95 Evidenziazione, page 6\
+Encoders should be aware of the distinct fields of use of the attribute values @wit, @hand, and @source\
+\
+\'95 Evidenziazione, page 6\
+@wit identifies the physical entity in which the reading is found (manuscript, clay tablet, papyrus, printed edition);\
+\
+\'95 Evidenziazione, page 6\
+@hand refers to the agent responsible for inscribing that reading in that physical entity (scribe, author, inscriber, hand 1, hand 2)\
+\
+\'95 Evidenziazione, page 6\
+@source indicates the scholar responsible for asserting the existence of that reading in that physical entity\
+\
+\'95 Evidenziazione, page 6\
+the categories may blur: a scholar may produce an edition introducing readings for which he or she is responsible; that edition may itself become a witness in a later critical apparatus.\
+\
+\'95 Evidenziazione, page 6\
+Subvariation\
+\
+\'95 Evidenziazione, page 6\
+The rdgGrp element may be used to group readings\
+\
+\'95 Evidenziazione, page 6\
+they have identical values on one or more attributes, or because they are seen as forming a self-contained variant sequence, or for some other reason\
+\
+\'95 Evidenziazione, page 7\
+<rdgGrp>\
+\
+\'95 Evidenziazione, page 7\
+reading group\
+\
+\'95 Evidenziazione, page 7\
+groups two or more readings perceived to have a genetic relationship or other affinity\
+\
+\'95 Evidenziazione, page 7\
+The rdgGrp element is a member of class att.textCritical and therefore can carry the @wit, @type, @cause, @varSeq, @hand, and @resp attributes described in the preceding section.\
+\
+\'95 Evidenziazione, page 7\
+When values for any of these attributes are given on a rdgGrp element, the values given are inherited by the rdg or lem elements nested within the reading group\
+\
+\'95 Evidenziazione, page 7\
+To indicate that both Hg and La vary only orthographically from the lemma, one might tag both readings <rdg type='orthographic'>\
+\
+\'95 Evidenziazione, page 7\
+This fact can be expressed more perspicuously, however, by grouping their readings into a rdgGrp\
+\
+\'95 Evidenziazione, page 7\
+<app> <lem wit="#El #Ra2">though</lem> <rdgGrp type="orthographic"> <rdg wit="#La">thogh</rdg> <rdg wit="#Hg">thouh</rdg> </rdgGrp> </app>\
+\
+\'95 Evidenziazione, page 7\
+Similarly, rdgGrp may be used to organize the substantive variants of an apparatus entry.\
+\
+\'95 Evidenziazione, page 7\
+Editors may need to indicate that each of a group of witnesses may be taken as all supporting a particular reading\
+\
+\'95 Evidenziazione, page 7\
+manuscripts display many different spellings of these words\
+\
+\'95 Evidenziazione, page 7\
+all these variant spellings and that these variant spellings actually support only the three regularized spelling forms\
+\
+\'95 Evidenziazione, page 7\
+One may term these variant spellings as \'91subvariants\'92 of the regularized spelling forms.\
+\
+\'95 Evidenziazione, page 7\
+This subvariation can be expressed within an app element by gathering the readings into three groups according to the normalized form of their reading.\
+\
+\'95 Evidenziazione, page 7\
+All the readings within each group may be accounted subvariants of the main reading for the group\
+\
+\'95 Evidenziazione, page 7\
+tagging it as a lem element or as <rdg type='groupBase'>\
+\
+\'95 Evidenziazione, page 7\
+In this example, the different subvariants on Experience, Experiment, and Eriment are held within three rdgGrp elements nested within the enclosing app element:\
+\
+\'95 Evidenziazione, page 7\
+<app type="substantive"> <rdgGrp type="subvariants"> <lem wit="#El #Hg">Experience</lem> <rdg wit="#Ha4">Experiens</rdg> </rdgGrp> <rdgGrp type="subvariants"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </rdgGrp> <rdgGrp type="subvariants"> <lem resp="#ed2013">Eriment</lem>\
+\
+\'95 Evidenziazione, page 8\
+<rdg wit="#Ra2">Eryment</rdg> </rdgGrp> </app>\
+\
+\'95 Evidenziazione, page 8\
+From this, one may deduce that the regularized reading Experience is supported by all three manuscripts El Hg Ha4, although the spelling differs in Ha4, and that the regularized reading Eriment is supported by Ra2, even though the form differs in that manuscript.\
+\
+\'95 Evidenziazione, page 8\
+Thus, Ha4 here supports the reading Experience found in El and Hg, even though it is spelt slightly differently in Ha4.\
+\
+\'95 Evidenziazione, page 8\
+Reading groups may nest recursively, so that variants can be classified to any desired depth.\
+\
+\'95 Evidenziazione, page 8\
+Because apparatus entries may also nest, the app element might also be used to group readings in the same way.\
+\
+\'95 Evidenziazione, page 8\
+<app n="a1" type="substantive"> <rdg wit="#El #Hg #Ha4"> <app n="a2" type="orthographic"> <lem wit="#El #Hg">Experience</lem> <rdg wit="#Ha4">Experiens</rdg> </app> </rdg> <rdg wit="#Cp #Ld1 #La"> <app n="a3" type="orthographic"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </app> </rdg> <rdg wit="#Ra2"> <app n="a4" type="orthographic"> <lem resp="#ed2013">Eriment</lem> <rdg wit="#Ra2">Eryment</rdg> </app> </rdg> </app>\
+\
+\'95 Evidenziazione, page 8\
+this variation has three normalized readings, and that the first of these is supported by manuscripts El, Hg, and Ha4; the second by Cp, Ld1, and La; and the third by Ra2\
+\
+\'95 Evidenziazione, page 8\
+Reading groups may also be used to bring together variants which form an apparent developmental sequence\
+\
+\'95 Evidenziazione, page 9\
+<rdgGrp type="sequence"> <rdgGrp varSeq="1" type="subvariants"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </rdgGrp> <rdgGrp varSeq="2" cause="abbreviation_loss"> <lem resp="#ed2013">Eriment</lem> <rdg wit="#Ra2">Eryment</rdg> </rdgGrp> </rdgGrp> </app>\
+\
+\'95 Evidenziazione, page 9\
+A given reading is associated with the set of witnesses attesting it by listing the witnesses in the @wit attribute on the rdg or lem element\
+\
+\'95 Evidenziazione, page 9\
+associate annotation on a reading with one specific witness among several\
+\
+\'95 Evidenziazione, page 9\
+ranscribe witness information verbatim from a source edition\
+\
+\'95 Evidenziazione, page 9\
+identify the formal lists of witnesses typically provided in the front matter of critical editions\
+\
+\'95 Evidenziazione, page 9\
+give additional information about the reading of a particular witness or witnesses\
+\
+\'95 Evidenziazione, page 9\
+that information may be given in a witDetail element\
+\
+\'95 Evidenziazione, page 9\
+can be linked to both a reading and to one or more of the witnesses for that reading\
+\
+\'95 Evidenziazione, page 9\
+The link to the reading\
+\
+\'95 Evidenziazione, page 9\
+made explicit by the @target attribute\
+\
+\'95 Evidenziazione, page 9\
+the link to the witness, by the @wit attribute\
+\
+\'95 Evidenziazione, page 9\
+@target specifies the destination of the reference\
+\
+\'95 Evidenziazione, page 9\
+<witDetail> (witness detail) gives further information about a particular witness, or witnesses, to a particular reading\
+\
+\'95 Evidenziazione, page 9\
+@wit (witnesses) indicates the sigil or sigla identifying the witness or witnesses to which the detail refers\
+\
+\'95 Evidenziazione, page 9\
+he witDetail refers to multiple readings, @target must be used to point to the reading(s) being annotated\
+\
+\'95 Evidenziazione, page 10\
+<app type="substantive"> <lem wit="#El #Hg">Experience</lem> <witDetail wit="#El">Ornamental capital.</witDetail> <rdg wit="#Ha4">Experiens</rdg> </app>\
+\
+\'95 Evidenziazione, page 10\
+may be used to record the specific wording of information in the source text\
+\
+\'95 Evidenziazione, page 10\
+to record the wording of the note explaining that the variant reading adds n to the original in a second hand:\
+\
+\'95 Evidenziazione, page 10\
+<l> <app> <rdg wit="#Mu" hand="#m1">alle</rdg> <rdg wit="#Mu" hand="#m2">allen</rdg> <witDetail wit="#Mu"> <mentioned>n</mentioned> nachgetragen. </witDetail> </app> disen sumer g\'e2n. </l>\
+\
+\'95 Nota ancorata, page 10\
+nota sigla \
+\
+\pard\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The Latin word siglum (sign), pl. sigla denotes the abbreviation used in a critical apparatus to indicate a particular witness
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\'95 Evidenziazione, page 10\
+lists of sigla\
+\
+\'95 Evidenziazione, page 10\
+may be complex enough\
+\
+\'95 Evidenziazione, page 10\
+in the transcription of printed critical editions, it may be desirable to retain for future reference the exact form in which the source edition records the witnesses to a particular reading;\
+\
+\'95 Evidenziazione, page 10\
+The wit element may be used to transcribe such lists of witnesses to a particular reading.\
+\
+\'95 Evidenziazione, page 10\
+<wit> contains a list of one or more sigla of witnesses attesting a given reading, in a textual variation.\
+\
+\'95 Evidenziazione, page 10\
+The wit list may appear following a rdg, rdgGrp, or lem element in any apparatus entry\
+\
+\'95 Evidenziazione, page 10\
+wit may be used in a way functionally equivalent to @wit if the sigla therein are wrapped in refs with @target attributes pointing to a predefined witness\
+\
+\'95 Evidenziazione, page 11\
+<app> <lem>Nondum</lem> <rdg wit="#G #P" ana="#orthographical">nundum</rdg> <wit> <ref target="#G">G</ref>(corr. <ref target="#G1">G<hi rend="super">1</hi> </ref>)<ref target="#P">P</ref> </wit> </app>\
+\
+\'95 Evidenziazione, page 11\
+@wit is more succinct,\
+\
+\'95 Evidenziazione, page 11\
+using @wit (with witDetail when needed) is almost always to be preferred\
+\
+\'95 Evidenziazione, page 11\
+A list of all identified witnesses should normally be supplied in the front matter of the edition, or in the sourceDesc element of its header\
+\
+\'95 Evidenziazione, page 11\
+may be given either as a simple bibliographic list\
+\
+\'95 Evidenziazione, page 11\
+or as a listWit element,\
+\
+\'95 Evidenziazione, page 11\
+which contains a series of witness elements\
+\
+\'95 Evidenziazione, page 11\
+Each witness element may contain a brief characterization of the witness, given as one or more prose paragraphs\
+\
+\'95 Evidenziazione, page 11\
+nformation about a manuscript witness is available, it should be represented using the msDesc element provided by the msdescription module; a msDesc may appear within a listBibl.\
+\
+\'95 Evidenziazione, page 11\
+a unique siglum for this source should always be supplied,\
+\
+\'95 Evidenziazione, page 11\
+This identifier can then be used elsewhere to refer to this particular witness\
+\
+\'95 Evidenziazione, page 11\
+<listWit> (witness list) lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.\
+\
+\'95 Evidenziazione, page 11\
+<witness> contains either a description of a single witness referred to within the critical apparatus, or a list of witnesses which is to be referred to by a single sigil.\
+\
+\'95 Evidenziazione, page 11\
+<msDesc> (manuscript description) contains a description of a single identifiable manuscript or other text-bearing object such as early printed books.\
+\
+\'95 Evidenziazione, page 11\
+<bibl> (bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged.\
+\
+\'95 Evidenziazione, page 11\
+<listBibl> (citation list) contains a list of bibliographic citations of any kind.\
+\
+\'95 Evidenziazione, page 12\
+witness list is thus the set of sigla for all the witnesses named in the apparatus\
+\
+\'95 Evidenziazione, page 12\
+<listWit> <witness xml:id="Chi3"/> <witness xml:id="Ha4"/> <witness xml:id="Ju"/> <witness xml:id="K"/> <witness xml:id="Kb"/> <witness xml:id="Kl"/> <witness xml:id="Kv"/> <witness xml:id="Ld"/> <witness xml:id="Ld1"/> <witness xml:id="Ln"/> <witness xml:id="Mu"/> <witness xml:id="Ry2"/> <witness xml:id="Wa"/> <witness xml:id="X"/> </listWit>\
+\
+\'95 Evidenziazione, page 12\
+each witness element should contain at least a brief prose description of the witness\
+\
+\'95 Evidenziazione, page 12\
+including a bibliographic citation\
+\
+\'95 Evidenziazione, page 12\
+<witness xml:id="Ra2">Bodleian Library Rawlinson Poetic 149 (see further <ptr target="http://example.com/msDescs#MSRP149"/>)</witness>\
+\
+\'95 Evidenziazione, page 12\
+the witness description here may be complemented by a reference to a full description of the manuscript supplied elsewhere, typically as the content of a msDesc or bibl element\
+\
+\'95 Evidenziazione, page 12\
+a whole paragraph of commentary for each witnes\
+\
+\'95 Evidenziazione, page 12\
+<witness xml:id="a">Bezeichnung <bibl> <author>Lachmann</author> </bibl>s f\'fcr die von einer 2. Hand auf bl. 40\'9643 geschriebenen Strophen der Hs. A.</witness>\
+\
+\'95 Evidenziazione, page 13\
+It would however generally be preferable to represent such detailed information using an appropriately structured msDesc element\
+\
+\'95 Evidenziazione, page 13\
+f the witnesses being recorded are not manuscripts but printed works, it may be preferable to document them using the standard bibl or biblStruct elements\
+\
+\'95 Evidenziazione, page 13\
+In text-critical work it is customary to refer to frequently occurring groups of witnesses by means of a single common siglum\
+\
+\'95 Evidenziazione, page 13\
+ncluding a nested witness list within the witness list\
+\
+\'95 Evidenziazione, page 13\
+uses the siglum for the group as its identifier\
+\
+\'95 Evidenziazione, page 13\
+supplies a fuller name for the group in its optional child head element\
+\
+\'95 Evidenziazione, page 13\
+listWit> <witness xml:id="Ellesmere">Ellesmere, Huntingdon Library 26.C.9</witness> <!-- ... --> <listWit xml:id="Con"> <head>Constant Group C</head> <witness xml:id="Cp">Corpus Christi Oxford MS 198</witness> <witness xml:id="La">British Library Lansdowne 851</witness> <witness xml:id="Sl2">British Library Sloane MS 1686</witness> </listWit> </listWit>\
+\
+\'95 Evidenziazione, page 13\
+<rdg wit="#Con">Experiment</rdg>\
+\
+\'95 Evidenziazione, page 13\
+The more elaborate example below shows both multiple levels of nesting and a strategy for mapping the the @xml:id of the witness to the siglum which will be displayed to the reader of a derived visualisation\
+\
+\'95 Evidenziazione, page 13\
+<witness xml:id="\uc0\u931 ">Servius (<abbr type="siglum">\u931 </abbr>) = \u916 \u915 \
+\
+\'95 Evidenziazione, page 13\
+<witness xml:id="\uc0\u916 ">\
+\
+\'95 Evidenziazione, page 14\
+<abbr type="siglum">\uc0\u916 </abbr>\
+\
+\'95 Evidenziazione, page 14\
+<witness xml:id="\uc0\u915 ">\
+\
+\'95 Evidenziazione, page 14\
+<abbr type="siglum">\uc0\u915 </abbr>\
+\
+\'95 Evidenziazione, page 15\
+Here we have a summary of the witnesses, with their sigla, used in an edition, as is generally found in the conspectus siglorum in the front matter of a critical edition.\
+\
+\'95 Evidenziazione, page 15\
+Families are indicated with Greek letters and manuscript witnesses with Latin letters\
+\
+\'95 Evidenziazione, page 15\
+The siglum for display is always contained in the abbr with @type \'91siglum\'92\
+\
+\'95 Evidenziazione, page 15\
+Situations commonly arise where there are many more or less fragmentary witnesses\
+\
+\'95 Evidenziazione, page 15\
+there may be quite distinct groups of witnesses for different parts of a text or collection of texts\
+\
+\'95 Evidenziazione, page 15\
+If a witness list is provided, it may be unnecessary to give, in each apparatus entry, an exhaustive list of the witnesses which agree with the base text\
+\
+\'95 Evidenziazione, page 15\
+hence calculate all the manuscripts agreeing with the base text\
+\
+\'95 Evidenziazione, page 15\
+encoders may find it less error-prone to list all witnesses explicitly in each apparatus entry\
+\
+\'95 Evidenziazione, page 15\
+If a witness is incomplete\
+\
+\'95 Evidenziazione, page 15\
+record explicitly where its preserved portions begin and end\
+\
+\'95 Evidenziazione, page 15\
+tags, which may occur within any lem or rdg element\
+\
+\'95 Evidenziazione, page 15\
+beginning or end of a fragmentary witness or of a lacuna\
+\
+\'95 Evidenziazione, page 15\
+<witStart> (fragmented witness start) indicates the beginning, or resumption, of the text of a fragmentary witness.\
+\
+\'95 Evidenziazione, page 15\
+<witEnd> (fragmented witness end) indicates the end, or suspension, of the text of a fragmentary witness.\
+\
+\'95 Evidenziazione, page 16\
+<lacunaStart> indicates the beginning of a lacuna in the text of a mostly complete textual witness.\
+\
+\'95 Evidenziazione, page 16\
+<lacunaEnd> indicates the end of a lacuna in a mostly complete textual witness.\
+\
+\'95 Evidenziazione, page 16\
+In an apparatus this might appear thus, distinguished from the reading of other manuscripts by the presence of the lacunaEnd element:\
+\
+\'95 Evidenziazione, page 16\
+<app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <lacunaEnd/>auctorite</rdg> </app>\
+\
+\'95 Evidenziazione, page 16\
+<app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2 #X"> <lacunaEnd wit="#X"/>auctorite</rdg> </app>\
+\
+\'95 Evidenziazione, page 16\
+In some cases, the apparatus in the source may commence recording the readings for a particular witness without its being clear whether the previous absence of readings for this witness is due to a lacuna\
+\
+\'95 Evidenziazione, page 16\
+The witStart element may be used in this circumstance:\
+\
+\'95 Evidenziazione, page 16\
+<app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <witStart/>auctorite</rdg> </app>\
+\
+\'95 Evidenziazione, page 16\
+Three different methods may be used to link a critical apparatus to the text:\
+\
+\'95 Evidenziazione, page 16\
+the location-referenced method,\
+\
+\'95 Evidenziazione, page 16\
+the double-end-point-attached method\
+\
+\'95 Evidenziazione, page 16\
+the parallel segmentation method\
+\
+\'95 Evidenziazione, page 16\
+the location-referenced and the double end-point methods may be used with either in-line or external apparatus\
+\
+\'95 Evidenziazione, page 16\
+former dispersed within the base text\
+\
+\'95 Evidenziazione, page 16\
+latter held in some separate\
+\
+\'95 Nota ancorata, page 16\
+Ci si riferisce al metodo inline\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 Ci si riferisce al metodo inline\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\'95 Evidenziazione, page 17\
+location\
+\
+\'95 Evidenziazione, page 17\
+within or outside the document with the base text\
+\
+\'95 Evidenziazione, page 17\
+The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus\
+\
+\'95 Evidenziazione, page 17\
+Where an external apparatus is used, the listApp element provides a useful means of grouping together a series of app elements of a specific type, or from a particular source\
+\
+\'95 Evidenziazione, page 17\
+<listApp>\
+\
+\'95 Evidenziazione, page 17\
+ist of apparatus entries.\
+\
+\'95 Evidenziazione, page 17\
+attributes which can be used to classify or subclassify elements\
+\
+\'95 Evidenziazione, page 17\
+@type\
+\
+\'95 Evidenziazione, page 17\
+@subtype\
+\
+\'95 Evidenziazione, page 17\
+listApp elements would normally appear in the back of a document, but they may also be placed in any other convenient location.\
+\
+\'95 Evidenziazione, page 17\
+Any document containing app elements requires a variantEncoding declaration in the encodingDesc element of its TEI heade\
+\
+\'95 Evidenziazione, page 17\
+<variantEncoding> declares the method used to encode text-critical variants.\
+\
+\'95 Evidenziazione, page 17\
+@method\
+\
+\'95 Evidenziazione, page 17\
+@location\
+\
+\'95 Evidenziazione, page 17\
+appears within the running text or external\
+\
+\'95 Evidenziazione, page 17\
+The location-referenced method of encoding apparatus provides a convenient method for encoding printed apparatus\
+\
+\'95 Evidenziazione, page 17\
+the apparatus is linked to the base text by indicating explicitly only the block of text on which there is a variant\
+\
+\'95 Evidenziazione, page 17\
+usually by a canonical reference scheme, or by line number in the edition\
+\
+\'95 Evidenziazione, page 17\
+If the location-referenced method is used for an apparatus stored externally to the base text, the TEI header must have the declaration\
+\
+\'95 Evidenziazione, page 17\
+<variantEncoding method="location-referenced" location="external"/>\
+\
+\'95 Evidenziazione, page 17\
+In the body of the document, the base text (here El) will appear\
+\
+\'95 Evidenziazione, page 18\
+Elsewhere in the document, or in a separate file, the apparatus will appear\
+\
+\'95 Evidenziazione, page 18\
+On each app element, the @loc attribute should be specified to indicate where the variant occurs in the base text.\
+\
+\'95 Evidenziazione, page 18\
+<app loc="WBP 1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app>\
+\
+\'95 Evidenziazione, page 18\
+encoded using in-line storage\
+\
+\'95 Evidenziazione, page 18\
+apparatus is dispersed through the base text block to which it refers\
+\
+\'95 Evidenziazione, page 18\
+In this case, the location of the variant can be read from the line in which it occurs\
+\
+\'95 Evidenziazione, page 18\
+<variantEncoding method="location-referenced" location="internal"/>\
+\
+\'95 Nota ancorata, page 18\
+in-line location referenced method\
+\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+\cf0 Quando si registrano le varianti inline, il testo base va riportato fuori dall'apparato\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+\cf0 \
+\'95 Evidenziazione, page 18\
+Since the location is not required to be exact, the apparatus for a line might also appear at the end of the line:\
+\
+\'95 Evidenziazione, page 18\
+<l n="1">Experience though noon Auctoritee <app> <rdg wit="#La"> Experiment</rdg> <rdg wit="#Ra2"> Eryment</rdg> </app> </l>\
+\
+\'95 Evidenziazione, page 18\
+it is not possible to find automatically the precise portion of text varied by the readings\
+\
+\'95 Evidenziazione, page 18\
+In order to show explicitly what portion of the base text is replaced by the variant readings, the lem element may be used:\
+\
+\'95 Evidenziazione, page 19\
+no recommendations are made for conventions of abbreviating the lemma\
+\
+\'95 Evidenziazione, page 19\
+simple location-reference methods are unlikely to be as successful as the other two methods, which allow the unambiguous reconstruction of the lemma from the encoding.\
+\
+\'95 Evidenziazione, page 19\
+In the double end-point attachment method, the beginning and end of the lemma in the base text are both explicitly indicated\
+\
+\'95 Evidenziazione, page 19\
+Double end-point attachment permits unambiguous matching of each variant reading against its lemma\
+\
+\'95 Evidenziazione, page 19\
+where the apparatus is intended to enable full reconstruction of the text\
+\
+\'95 Evidenziazione, page 19\
+the @from and @to attributes of the app element are used to indicate the beginning and ending points of the reading in the base text:\
+\
+\'95 Evidenziazione, page 19\
+identifiers which occur at the locations in question\
+\
+\'95 Evidenziazione, page 19\
+If no other markup is present there, the beginning and ending points should be marked using the anchor element\
+\
+\'95 Evidenziazione, page 19\
+he beginning and end of the lemma may be indicated by using the \'91indirect pointing\'92 mechanisms\
+\
+\'95 Evidenziazione, page 19\
+The double end-point attachment method may be used with in-line or external apparatus\
+\
+\'95 Evidenziazione, page 19\
+the base text (here El) will appear with anchor elements inserted at every place where a variant begins or ends\
+\
+\'95 Evidenziazione, page 19\
+unless some element with an identifier already begins or ends at that point\
+\
+\'95 Evidenziazione, page 19\
+<variantEncoding method="double-end-point" location="external"/> <!-- ... --> <div n="WBP" type="prologue"> <head>The Prologe ... </head> <l n="1" xml:id="WBP.1">Experience<anchor xml:id="WBP-A2"/> though noon Auctoritee</l> <l>Were in this world ...</l> </div>\
+\
+\'95 Evidenziazione, page 19\
+separately encoded\
+\
+\'95 Evidenziazione, page 19\
+<app from="#WBP.1" to="#WBP-A2"> <rdg wit="#La">Experiment</rdg>\
+\
+\'95 Evidenziazione, page 20\
+<rdg wit="#Ra2">Eryment</rdg> </app>\
+\
+\'95 Evidenziazione, page 20\
+No anchor element is needed at the beginning of the line, since the @from attribute can use the identifier for the line as a whole\
+\
+\'95 Evidenziazione, page 20\
+the lemma is assumed to run from the beginning of the element indicated by the @from attribute, to the end of that indicated by the @to attribute\
+\
+\'95 Evidenziazione, page 20\
+If no value is given for @to, the lemma runs from the beginning to the end of the element indicated by the @from attribute.\
+\
+\'95 Evidenziazione, page 20\
+When the apparatus is encoded in-line, it is dispersed through the base text\
+\
+\'95 Evidenziazione, page 20\
+Only the beginning of the lemma need be marked with an anchor, since the app is inserted at the end of the lemma, and itself therefore marks the end of the lemma.\
+\
+\'95 Evidenziazione, page 20\
+<variantEncoding method="double-end-point" location="internal"/> <!-- ... --> <l n="1" xml:id="wbp.1">Experience <app from="#wbp.1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee</l> <l>Were in this world ...</l>\
+\
+\'95 Evidenziazione, page 20\
+The lemma need not be repeated within the app element in this method, as it may be extracted reliably from the base text\
+\
+\'95 Evidenziazione, page 20\
+if it is desired to make an explicit record of the attestation of the base text, the lem element may be embedded within app, carrying the witnesses to the base\
+\
+\'95 Evidenziazione, page 20\
+<app from="#WBP.1" to="#WBP-A2"> <lem wit="#El #Hg">Experience</lem>\
+\
+\'95 Evidenziazione, page 20\
+This method is designed to cope with \'91overlapping lemmata\'92\
+\
+\'95 Evidenziazione, page 21\
+This method can readily cope with such difficult situations\
+\
+\'95 Evidenziazione, page 21\
+typically found in large and complex traditions\
+\
+\'95 Evidenziazione, page 21\
+<l xml:id="WBP.117" n="117"> And <anchor xml:id="WBP-A117.1"/> of so parfit <anchor xml:id="WBP-A117.2"/> wys <anchor xml:id="WBP-A117.3"/> a wight <anchor xml:id="WBP-A117.4"/> ywroght\
+\
+\'95 Evidenziazione, page 21\
+<app from="#WBP-A117.1" to="#WBP-A117.3"> <lem wit="#Hg">of so parfit wys</lem> <rdg wit="#Ha4">in what wise was</rdg> </app>\
+\
+\'95 Evidenziazione, page 21\
+<app from="#WBP-A117.2" to="#WBP-A117.4"> <lem wit="#Hg">wys a wight</lem> <rdg wit="#El #Ha4">was a wight</rdg> </app>\
+\
+\'95 Evidenziazione, page 21\
+The parallel segmentation method, to be discussed next, cannot handle overlaps among variants\
+\
+\'95 Evidenziazione, page 21\
+This method differs from the double end-point attachment method in that all variants at any point of the text are expressed as variants on one another.\
+\
+\'95 Evidenziazione, page 21\
+In this method, no two variations can overlap, although they may nest\
+\
+\'95 Evidenziazione, page 21\
+The texts compared are divided into matching segments all synchronized with one another\
+\
+\'95 Evidenziazione, page 21\
+It is also very easy with this method for an application to extract the full text of any one witness from the apparatus\
+\
+\'95 Evidenziazione, page 21\
+It will however be less convenient for very complex traditions\
+\
+\'95 Evidenziazione, page 21\
+In the parallel segmentation method, each segment of text on which there is variation is marked by an app element\
+\
+\'95 Evidenziazione, page 21\
+If there is a preferred (or base) reading it is tagged with lem; each reading is given in a rdg element:\
+\
+\'95 Evidenziazione, page 22\
+This method cannot be used with external apparatus\
+\
+\'95 Evidenziazione, page 22\
+it must be used in-line\
+\
+\'95 Evidenziazione, page 22\
+the witnesses to the reading most widely attested need not be stated\
+\
+\'95 Evidenziazione, page 22\
+read a listWit declaring all the witnesses to the text and then calculate which witnesses have not been named\
+\
+\'95 Evidenziazione, page 22\
+To avoid confusion, however, witnesses may be omitted only for a single reading.\
+\
+\'95 Evidenziazione, page 22\
+<l n="1"> <app> <lem>Experience</lem> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee </l>\
+\
+\'95 Evidenziazione, page 22\
+apparatus entries may nest in this method\
+\
+\'95 Evidenziazione, page 22\
+the variation on the individual words of the line would nest within that for the line as a whole:\
+\
+\'95 Evidenziazione, page 22\
+<rdg wit="#Chi3">Auctoritee, though none experience</rdg> <rdg> <app> <rdg wit="#El #Hg">Experience</rdg> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> <app> <rdg wit="#El #Ra2">though</rdg> <rdg wit="#Hg">thogh</rdg> <rdg wit="#La">thouh</rdg> </app> <app> <rdg wit="#El #Hg">noon Auctorite</rdg> <rdg wit="#La #Ra2">none auctorite</rdg> </app> </rdg>\
+\
+\'95 Evidenziazione, page 23\
+Parallel segmentation cannot, however, deal very gracefully with variants which overlap without nesting\
+\
+\'95 Evidenziazione, page 23\
+When an apparatus is provided it does not need to be given at the location in the transcription where the variation, emendation, attribution, or other apparatus observation occurs. Instead it may be stored in a separate place in the same file, or indeed in another file, and point to the location at which it is meant to be used\
+\
+\'95 Evidenziazione, page 23\
+The location-referenced method can be used to point a position in a text using the @loc attribute and a canonical reference that is understood and documented in the context of the file where it is used\
+\
+\'95 Evidenziazione, page 23\
+Where possible it is recommended that other methods use the @from attribute to point to an @xml:id attribute on an anchor or other element at the location where the apparatus observation takes place\
+\
+\'95 Evidenziazione, page 23\
+The contents of an element pointed to are understood to be equivalent to a lem if none exists in the app, and if a lem does exist this should replace any content.\
+\
+\'95 Evidenziazione, page 23\
+The @from attribute is a data.pointer datatype and thus contains a URI as a value\
+\
+\'95 Evidenziazione, page 23\
+directly to an @xml:id, an @xml:id in another local file, or indeed a file identified by any URL or URN\
+\
+\'95 Evidenziazione, page 23\
+<app from="example.xml#WBP-so.1.1">\
+\
+\'95 Evidenziazione, page 23\
+could also be encoded as\
+\
+\'95 Evidenziazione, page 23\
+<anchor xml:id="WBP-so.1.1a"/>\
+\
+\'95 Evidenziazione, page 23\
+<app from="http://www.example.com/example.xml#WBP-so.1.1a"> <lem>Experience</lem>\
+\
+\'95 Evidenziazione, page 24\
+In addition, URLs can contain XPointer schemes including xpath(), range(), and string-range() which can be used in providing the location of an app that is stored separately from the text to which it applies\
+\
+\'95 Evidenziazione, page 24\
+Both @from and @to can be used, as in the double end-point attachment method, to identify the starting and ending location for an apparatus using XPointer schemes described\
+\
+\'95 Evidenziazione, page 24\
+<l n="1" xml:id="WP.1a">Experience though noon Auctoritee</l>\
+\
+\'95 Evidenziazione, page 24\
+<app from="example.xml#string-range(WP.1a, 0, 10)"> <lem>Experience</lem>\
+\
+\'95 Evidenziazione, page 24\
+If only the @from attribute is provided then it should be understood that this supplies the location of the textual variance that the apparatus documents\
+\
+\'95 Evidenziazione, page 24\
+If the @from attribute contains an XPointer scheme that identifies a range of text\
+\
+\'95 Evidenziazione, page 24\
+record the starting and ending of the range\
+\
+\'95 Evidenziazione, page 24\
+In such a case a @to attribute is unnecessary.\
+\
+\'95 Evidenziazione, page 24\
+It is often desirable to record different transcriptions of one stretch of text.\
+\
+\'95 Evidenziazione, page 24\
+An application may then construct different \'91views\'92 of the transcription by extraction of the appropriate variant readings from the apparatus elements embedded in the transcription.\
+\
+\'95 Evidenziazione, page 24\
+For example, alternative expansions can be recorded in several different expan elements, all grouped within an app element\
+\
+\'95 Evidenziazione, page 24\
+which has been read in different ways by different scholars\
+\
+\'95 Evidenziazione, page 24\
+This information may be held within an app structure\
+\
+\'95 Evidenziazione, page 24\
+<app> <rdg source="#ES">perfectio<am> <g ref="#ii"/> </am> </rdg> <rdg source="#FJF">perfectio<ex>u</ex>n</rdg> <rdg source="#PGR">perfectiou<ex>n</ex>\
+\
+\'95 Evidenziazione, page 25\
+Editorial notes may also be attached to app structures within transcriptions\
+\
+\'95 Evidenziazione, page 25\
+In most cases, elements used to indicate features of a primary textual source may be represented within an app structure simply by nesting them within its readings\
+\
+\'95 Evidenziazione, page 25\
+the markup may use the join element or the @next and @prev attributes defined by chapter\
+\
+\'95 Evidenziazione, page 25\
+Variation most frequently occurs at the phrase level, but is also common at higher structural levels, such as the verse line, paragraph, or chapter\
+\
+\'95 Evidenziazione, page 25\
+some care must be taken in their encoding to ensure that TEI's Abstract Model is not being broken.\
+\
+\'95 Evidenziazione, page 26\
+Similarly, it is an error if the contents of an apparatus entry place a p inside another p or an l inside an l.\
+\
+\'95 Evidenziazione, page 26\
+Phenomena such as omissions and transpositions in witnesses will require some encoding strategies that differ from those in the examples above\
+\
+\'95 Evidenziazione, page 26\
+An editor wishing to signal an omission in one witness should encode the omission using an empty rdg\
+\
+\'95 Evidenziazione, page 26\
+<app xml:id="d1e372"> <lem xml:id="d1e373" source="#Heyworth"> <l n="18">Hypsipyle uacuo constitit in thalamo:</l> </lem> <rdg xml:id="d1e376" wit="#J" cause="homeoarchon"/> </app>\
+\
+\'95 Evidenziazione, page 26\
+Notice that in this example, the variation occurs at the unit of the verse line\
+\
+\'95 Evidenziazione, page 26\
+by mistake\
+\
+\'95 Evidenziazione, page 26\
+If a witness contains an interpolation that the editor does not wish to show in the base text, an empty lem should be used, in the same fashion.\
+\
+\'95 Evidenziazione, page 26\
+Transpositions are harder to encode\
+\
+\'95 Evidenziazione, page 26\
+A single app will therefore not be sufficient\
+\
+\'95 Evidenziazione, page 26\
+and the variants must be linked.\
+\
+\'95 Evidenziazione, page 26\
+<app xml:id="app-lem-l25-l26" exclude="#app-rdg-Housman-l25-26"> <lem xml:id="d1e462" source="#Heyworth"> <l n="25" xml:id="l25">desine iam reuocare tuis periuria verbis,</l> <l n="26" xml:id="l26">Cynthia, et oblitos parce movere deos;</l> </lem> </app>\
+\
+\'95 Evidenziazione, page 26\
+<app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26"> <rdg xml:id="d1e603" source="#Housman"> <l copyOf="#l25"/> <l copyOf="#l26"/> </rdg> <note target="#d1e603">Housman put these lines after 32.</note> </app>\
+\
+\'95 Evidenziazione, page 26\
+Note that both apps are linked via the @exclude attribut\
+\
+\'95 Evidenziazione, page 26\
+because they are mutually exclusive\
+\
+\'95 Evidenziazione, page 26\
+To avoid repetition, the second pair of lines can make use of the @copyOf attribute.\
+\
+\'95 Evidenziazione, page 26\
+Apparatus entries may nest when there is variation at both higher and lower structural levels\
+\
+\'95 Evidenziazione, page 27\
+<app xml:id="d1e275"> <lem xml:id="d1e277" source="#Heyworth"> <l n="8"> <app xml:id="d1e280"> <lem xml:id="d1e281" wit="#N #\uc0\u923 ">ut</lem> <rdg xml:id="d1e283" wit="#A">et</rdg> <rdg xml:id="d1e285" source="#Nodell">ac</rdg> <note target="#d1e287">perhaps</note> <rdg xml:id="d1e287" source="#Heyworth" cert="low">quam</rdg> </app> formosa nouo quae parat ire uiro.</l> <l n="9"> <app xml:id="d1e294"> <lem xml:id="d1e295">at</lem> <rdg xml:id="d1e297" wit="#A">et</rdg> </app> non sic, Ithaci digressu <app xml:id="d1e300"> <lem xml:id="d1e301">mota</lem> <rdg xml:id="d1e303" source="#Graevius">immota</rdg> </app>, Calypso</l> <l n="10">desertis olim fleuerat aequoribus:</l> <l n="11">multos illa dies incomptis maesta capillis</l> </lem> <rdg xml:id="d1e314" wit="#C" cause="homoeoteleuton"/> <note target="#d1e314">omits lines 8-11 because of homoeoteleuton.</note> </app>\
+\
+\'95 Evidenziazione, page 27\
+Here, MS C omits lines 8-11, but there are variations the editor wishes to record in the other witnesses which do have these lines\
+\
+\'95 Evidenziazione, page 27\
+Therefore, an outer app gives the lines in the lem and the omission in a rdg\
+\
+\'95 Evidenziazione, page 27\
+Further variation is encoded for lines 8 and 9 using nested apps.\
+\
+}

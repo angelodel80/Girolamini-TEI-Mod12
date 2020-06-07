@@ -1,4 +1,38 @@
-% Presentazione seminario multilanguage word-based alignment Lione 26-11-2019
+% Seminario Girolamini 17 giugno 2020
+%  temi:
+% - recensio/raccolta e descrizione dei testimoni
+% - collatio/esaminatio
+% - costitutio/emendatio
+% - pubblicazione/messa in pagina
+%
+% - Intro XML <https://www.tei-c.org/release/doc/tei-p5-doc/en/html/SG.html>
+%
+% - Intro TEI < https://books.openedition.org/oep/426 >
+%
+% - TEI Modulo 12 < https://www.tei-c.org/release/doc/tei-p5-doc/en/html/TC.html >
+%
+% - Tool di allineamento per la collazione:
+%
+% -- http://v-machine.org/documentation/
+%
+% -- https://collatex.net/
+%
+% -- http://www.juxtacommons.org/
+%
+% -- https://sada.uzi.uni-halle.de/
+%
+% -- medite
+%
+% -- tustep/TXSTEP
+%
+% -- http://evt.labcd.unipi.it/
+
+% -- http://www.informatik.uni-leipzig.de:8080/BibleViz/
+
+% ecdotica: resa grafica, messa in pagina
+% -- https://ride.i-d-e.de/issues/issue-11/reledmac/
+% -- https://tei-c.org/2014/06/10/tei-critical-edition-toolbox/
+% -- http://teicat.huma-num.fr/index.php
 
 \documentclass{beamer}
     
@@ -44,11 +78,11 @@
 %\includexmp{LicencesAndLicensing}
 
 %frame00 metadata
-	\title{Dalla recensio all'emendatio digitale}
+	\title{Dalla Recensio all'Emendatio Digitale}
 	\author[A.M. Del Grosso]{Angelo Mario Del Grosso}
 	%\institute{}
-	%\institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textit{CNR-ILC-LicoLab} \\\bigskip\url{http://licolab.ilc.cnr.it/}}
-    \institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textbf{Methodology}}
+	\institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textit{CNR-ILC} \\\bigskip\url{http://ilc.cnr.it/}}
+    \institute{\texttt{angelo.delgrosso@ilc.cnr.it} \\\bigskip\textbf{Teoria, Prassi e Strumenti}}
     \date{Istituto di Linguistica Computazionale ``A. Zampolli'', \today}
     \AtBeginSection[]{
     \begin{frame}<beamer>
@@ -78,7 +112,7 @@
 
 	\begin{block}{My interests}
 		\begin{center}
-			I am a computer engineer involed in computational philology
+			Ingegnere Informatico prestato alla filologia computazionale
 		\end{center}
 	\end{block}
 
@@ -89,36 +123,60 @@
 \end{frame}
 
 \begin{frame}
-	\frametitle{DH projects}
+	\frametitle{Temi del seminario}
 	\addtocounter{nframe}{1}
 
 	\begin{itemize}
-		\item 
-		\item 
-		\item 
-		\item 
+		\item Filologia del testo 
+		\begin{itemize}
+			\item disciplina storica (insieme di discipline) dedicata al recupero/ricostruzione di un'opera - per lo più letteraria - e allo studio critico delle sue testimonianze condotto con metodo scientifico.
+		\end{itemize}
+		\item Metodo di Lachman
+		\item Apparato Critico
+		\begin{itemize}
+			\item Apparato critico: nella edizione critica di un testo, l'apparato critico è il luogo (che può essere: a piè di pagina, in appendice al testo oppure dopo la nota al testo) in cui l'editore accoglie - a volte discutendolo (e comunque offrendo la possibilità di verifica del suo lavoro critico) - il complesso delle annotazioni, correzioni e varianti portate dalla tradizione e da lui giudicate erronee (o non meritevoli di essere accolte come lezione a testo).	
+		\end{itemize}
+		\item Collazione: collation is "to compare one text with another to discover textual variation"
 		\item 
 		\item 
 	\end{itemize}
 
 \end{frame}
 
-\section{Introduction}
-\input{includes/intro.tex}
+% Apparato critico negativo: l'apparato negativo o implicito non riporta la lezione a testo ma solo la lezione o le lezioni non accolte dell'altro o degli altri testimoni rappresentati con sigle distintive. Sta al lettore identificare nel testo la lezione corrispondente.
+%Apparato critico positivo: l'apparato positivo o esplicito riporta la lezione a testo (in genere solo la prima e l'ultima parola di brani lunghi) non di rado delimitata da una parentesi quadra ( ] ), seguita dalla lezione o lezioni dell'altro o degli altri testimoni rappresentati con sigle distintive.
 
-\section{Project}
-\input{includes/section1.tex}
+\begin{frame}
+	\frametitle{Temi del seminario}
+	\addtocounter{nframe}{1}
 
-\section{Other}
-\input{includes/section2.tex}
+	\begin{itemize}
+		\item Codifica del testo 
+		\begin{itemize}
+			\item Rappresentazione formale con tecnologia digitale
+			\item Livello di rappresentazione dei caratteri
+			\item Livello di rappresentazione della struttura e dei fenomeni testuali
+		\end{itemize}
+	\end{itemize}
 
-\section{Next}
-\input{includes/section3.tex}
+\end{frame}
 
-\section{Conclusions}
-\input{includes/conclusion.tex}
+\section{Panoramica Text Encoding Initiative}
+%\input{includes/intro-tei.tex}
+
+\section{Panoramica eXtensible Markup Language}
+%\input{includes/intro-xml.tex}
+
+\section{TEI: Codifica Apparato Critico}
+%\input{includes/tei-mod12.tex}
+
+\section{Strumenti per edizioni critiche}
+%\input{includes/section3.tex}
+
+\section{Considerazioni Finali}
+%\input{includes/conclusion.tex}
 
 \section{References}
-\input{includes/biblio.tex}
+%\input{includes/biblio.tex}
 
 \end{document}

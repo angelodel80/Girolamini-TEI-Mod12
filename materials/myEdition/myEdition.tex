@@ -1,0 +1,69 @@
+\documentclass{article}
+    \usepackage{polyglossia,fontspec,xunicode}
+    \usepackage{libertine} 
+    \usepackage{soul} 
+    \usepackage{hyperref}
+    
+      \usepackage[12pt]{extsizes}
+      \usepackage[a4paper, twoside, bindingoffset=0.5cm, inner=3cm, outer=3cm, top=3cm, bottom=3cm]{geometry} 
+    \usepackage{fancyhdr} 
+    \fancyfoot{}
+    \renewcommand{\headrulewidth}{0pt} % remove the header 
+    \pagestyle{fancy}
+        \fancyhead[LE,RO]{\thepage}
+      \setmainlanguage{latin}
+      \setotherlanguage{english}
+    \usepackage[series={A,B},noend,noeledsec,noledgroup]{reledmac} 
+    \Xarrangement[A]{paragraph}
+    \Xarrangement[B]{paragraph}
+      % set the space before each series of notes 
+      \Xbeforenotes[A]{18pt}
+      \Xbeforenotes[B]{18pt}
+      \Xlemmadisablefontselection[A] % Prevents the lemma from having the same characteristics as in the text (bold, italics, etc.)
+      \Xnotenumfont{\normalfont\bfseries} % To print the line number in bold in the apparatus...
+        \lineation{page} 
+    
+      \setlength{\stanzaindentbase}{20pt}
+      \setstanzaindents{1,1}
+      \setcounter{stanzaindentsrepetition}{1}
+         
+      \firstlinenum{0}
+      \linenumincrement{5}
+    \linenummargin{outer}
+    \Xnumberonlyfirstinline[] 
+    \Xnumberonlyfirstintwolines[]
+      \Xsymlinenum{}
+    \fnpos{critical-familiar}
+    \begin{document} 
+      \thispagestyle{empty}
+      \sidenotemargin{inner} 
+        \pagenumbering{arabic} 
+        \begin{center}\begin{Large} \textsc{\emph{Confessiones [pseudo-edition for testing purpose]}}
+        \end{Large}\end{center} \vspace{0.8cm} 
+      \par \textbf{A} - Manuscript A 
+      \par \textbf{B} - Manuscript B 
+      \par \textbf{C} - Manuscript C 
+      \par \textbf{D} - Manuscript D 
+      \par \textbf{E} - Manuscript E
+      \vspace{0.8cm}
+      \beginnumbering       \vspace{0cm}
+      \pstart  \begin{Large}\textbf{Liber I}\end{Large}
+    \pend
+    \vspace{0.1cm}   \vspace{0cm}
+      \pstart  \begin{Large}\textbf{CAPUT 1}\end{Large}
+    \pend
+    \vspace{0.1cm}  
+      \pstart Magnus es, domine, et laudabilis valde: \edtext{magna}{\lemma{magna} \Afootnote{magna magma maga laudabilis laudablis}}\footnoteA{This apparatus entry is an example using "rdgGrp" to group together variants. Here we have two groups, one presenting only spelling mistakes on the same reading as the lemma, while the second group has a different reading (with a spelling mistake for witness D)} virtus tua, et sapientiae tuae non est numerus. et laudare te vult homo, aliqua portio \edtext{creaturae tuae}{\lemma{creaturae tuae} \Afootnote{creaturas tuas \emph{B E}, creaturarum tuarum \emph{C}}},\footnoteA{In this apparatus entry, I have intentionally forgotten to mention the reading borne by witness D.} et homo circumferens \edtext{}{\lemma{circumferens} \Afootnote{mortalitem \emph{add.} \emph{A B C}, fragilitatem \emph{add.} \emph{D E}}} \footnoteA{In this apparatus entry, the editor has not decided yet which lectio should be considered the lemma. The app contains only rdg elements. They are therefore displayed in a different way from the other apparatus entries.} suam, circumferens testimonium peccati sui et testimonium, quia superbis resistis: et tamen laudare te vult homo, \edtext{aliqua}{\lemma{aliqua} \Afootnote{aliquando \emph{A C}, aliquo \emph{B D}}} \footnoteA{In this apparatus entry, I have introduced a mistake: witness B is mentionned two times, in the @wit of the lemma and of a reading.} portio creaturae tuae. Tu excitas, ut laudare te delectet, quia fecisti nos ad te et inquietum est cor nostrum, donec requiescat in te. Da \edtext{mihi}{\lemma{mihi} \Afootnote{nobis \emph{B C}, \emph{ om.} \emph{E}}},\footnoteA{A most banal apparatus entry.} domine, scire et intellegere, utrum sit prius invocare te an laudare te, et scire te prius sit an invocare te. sed quis te invocat nesciens te? Aliud enim \edtext{pro alio}{\lemma{pro alio} \Afootnote{\emph{ om.} \emph{B C}}} \footnoteA{A most banal apparatus entry.} potest invocare nesciens. An potius \edtext{invocaris}{\lemma{invocaris} \Afootnote{invocatis \emph{D}}},\footnoteA{A most banal apparatus entry.} ut sciaris?\edtext{\edtext{Quomodo}{\lemma{quomodo} \Afootnote{quando \emph{A D}}} This apparatus entry is nested within the lemma of another apparatus entry. Note that only witnesses A, B, C and D are listed there, since witneses E omits this sentence, and this apparatus entry is nested within the lemma which is borne only by witnesses A, B, C and D. The application will therefore recognize that witness E is not missing here, because it is listed in another reading of the ancestor apparatus entry.  autem invocabunt, in quem non crediderunt? Aut quomodo credent sine praedicante?}{\lemma{quomodo autem invocabunt \dots credent sine praedicante} \Afootnote{\emph{ om.} \emph{E}}} \footnoteA{This apparatus entry contains another apparatus entry.} Et laudabunt dominum qui requirunt eum. Quaerentes enim inveniunt eum et invenientes \edtext{laudabunt}{\lemma{laudabunt} \Afootnote{laudabant \emph{}}} \footnoteA{In this apparatus entry, all the @wit have been forgotten, so there is no indication where to find each reading.} eum. Quaeram te, domine, invocans te, et invocem te credens in te: praedicatus enim es nobis. Invocat te, domine, fides mea, quam dedisti mihi, quam inspirasti mihi per \edtext{humanitatem}{\lemma{humanitatem} \Afootnote{humilitatem \emph{A D E}}} \footnoteA{In this apparatus entry, I have introduced two mistakes: witness B is not mentioned, while witness E is mentionned two times, in the @wit of the lemma and of a reading.} filii tui, per \edtext{ministerium}{\lemma{ministerium} \Afootnote{mysterium \emph{D E}}} \footnoteA{A most banal apparatus entry.} \edtext{}{\lemma{ministerium} \Afootnote{praedicatoris tui \emph{add.} \emph{A C}, praedicatorum tuorum \emph{add.} \emph{C D E}}}. \footnoteA{In this apparatus entry, the editor has not decided yet which lectio should be considered the lemma. The app contains only rdg elements. They are therefore displayed in a different way from the other apparatus entries. I have also introduced two mistakes: there is no mention of witness B, while witness C is mentioned twice.}
+      \pend \vspace{0.1cm}    \vspace{0cm}
+      \pstart  \begin{Large}\textbf{CAPUT 2}\end{Large}
+    \pend
+    \vspace{0.1cm}  
+      \pstart Et quomodo invocabo deum meum, deum et dominum meum, quoniam utique inme ipsum eum invocabo, cum invocabo eum? Et quis locus est in me, quoveniat in me deus meus? quo deus veniat in me, deus, qui fecit caelum et terram? itane, domine deus meus, est quiquam in me, quod capiat te? An vero caelum et terra, quae fecisti et in quibus me fecisti, capiuntte? An quia sine te non esset  quidquid est, fit, ut quidquid est capiat te? quoniam itaque et ego sum, quid peto, ut venias in me, quinon essem, nisi esses in me? Non enim ego iam in \edtext{inferis}{\lemma{inferis} \Afootnote{infernis \emph{A B}}},\footnoteA{A most banal apparatus entry} et tamen etiam ibi es. Nam etsi descendero in infernum, ades. non ergo essem, deus meus, non omnino essem, nisi esses in me. An potius non essem, nisi essem in te, ex quo omnia, per quem omnia, in quo omnia? \edtext{}{\lemma{omnia} \Afootnote{}} \footnoteA{A lacuna in witness C starts here.} Etiam sic, domine, etiam sic. quo te invoco, cum in te sim? aut unde venias in me? \edtext{Quo}{\lemma{quo} \Afootnote{quomodo \emph{E}}} \footnoteA{A most banal apparatus entry. Note that since this entry occurs within a lacuna in witness C, this witness is not mentioned in this entry, and this is not an error.} enim recedam extra caelum et terram, ut inde in me veniat deus meus, qui dixit: caelum et terram ego impleo?
+      \pend \vspace{0.1cm}    \vspace{0cm}
+      \pstart  \begin{Large}\textbf{CAPUT 3}\end{Large}
+    \pend
+    \vspace{0.1cm}  
+      \pstart Capiunt ergone te caelum et terra, quoniam tu imples ea? An imples et restat, quoniam non te capiunt? et quo refundis quidquid impleto caeloet terra  restat ex te? An non opus habes, ut quoquam continearis, qui contines omnia, quoniam quae imples continendo \edtext{imples}{\lemma{imples} \Afootnote{implebis \emph{E}}}? \footnoteA{In this apparatus entry, the lemma bears no @wit. This is a perfectly acceptable form of encoding, implying that all witnesses not listed in the rdg bear by default the reading of the lemma. But since in this document the apparatus is elsewhere recorded in a "positive" fashion, listing each reading of each manuscript explicitly, it might be useful to point out that this entry does not follow the same practice, which could be a mistake in the context.} Non enim vasa, quae te plena sunt, stabilem te faciunt, quia etsi frangantur non effunderis. Et cum effunderis super nos, non tu iaces, sed erigis nos, nec tu dissiparis, sed colligis nos. sed quae imples omnia, te toto imples omnia. An quia non possunt te totum capere omnia, partem tui capiunt et eandem partem simul omnia capiunt? An singulas singula et maiores maiora, minores \edtext{minora}{\lemma{minora} \Afootnote{maiora \emph{B}}} \footnoteA{A most banal apparatus entry} capiunt? Ergo est aliqua pars tua maior, aliqua minor? An ubique totus es et res nulla te totum capit? \edtext{}{\lemma{capit} \Afootnote{}} \footnoteA{A lacuna in witness C ends here.}
+      \pend \vspace{0.1cm} 
+      \endnumbering 
+       \end{document}

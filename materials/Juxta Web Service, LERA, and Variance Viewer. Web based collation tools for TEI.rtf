@@ -1,0 +1,765 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\info
+{\title Juxta Web Service, LERA, and Variance Viewer. Web based collation tools for TEI}
+{\author Angelo}
+{\creatim\yr2020\mo6\dy7\hr18\min52\sec18\timesinceref613241538}}\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 \'95 Evidenziazione, page 1\
+three open source and web-based text collation tools\
+\
+\'95 Evidenziazione, page 1\
+Juxta Web Service\
+\
+\'95 Evidenziazione, page 1\
+LERA\
+\
+\'95 Evidenziazione, page 1\
+Variance Viewer\
+\
+\'95 Evidenziazione, page 1\
+suitability especially for philological work with TEI\
+\
+\'95 Evidenziazione, page 1\
+text collation\
+\
+\'95 Evidenziazione, page 1\
+supports individual workflow concepts and visualization methods\
+\
+\'95 Evidenziazione, page 1\
+consider supporting TEI standoff markup\
+\
+\'95 Evidenziazione, page 1\
+identify the differences between them\
+\
+\'95 Evidenziazione, page 1\
+variant readings are often encoded manually by human editors\
+\
+\'95 Evidenziazione, page 1\
+automatic text collation\
+\
+\'95 Evidenziazione, page 1\
+difficult to use\
+\
+\'95 Evidenziazione, page 1\
+address specific use cases\
+\
+\'95 Evidenziazione, page 1\
+adaptable tools which can handle textual variance and text alignment\
+\
+\'95 Evidenziazione, page 1\
+support for TEI-XML markup\
+\
+\'95 Evidenziazione, page 1\
+philological and technical requirements of researchers\
+\
+\'95 Evidenziazione, page 2\
+overview of text collation in philology and computer science\
+\
+\'95 Evidenziazione, page 2\
+collation tools: Juxta Web Service1, LERA2, and Variance Viewer\
+\
+\'95 Evidenziazione, page 2\
+discussion about workflow integration and future requirements\
+\
+\'95 Evidenziazione, page 2\
+non-proprietary online tools which require knowledge of XML-TEI\
+\
+\'95 Evidenziazione, page 2\
+some important instruments for scholarly text collation\
+\
+\'95 Evidenziazione, page 2\
+TUSTEP4\
+\
+\'95 Evidenziazione, page 2\
+Classical Text Editor\
+\
+\'95 Evidenziazione, page 2\
+Versioning Machine\
+\
+\'95 Evidenziazione, page 2\
+Oxygen XML Editor\
+\
+\'95 Evidenziazione, page 2\
+CollateX\
+\
+\'95 Evidenziazione, page 2\
+Nury (2018)\
+\
+\'95 Evidenziazione, page 2\
+comprehensive study\
+\
+\'95 Evidenziazione, page 2\
+etailed list of scholarly collation tools (ibid. 305\'96316)\
+\
+\'95 Evidenziazione, page 2\
+text comparison and collation\
+\
+\'95 Evidenziazione, page 2\
+Text comparison means identifying differences between two or more texts, by comparing them directly to each other\
+\
+\'95 Evidenziazione, page 2\
+This technique is used in a broad range of scientific disciplines in which text is involved:\
+\
+\'95 Evidenziazione, page 2\
+text comparison exists that aims at a better understanding of cultural processes\
+\
+\'95 Evidenziazione, page 2\
+Scholars from all historical disciplines\
+\
+\'95 Evidenziazione, page 3\
+interest in retracing the creation and transmission of texts in order to establish connections or divergences between them\
+\
+\'95 Evidenziazione, page 3\
+n textual criticism, the epistemic process of text comparison is called collation\
+\
+\'95 Evidenziazione, page 3\
+to bring together and compare, examine critically as to agreement\
+\
+\'95 Evidenziazione, page 3\
+understandings of text\
+\
+\'95 Evidenziazione, page 3\
+In computer science, text is understood as a linear sequence of characters stored in an electronic document (file), while in philology, text is interpreted on multiple dimensions, for example by distinguishing text as a single physical document from text as an abstract idea\
+\
+\'95 Evidenziazione, page 3\
+Sahle 2013: 45\'9660\
+\
+\'95 Evidenziazione, page 3\
+philological text collation tool needs to build a bridge between technical and scholarly understanding\
+\
+\'95 Evidenziazione, page 3\
+Text collation is a technique used in textual criticism\
+\
+\'95 Evidenziazione, page 3\
+which aims at retracing the genesis and the history of texts\
+\
+\'95 Evidenziazione, page 3\
+It plays a major role when uncovering developments and dissemination of thoughts, ideas and concepts represented within texts\
+\
+\'95 Evidenziazione, page 3\
+a philologist consults an immense number of copies and related sources while engaging in the study of the history of one text;\
+\
+\'95 Evidenziazione, page 3\
+in philology, the manuscript transmission is often represented as a stemma\
+\
+\'95 Evidenziazione, page 3\
+Plachta 2013\
+\
+\'95 Evidenziazione, page 3\
+a tree-like figure which points out relationships between sources\
+\
+\'95 Evidenziazione, page 4\
+Traditionally, philological text collation is performed manually\
+\
+\'95 Evidenziazione, page 4\
+Changes are catalogued in a critical apparatus\
+\
+\'95 Evidenziazione, page 4\
+A typical entry starts with the variant\'92s position (usually line or paragraph number)\
+\
+\'95 Evidenziazione, page 4\
+followed by the lemma of the base text often delimited by a closing square bracket \'91]\'92\
+\
+\'95 Evidenziazione, page 4\
+follows the variant text itself and finally the corresponding sigla of the sources\
+\
+\'95 Evidenziazione, page 4\
+it does cost a lot of time and effort.\
+\
+\'95 Evidenziazione, page 4\
+Editors need to establish clear guidelines to define the phenomena of interest\
+\
+\'95 Evidenziazione, page 4\
+the more details have to be tracked, the more human errors might increase.\
+\
+\'95 Evidenziazione, page 5\
+There are various conventional methods to present the results of a given text collation in printed editions\
+\
+\'95 Evidenziazione, page 5\
+classical scholarly editions prefer a critical apparatus:\
+\
+\'95 Evidenziazione, page 5\
+one witness or the established critical text is chosen as base-text, while all variants are presented in footnotes or endnotes\
+\
+\'95 Evidenziazione, page 5\
+A more visual presentation mode is synopsis: all collated texts are presented in parallel, either in vertical or horizontal order\
+\
+\'95 Evidenziazione, page 5\
+Digital tools can help\
+\
+\'95 Evidenziazione, page 5\
+automatic collation can be significantly faster\
+\
+\'95 Evidenziazione, page 5\
+f all witnesses are already fully transcribed\
+\
+\'95 Evidenziazione, page 5\
+leave the tedious letter-by-letter-collation to the machine\
+\
+\'95 Evidenziazione, page 5\
+nterpreting and refining the results\
+\
+\'95 Evidenziazione, page 5\
+comparing the texts\
+\
+\'95 Evidenziazione, page 5\
+ould be utilized to divide the process into an automated collation layer and a human interpretation layer.\
+\
+\'95 Evidenziazione, page 5\
+digital tools can also help to create presentations dynamically\
+\
+\'95 Evidenziazione, page 5\
+Some digital environments even leave the choice of a visualization method and base-text to the user\
+\
+\'95 Evidenziazione, page 5\
+The creation of user-configurable visualizations is supported by a basic digital paradigm: separating the visual presentation (e.g. HTML) from the encoded\
+\
+\'95 Evidenziazione, page 6\
+representation (e.g. XML).\
+\
+\'95 Evidenziazione, page 6\
+which type of variation can actually occur\
+\
+\'95 Evidenziazione, page 6\
+two basic cases\
+\
+\'95 Evidenziazione, page 6\
+addition\
+\
+\'95 Evidenziazione, page 6\
+deletion\
+\
+\'95 Evidenziazione, page 6\
+Two more complex categories of variation\
+\
+\'95 Evidenziazione, page 6\
+substitution\
+\
+\'95 Evidenziazione, page 6\
+transposition\
+\
+\'95 Evidenziazione, page 6\
+Identifying substitution and transposition is less trivial than additions and deletions\
+\
+\'95 Evidenziazione, page 6\
+transposition problem\
+\
+\'95 Evidenziazione, page 6\
+Sch\'f6ch\
+\
+\'95 Evidenziazione, page 6\
+Both substitution and transposition can also be interpreted as successive additions and deletions,\
+\
+\'95 Evidenziazione, page 7\
+scholar decides by personal knowledge and experience, an algorithm by formal models\
+\
+\'95 Evidenziazione, page 7\
+The most popular example is called Levenshtein Distance\
+\
+\'95 Evidenziazione, page 7\
+expresses textual difference as \'91edit distance\'92\
+\
+\'95 Evidenziazione, page 7\
+minimal number of characters that need to be added, deleted or substituted to transform sequence A into sequence B.\
+\
+\'95 Evidenziazione, page 7\
+the longest common subsequence problem, and revolutionized file comparison when it was implemented for the Unix command \'91diff\'92\
+\
+\'95 Evidenziazione, page 7\
+capable of identifying and describing differences line wise\
+\
+\'95 Evidenziazione, page 7\
+These algorithms or optimized variations of them have been in use until today.\
+\
+\'95 Evidenziazione, page 7\
+Collating long texts turned out to be a complex scenario\
+\
+\'95 Evidenziazione, page 7\
+Spadini 2016\
+\
+\'95 Evidenziazione, page 7\
+2009, a working group presented an abstract framework for complex text collation procedures, which was later called \'91Gothenburg mode\
+\
+\'95 Evidenziazione, page 7\
+five different computing stages\
+\
+\'95 Evidenziazione, page 7\
+tokenization\
+\
+\'95 Evidenziazione, page 7\
+normalization\
+\
+\'95 Evidenziazione, page 7\
+alignment\
+\
+\'95 Evidenziazione, page 7\
+analysis\
+\
+\'95 Evidenziazione, page 7\
+visualization\
+\
+\'95 Evidenziazione, page 7\
+extend this model by a sixth, interpretative layer\
+\
+\'95 Evidenziazione, page 7\
+before starting the collation procedure:\
+\
+\'95 Evidenziazione, page 8\
+What is the smallest unit (token) of a compared sequence? Is it a letter, a word, a phrase or even a paragraph\
+\
+\'95 Evidenziazione, page 8\
+normalization rules apply\
+\
+\'95 Evidenziazione, page 8\
+whitespace\
+\
+\'95 Evidenziazione, page 8\
+abbreviations\
+\
+\'95 Evidenziazione, page 8\
+spelling\
+\
+\'95 Evidenziazione, page 8\
+graphemics\
+\
+\'95 Evidenziazione, page 8\
+Should presentational or rendering aspects be included\
+\
+\'95 Evidenziazione, page 8\
+Should collation also take the formal structure of the documents into account\
+\
+\'95 Evidenziazione, page 8\
+Should subsequent additions and deletions automatically be interpreted as substitutions\
+\
+\'95 Evidenziazione, page 8\
+Is it required to identify transpositions as well\
+\
+\'95 Evidenziazione, page 8\
+To this aim, a short list of basic features that helps to conduct this task, obligatory and non- obligatory, is presented first\
+\
+\'95 Evidenziazione, page 9\
+web interface for uploading two or more documents\
+\
+\'95 Evidenziazione, page 9\
+TEI support\
+\
+\'95 Evidenziazione, page 9\
+nitiation of a text collation procedure\
+\
+\'95 Evidenziazione, page 9\
+flexible collation parameters\
+\
+\'95 Evidenziazione, page 9\
+good performance with very large portions of text\
+\
+\'95 Evidenziazione, page 9\
+identification of basic types of textual difference\
+\
+\'95 Evidenziazione, page 9\
+identification of sections of transposed text\
+\
+\'95 Evidenziazione, page 9\
+automatic classification of variants in systematic groups\
+\
+\'95 Evidenziazione, page 9\
+browser-based visualization of the results\
+\
+\'95 Evidenziazione, page 9\
+results export\
+\
+\'95 Evidenziazione, page 9\
+TEI apparatus encoded\
+\
+\'95 Evidenziazione, page 9\
+open source code available\
+\
+\'95 Evidenziazione, page 9\
+easily accessible and free of charge\
+\
+\'95 Evidenziazione, page 10\
+overs the basic scenarios of textual variance\
+\
+\'95 Evidenziazione, page 10\
+real example and was taken from The Shakespeare Quartos Archive\
+\
+\'95 Evidenziazione, page 10\
+TEI-encoded\
+\
+\'95 Evidenziazione, page 10\
+Juxta\
+\
+\'95 Evidenziazione, page 10\
+text collation software produced by the University of Virginia in 2009\
+\
+\'95 Evidenziazione, page 11\
+It received the Google Digital Humanities Award17 in 2010\
+\
+\'95 Evidenziazione, page 11\
+Juxta Web Service is still active, and the code is available on Github18 under an Apache 2.0 license.\
+\
+\'95 Evidenziazione, page 11\
+Juxta Web Service requires an account which can be created online free of charge with a few clicks\
+\
+\'95 Evidenziazione, page 11\
+uploads two or more files that he/she wishes to collate and that will appear as \'91sources\'92 in the dashboard\
+\
+\'95 Evidenziazione, page 11\
+If desired, source files can be reformatted\
+\
+\'95 Evidenziazione, page 11\
+each source needs to be prepared as \'91witness\'92\
+\
+\'95 Evidenziazione, page 11\
+the text is being tokenized automatically in the background.\
+\
+\'95 Evidenziazione, page 11\
+The whole process becomes transparent and can also be modified in the \'91XML View\'92, which displays the XSLT transformation templates\
+\
+\'95 Evidenziazione, page 11\
+Finally, the user selects two or more witnesses to form a \'91comparison set\'92\
+\
+\'95 Evidenziazione, page 12\
+uxta Web Service presents the result of the collation in a number of different views\
+\
+\'95 Evidenziazione, page 12\
+Heat Map\
+\
+\'95 Evidenziazione, page 12\
+base text can be changed dynamically\
+\
+\'95 Evidenziazione, page 12\
+The \'91Side-by-side View\'92 is a synoptic view of two selected witnesses\
+\
+\'95 Evidenziazione, page 12\
+integrated Versioning Machine\
+\
+\'95 Evidenziazione, page 12\
+The results can be exported in various formats, e.g. a TEI encoded version following the parallel segmentation method, and ready for further use\
+\
+\'95 Evidenziazione, page 12\
+including a classical apparatus which follows a simple output of the base text.\
+\
+\'95 Evidenziazione, page 13\
+Juxta Web Service\'92s in-depth and thoughtfully developed features \'96 although some of them remained in the experimental stage \'96 make it a powerful tool.\
+\
+\'95 Evidenziazione, page 13\
+consider that currently, the Juxta Web Service is minimally maintained.\
+\
+\'95 Evidenziazione, page 13\
+LERA\
+\
+\'95 Evidenziazione, page 13\
+acronym for: \'91Locate, Explore, Retrace and Apprehend complex text variants\'92\
+\
+\'95 Evidenziazione, page 13\
+text collation software\
+\
+\'95 Evidenziazione, page 13\
+It is part of the project SADA\
+\
+\'95 Evidenziazione, page 13\
+which focuses on analyzing text variants at a larger scale\
+\
+\'95 Evidenziazione, page 13\
+LERA, as one of its parts, was designed in close collaboration with researchers from the humanities\
+\
+\'95 Evidenziazione, page 13\
+The code repository is currently not accessible for the public, however it is planned to publish it in accordance with academic Open Science policies.\
+\
+\'95 Evidenziazione, page 13\
+available on personal request\
+\
+\'95 Evidenziazione, page 14\
+upload two or more \'91documents\'92 for collation\
+\
+\'95 Evidenziazione, page 14\
+During this procedure, the user assigns a siglum and a title to each document\
+\
+\'95 Evidenziazione, page 14\
+optionally sets language\
+\
+\'95 Evidenziazione, page 14\
+segmentation method\
+\
+\'95 Evidenziazione, page 14\
+hyphenation handling\
+\
+\'95 Evidenziazione, page 14\
+linguistic annotation\
+\
+\'95 Evidenziazione, page 14\
+the user selects a set of documents for collation, which will then be displayed as \'91edition\'92\
+\
+\'95 Evidenziazione, page 14\
+broad range of tools and features for text collation\
+\
+\'95 Evidenziazione, page 14\
+The basic structure is a synoptic view of all documents\
+\
+\'95 Evidenziazione, page 14\
+which can be customized with a rich selection of parameters and visual features.\
+\
+\'95 Evidenziazione, page 14\
+Additions, deletions, and substitutions can be color highlighted\
+\
+\'95 Evidenziazione, page 14\
+for collation of more than two texts, colors can be used to highlight variants in the texts which are identical in two versions\
+\
+\'95 Evidenziazione, page 14\
+or exist only in one version\
+\
+\'95 Evidenziazione, page 14\
+Detailed filter rules for normalization can be applied and changed on the fly\
+\
+\'95 Evidenziazione, page 14\
+distinctive feature of LERA is probably the section alignment, which is a feature to refine the results of the automatic collation of longer texts\
+\
+\'95 Evidenziazione, page 15\
+navigation tool called CATview24 helps to browse through the text by highlighting each section as one square,\
+\
+\'95 Evidenziazione, page 15\
+is colored according to the frequency of changes in that section\
+\
+\'95 Evidenziazione, page 15\
+A word cloud is also available\
+\
+\'95 Evidenziazione, page 15\
+PDF, TEX and HTML.\
+\
+\'95 Evidenziazione, page 15\
+LERA is an impressively coherent suite of tools for text alignment and collation which allows the user to flexibly combine tools and parameters for individual use cases. Two things are still on the wish list: TEI export (or another structured format like JSON) and a public code repository.\
+\
+\'95 Evidenziazione, page 15\
+Variance Viewer\
+\
+\'95 Evidenziazione, page 15\
+http://variance-viewer.informatik.uni-wuerzburg.de/Variance-Viewer/\
+\
+\'95 Evidenziazione, page 15\
+web application for text\
+\
+\'95 Evidenziazione, page 16\
+collation\
+\
+\'95 Evidenziazione, page 16\
+Nico Balbach\
+\
+\'95 Evidenziazione, page 16\
+University of W\'fcrzburg\
+\
+\'95 Evidenziazione, page 16\
+group of researchers from an academic working group for digital editions\
+\
+\'95 Evidenziazione, page 16\
+build a generic tool which conducts common text collation tasks for different research projects\
+\
+\'95 Evidenziazione, page 16\
+Variance Viewer can be used without an account\
+\
+\'95 Evidenziazione, page 16\
+user can directly upload (exactly) two files to collate on a simple one page dialogue website\
+\
+\'95 Evidenziazione, page 16\
+Accepted formats are only XML (by default) and TXT (as fallback)\
+\
+\'95 Evidenziazione, page 16\
+upload a configuration file with customized settings\
+\
+\'95 Evidenziazione, page 16\
+GitHub documentation\
+\
+\'95 Evidenziazione, page 16\
+it is possible to modify the list of XML elements whose content will be compared\
+\
+\'95 Evidenziazione, page 16\
+define normalization rules for graphemic variance\
+\
+\'95 Evidenziazione, page 16\
+punctuation\
+\
+\'95 Evidenziazione, page 16\
+abbreviations\
+\
+\'95 Evidenziazione, page 17\
+The web service operates quickly and displays a visualization of the collation result nearly instantly\
+\
+\'95 Evidenziazione, page 17\
+automatic classification of variants\
+\
+\'95 Evidenziazione, page 17\
+content\
+\
+\'95 Evidenziazione, page 17\
+punctuation\
+\
+\'95 Evidenziazione, page 17\
+graphemics\
+\
+\'95 Evidenziazione, page 17\
+abbreviation\
+\
+\'95 Evidenziazione, page 17\
+typography\
+\
+\'95 Evidenziazione, page 17\
+separation\
+\
+\'95 Evidenziazione, page 17\
+color code\
+\
+\'95 Evidenziazione, page 17\
+Color shades make clear whether there is only one different character in a token (light) or more than one (dark)\
+\
+\'95 Evidenziazione, page 17\
+Each feature can be switched on and off by using respective buttons\
+\
+\'95 Evidenziazione, page 17\
+adapt the visualization of the results by using CSS properties\
+\
+\'95 Evidenziazione, page 17\
+dentify presentational differences\
+\
+\'95 Evidenziazione, page 17\
+described in @rend-attributes\
+\
+\'95 Evidenziazione, page 17\
+Variance Viewer analyzes typographic aspects even if the underlying text is identical\
+\
+\'95 Evidenziazione, page 17\
+Currently, this is implemented for the TEI attribute @rend only\
+\
+\'95 Evidenziazione, page 17\
+The result is downloadable in TEI/XML format\
+\
+\'95 Evidenziazione, page 17\
+variants encoded in parallel segmentation\
+\
+\'95 Evidenziazione, page 17\
+using elements <lem> and <rdg> for variants in the first and second text respectively\
+\
+\'95 Evidenziazione, page 17\
+the variant classification is recorded into the attribute @type of the <app> element\
+\
+\'95 Evidenziazione, page 18\
+Variance Viewer does an excellent job in handling the TEI input\
+\
+\'95 Evidenziazione, page 18\
+The configuration options are powerful and make Variance Viewer an excellent generic tool\
+\
+\'95 Evidenziazione, page 18\
+The tool is well-suited for inclusion in a workflow at a relatively early stage, e.g. after transcription and base encoding are completed, but before deeper semantic tagging takes place.\
+\
+\'95 Evidenziazione, page 18\
+all tools provided a web interface for document upload\
+\
+\'95 Evidenziazione, page 18\
+starting a collation procedure\
+\
+\'95 Evidenziazione, page 18\
+options for individual configurations\
+\
+\'95 Evidenziazione, page 18\
+LERA and Juxta Web Service both offer extremely granular interfaces, Variance Viewer offers high flexibility through an uploadable configuration file\
+\
+\'95 Evidenziazione, page 18\
+the tools cause heavy load on the client side, as they all load the complete collation result into the browser\
+\
+\'95 Evidenziazione, page 18\
+All tools were able to identify additions, deletions and substitutions correctly\
+\
+\'95 Evidenziazione, page 18\
+transposition is obviously an interpretative issue and needs further analysis or manual editing\
+\
+\'95 Evidenziazione, page 18\
+parallel synopsis view with variants highlighted\
+\
+\'95 Evidenziazione, page 18\
+exploration tool\
+\
+\'95 Evidenziazione, page 19\
+easy navigation through longer texts with Histogram and CATview\
+\
+\'95 Evidenziazione, page 19\
+Variance Viewer has not only developed an interesting approach to classify variants automatically, but it can also detect presentational variants, which is most useful for collating texts with complex typography.\
+\
+\'95 Evidenziazione, page 19\
+Concerning output formats\
+\
+\'95 Evidenziazione, page 19\
+the usefulness of these routines is questionable\
+\
+\'95 Evidenziazione, page 19\
+It is positive that the source code of all tools is available (or planned to be) on public repositories (feature 6)\
+\
+\'95 Evidenziazione, page 19\
+Usage of the tools is relatively easy and free of charge\
+\
+\'95 Evidenziazione, page 19\
+Concerning accessibility, Variance Viewer follows an interesting lightweight concept, as it does not require any user management nor authentication, while LERA and Juxta Web Service require individual accounts and bind users to their web service.\
+\
+\'95 Evidenziazione, page 19\
+The most debatable aspect of the TEI output routines is that all tools offer only parallel segmentation\
+\
+\'95 Evidenziazione, page 19\
+as encoding method\
+\
+\'95 Evidenziazione, page 19\
+resulting in a simplified apparatus file with all extra features subtracted\
+\
+\'95 Evidenziazione, page 19\
+implement an output as standoff apparatus\
+\
+\'95 Evidenziazione, page 19\
+either with the double endpoint attachment (TEI Guidelines, 12.2.230) or with the location referenced method (TEI Guidelines, 12.2.131), while the source documents could remain unmodified\
+\
+\'95 Evidenziazione, page 19\
+Bleeker\
+\
+\'95 Evidenziazione, page 19\
+The only condition would be granular encoding with @xml:id on each token, or corresponding milestones\
+\
+\'95 Evidenziazione, page 19\
+Cayless\
+\
+\'95 Evidenziazione, page 20\
+other tools which could cover this function independently\
+\
+\'95 Evidenziazione, page 20\
+example, TEICat32 by M. Burghart offers a great alternative\
+\
+\'95 Evidenziazione, page 20\
+thinking of the \'93separation of concerns\'94, as mentioned in the Gothenburg model, it seems desirable to move towards a modular workflow with more than one tool involved\
+\
+\'95 Evidenziazione, page 20\
+develop software independently for each task,\
+\
+\'95 Evidenziazione, page 20\
+support more generic and more detailed solutions\
+\
+\'95 Evidenziazione, page 20\
+It would also be possible to design combined workflows, like for example, Juxta Web Service\'92s TEI output routine, LERA\'92s alignment tool and Variance Viewer\'92s classification algorithm\
+\
+\'95 Evidenziazione, page 20\
+For the workflow of an edition, it is not only important to decide which tool suits the individual requirements, but also to decide the role of the tool in the workflow\
+\
+\'95 Evidenziazione, page 20\
+which tasks are better done manually and/or by using other tools?\
+\
+\'95 Evidenziazione, page 20\
+t is a good idea to use collation tools at a relatively early stage, after all versions of a text have been transcribed and checked for reliability\
+\
+\'95 Evidenziazione, page 20\
+Because a generic solution is unlikely to exist in the near future, it is advisable to rely on a wise combination of independent but interoperable tools and open services.\
+\
+\'95 Evidenziazione, page 23\
+https://archive.xmlprague.cz/2018/files/xmlprague-2018-proceedings.pdf.\
+\
+\'95 Evidenziazione, page 23\
+Document Modeling with the TEI Critical Apparatus\
+\
+\'95 Evidenziazione, page 23\
+TEI and beyond, September 16\'9620, University of Graz\
+\
+}

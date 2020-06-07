@@ -1,0 +1,10 @@
+
+<p>
+    The quick brown 
+    <app>
+        <rdg wit="#A">fox</rdg>
+        <rdg wit="#B">mouse</rdg>
+        <rdg wit="#C">cat</rdg>
+    </app> 
+    jumps <gap />
+</p>

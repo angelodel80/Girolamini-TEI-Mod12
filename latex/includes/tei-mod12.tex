@@ -434,7 +434,7 @@
             \item \texttt{@type}: \textit{classifies the variation contained in this element according to some convenient typology}
             \item \texttt{@from}: \textit{identifies the beginning of the lemma in the base text.}
             \item \texttt{@to}: \textit{identifies the endpoint of the lemma in the base text}
-            \item \texttt{@loc} \textit{indicates the location of the variation}
+            \item \texttt{@loc}: \textit{indicates the location of the variation}
         \end{itemize}
     \end{block}
 
@@ -458,9 +458,6 @@
     \end{center}
 
 \end{frame}
-
-
-
 % * Evidenziazione, page 3
 % readings
 
@@ -470,50 +467,224 @@
 % * Evidenziazione, page 3
 % witness information
 
-% * Evidenziazione, page 3
-% Individual readings are the crucial elements in any critical apparatus of variants
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 3
+    % Individual readings are the crucial elements in any critical apparatus of variants
+
+    % * Evidenziazione, page 3
+    % tag individual readings within an apparatus entry:
+
+
+    \begin{block}{Registrazione delle diverse lezioni}
+        Registrare le singole letture conservate nei singoli testimoni del testo tramandato è l'attività principale per realizzare un apparato delle varianti scientificamente curato 
+    \end{block}
+
+    \begin{block}{Registrazione delle diverse lezioni}
+        Il vocabolario XML-TEI definisce due elementi per registrare le singole letture 
+    \end{block}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
 
 % * Evidenziazione, page 3
-% tag individual readings within an apparatus entry:
+    % <lem>
 
-% * Evidenziazione, page 3
-% <lem>
+    % * Evidenziazione, page 3
+    % lemma
 
-% * Evidenziazione, page 3
-% lemma
+    % * Evidenziazione, page 3
+    % contains the lemma, or base text, of a textual variation
 
-% * Evidenziazione, page 3
-% contains the lemma, or base text, of a textual variation
+    % * Evidenziazione, page 3
+    % <rdg>
 
-% * Evidenziazione, page 3
-% <rdg>
+    % * Evidenziazione, page 3
+    % reading
 
-% * Evidenziazione, page 3
-% reading
+    % * Evidenziazione, page 3
+    % contains a single reading within a textual variation.
 
-% * Evidenziazione, page 3
-% contains a single reading within a textual variation.
+    % * Evidenziazione, page 3
+    % the term lemma is used here in the text-critical sense of ‘the reading accepted as that of the original or of the base text’
 
-% * Evidenziazione, page 3
-% the term lemma is used here in the text-critical sense of ‘the reading accepted as that of the original or of the base text’
+    \begin{block}{Elementi per la registrazione delle lezioni}
+        
+        \begin{itemize}
+            \item \texttt{<lem>}: \textit{lemma} - contains the lemma, or base text, of a textual variation
+            \item \texttt{<rdg>}: \textit{reading} - contains a single reading within a textual variation.
+        \end{itemize}
+
+    \end{block}
+
+    \textit{Il termine \textbf{lemma} è inteso nell'accezione di \textbf{lezione accettata dall'editore come lezione a testo, oppure in alternativa come lettura presente nel testo base}}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+
+    % * Evidenziazione, page 3
+    % The lem element may also be used to record the base text of the source edition
+
+    % * Evidenziazione, page 3
+    % mark the readings of a base witness, to indicate the preference of an editor or encoder for a particular reading, or (e.g. in the case of an external apparatus) to indicate precisely to which portion of the main text the variation applies.
+
+    % * Evidenziazione, page 3
+    % may prefer not to use it at all
+
+    \begin{block}{L'elemento texttt{<lem>}}
+        
+        \begin{itemize}
+            \item Usato per registrare il testo di base riportato nella edizione di riferimento
+            \item Usato per registrare le lezioni del testimone base di collazione
+            \item Usato per registrare la lezione accolta a testo dall'editore dell'edizione critica digitale
+            \item Usato per per indicare in modo puntuale a quale porzione del testo principale le letture divergenti si riferiscono
+            \item Potrebbe non essere utilizzato affatto
+        \end{itemize}
+
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/app-rdg.png}
+    \end{center}
+
+\end{frame}
+
 
 % * Evidenziazione, page 3
 % In recording readings within an apparatus entry, the rdg element should always be used; each app usually contains at least one rdg, though it may contain only notes.
-
-% * Evidenziazione, page 3
-% The lem element may also be used to record the base text of the source edition
-
-% * Evidenziazione, page 3
-% mark the readings of a base witness, to indicate the preference of an editor or encoder for a particular reading, or (e.g. in the case of an external apparatus) to indicate precisely to which portion of the main text the variation applies.
-
-% * Evidenziazione, page 3
-% may prefer not to use it at all
 
 % * Evidenziazione, page 3
 % How it is used depends in part on the method chosen for linking the apparatus to the text
 
 % * Evidenziazione, page 3
 % Readings may be encoded individually, or grouped for perspicuity using the rdgGrp element
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+        \begin{itemize}
+            \item \texttt{@wit}: \textit{(witness or witnesses)} - contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading
+            \item \texttt{@type}: \textit{} - classifies the reading according to some useful typology. Sample values include: 1] \textit{substantive}; 2] \textit{orthographic}
+            \item \texttt{@cause}: \textit{} - classifies the cause for the variant reading, according to any appropriate typology of possible origins. Sample values include: 1] \textit{homeoteleuton}; 2] \textit{homeoarchy}; 3] \textit{paleographicConfusion}; 4] \textit{haplography}; 5] \textit{dittography}; 6] \textit{falseEmendation}
+            \item \texttt{@varSeq}: \textit{(variant sequence)} - provides a number indicating the position of this reading in a sequence, when there is reason to presume a sequence to the variants.
+        \end{itemize}
+    \end{block}
+
+    \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+      
+	
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+        \begin{itemize}
+            \item \texttt{@hand}: \textit{} - points to a handNote element describing the hand considered responsible for the content of the element concerned
+            \item \texttt{@resp}: \textit{(responsible party)} - indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber
+            \item \texttt{@cert}: \textit{(certainty)} - signifies the degree of certainty associated with the intervention or interpretation
+            \item \texttt{@source}: \textit{} - specifies the source from which some aspect of this element is drawn
+            \item \texttt{@exclude}	\textit{} - points to elements that are in exclusive alternation with the current element.
+        \end{itemize}
+    \end{block}
+
+    \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{@hand, @source, @resp, @wit}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 6
+    % Encoders should be aware of the distinct fields of use of the attribute values @wit, @hand, and @source
+
+    % * Evidenziazione, page 6
+    % @wit identifies the physical entity in which the reading is found (manuscript, clay tablet, papyrus, printed edition);
+
+    % * Evidenziazione, page 6
+    % @hand refers to the agent responsible for inscribing that reading in that physical entity (scribe, author, inscriber, hand 1, hand 2)
+
+    % * Evidenziazione, page 6
+    % @source indicates the scholar responsible for asserting the existence of that reading in that physical entity
+
+    \begin{block}{Attributi elementi lezioni}
+        \texttt{@wit} identifies the physical entity in which the reading is found (manuscript, clay tablet, papyrus, printed edition)
+    \end{block}
+
+    \begin{block}{Attributi elementi lezioni}
+        \texttt{@hand} refers to the agent responsible for inscribing that reading in that physical entity (scribe, author, inscriber, hand 1, hand 2) 
+    \end{block}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{@hand, @source, @resp, @wit}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 6
+    % Encoders should be aware of the distinct fields of use of the attribute values @wit, @hand, and @source
+
+    % * Evidenziazione, page 6
+    % @wit identifies the physical entity in which the reading is found (manuscript, clay tablet, papyrus, printed edition);
+
+    % * Evidenziazione, page 6
+    % @hand refers to the agent responsible for inscribing that reading in that physical entity (scribe, author, inscriber, hand 1, hand 2)
+
+    % * Evidenziazione, page 6
+    % @source indicates the scholar responsible for asserting the existence of that reading in that physical entity
+
+    \begin{block}{Attributi elementi lezioni}
+        \texttt{@source} indicates the scholar responsible for asserting the existence of that reading in that physical entity
+    \end{block}
+
+    \begin{block}{Attributi elementi lezioni}
+         \texttt{@resp} indicates the scholars  responsible for supplying the intellectual content of the reading reported in the transcription
+    \end{block}
+
+
+\end{frame}
+
+%%%% ESEMPI IMMAGINI
+
 
 % * Evidenziazione, page 3
 % attribute classes att.witnessed and att.textCritical,
@@ -692,17 +863,7 @@
 % * Evidenziazione, page 6
 % Notes providing details of the reading of one particular witness should be encoded using the specialized witDetail element
 
-% * Evidenziazione, page 6
-% Encoders should be aware of the distinct fields of use of the attribute values @wit, @hand, and @source
 
-% * Evidenziazione, page 6
-% @wit identifies the physical entity in which the reading is found (manuscript, clay tablet, papyrus, printed edition);
-
-% * Evidenziazione, page 6
-% @hand refers to the agent responsible for inscribing that reading in that physical entity (scribe, author, inscriber, hand 1, hand 2)
-
-% * Evidenziazione, page 6
-% @source indicates the scholar responsible for asserting the existence of that reading in that physical entity
 
 % * Evidenziazione, page 6
 % the categories may blur: a scholar may produce an edition introducing readings for which he or she is responsible; that edition may itself become a witness in a later critical apparatus.

@@ -1,10 +1,80 @@
+<tei-app-exemples>
 
-<p>
-    The quick brown 
-    <app>
-        <rdg wit="#A">fox</rdg>
+    <p>
+        The quick brown 
+        <app>
+            <rdg wit="#A">fox</rdg>
+            <rdg wit="#B">mouse</rdg>
+            <rdg wit="#C">cat</rdg>
+        </app> 
+        jumps <gap />
+    </p>
+
+
+
+
+    <app> 
+        <rdg wit="#El">Experience though noon Auctoritee</rdg> 
+        <rdg wit="#La">Experiment thouh noon Auctoritee</rdg> 
+        <rdg wit="#Ra2">Eryment though none auctorite</rdg> 
+    </app>
+
+    <app> 
+        <lem wit="#El #Hg">Experience</lem>
+        <rdg wit="#La" type="substantive">Experiment</rdg> 
+        <rdg wit="#Ra2" type="substantive">Eryment</rdg> 
+    </app>
+
+    <app> 
+        <lem wit="#El #Ra2">though</lem> 
+        <rdg wit="#La" type="orthographic">thouh</rdg> 
+    </app>
+
+    <app> 
+        <rdg wit="#La" varSeq="1">Experiment</rdg> 
+        <rdg wit="#Ra2" cause="abbreviation_loss" varSeq="2">Eryment</rdg> 
+    </app>
+
+    <app> 
+        <rdg wit="#Mu" varSeq="1" hand="#m1">alle</rdg> 
+        <rdg wit="#Mu" cause="nachgetragen" varSeq="2" hand="#m2">allen</rdg> 
+    </app>
+
+    <app> 
+        <rdg wit="#Kl">hea(um) h(æþ)e</rdg> 
+        <rdg wit="#ms" source="#Z">heaðo hlæwe</rdg> 
+        <rdg wit="#ms" source="#Cha">heaum hope</rdg> 
+    </app>
+
+    
+    <p>
+        The quick brown 
+        <app>
+            <lem wit="#A">fox</lem>
+            <rdg wit="#B">mouse</rdg>
+            <rdg xml:id="C1" wit="#C" exclude="#C2">cat</rdg>
+        </app> 
+        jumps over the lazy 
+        <app>
+            <lem wit="#C">dog</lem>
+            <rdg xml:id="C2" wit="#B" exclude="#C1">cat</rdg>
+        </app>.
+    </p>
+
+
+
+    <p>The quick brown fox jumps over the lazy dog.</p>
+    ...
+    <listApp>
+    <app from="#match(//p[1],'fox')">
+        <lem wit="#A">fox</lem>
         <rdg wit="#B">mouse</rdg>
-        <rdg wit="#C">cat</rdg>
-    </app> 
-    jumps <gap />
-</p>
+        <rdg xml:id="C1" wit="#C" exclude="#C2">cat</rdg>
+    </app>
+    <app from="#match(//p[1],'dog')">
+        <lem wit="#C">dog</lem>
+        <rdg xml:id="C2" wit="#B" exclude="#C1">cat</rdg>
+    </app>
+    </listApp>
+    
+</tei-app-exemples>

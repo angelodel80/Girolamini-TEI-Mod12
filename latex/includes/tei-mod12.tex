@@ -673,180 +673,30 @@
     % @source indicates the scholar responsible for asserting the existence of that reading in that physical entity
 
     \begin{block}{Attributi elementi lezioni}
-        \texttt{@source} indicates the scholar responsible for asserting the existence of that reading in that physical entity
+        \texttt{@source} indicates the scholars responsible for asserting the existence of that reading in that physical entity
     \end{block}
 
     \begin{block}{Attributi elementi lezioni}
-         \texttt{@resp} indicates the scholars  responsible for supplying the intellectual content of the reading reported in the transcription
+         \texttt{@resp} indicates the scholars responsible for supplying the intellectual content of the reading reported in the transcription
     \end{block}
-
 
 \end{frame}
 
-%%%% ESEMPI IMMAGINI
+%%%% ESEMPI IMMAGINI %%%%
+%%                     %%
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+    
+
+    \textbf{ESEMPI IMMAGINI!}
+    
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/app-rdg.png}
+    \end{center}
 
 
-% * Evidenziazione, page 3
-% attribute classes att.witnessed and att.textCritical,
-
-% * Evidenziazione, page 3
-% attributes
-
-% * Evidenziazione, page 3
-% attribute used to identify the witnesses supporting a particular reading in a critical apparatus.
-
-% * Evidenziazione, page 4
-% @wit
-
-% * Evidenziazione, page 4
-% witness
-
-% * Evidenziazione, page 4
-% witnesses
-
-% * Evidenziazione, page 4
-% contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading.
-
-% * Evidenziazione, page 4
-% set of attributes common to all elements representing variant readings in text critical work
-
-% * Evidenziazione, page 4
-% type
-
-% * Evidenziazione, page 4
-% classifies the reading according to some useful typology
-
-% * Evidenziazione, page 4
-% substantive
-
-% * Evidenziazione, page 4
-% orthographic
-
-% * Evidenziazione, page 4
-% cause
-
-% * Evidenziazione, page 4
-% he cause for the variant reading
-
-% * Evidenziazione, page 4
-% homeoteleuton
-
-% * Evidenziazione, page 4
-% homeoarchy
-
-% * Evidenziazione, page 4
-% paleographicConfusion
-
-% * Evidenziazione, page 4
-% haplography
-
-% * Evidenziazione, page 4
-% dittography
-
-% * Evidenziazione, page 4
-% falseEmendation
-
-% * Evidenziazione, page 4
-% varSeq
-
-% * Evidenziazione, page 4
-% variant sequence
-
-% * Evidenziazione, page 4
-% number indicating the position of this reading in a sequence
-
-% * Evidenziazione, page 4
-% hand
-
-% * Evidenziazione, page 4
-% points to a handNote element describing the hand considered responsible
-
-% * Evidenziazione, page 4
-% att.written
-
-% * Evidenziazione, page 4
-% nherit the following attributes from the att.global.responsibility class
-
-% * Evidenziazione, page 4
-% attributes indicating the agent responsible for some aspect of the text
-
-% * Evidenziazione, page 4
-% resp
-
-% * Evidenziazione, page 4
-% esponsible party
-
-% * Evidenziazione, page 4
-% agency responsible for the intervention or interpretation, for example an editor or transcriber
-
-% * Evidenziazione, page 4
-% cert
-
-% * Evidenziazione, page 4
-% certainty
-
-% * Evidenziazione, page 4
-% the degree of certainty associated with the intervention or interpretation
-
-% * Evidenziazione, page 4
-% these attributes may be used to indicate the person responsible for the editorial decision being recorded
-
-% * Evidenziazione, page 4
-% also the degree of certainty associated with that decision by the person carrying out the encoding
-
-% * Evidenziazione, page 4
-% The @wit attribute identifies the witnesses which have the reading in question
-
-% * Evidenziazione, page 4
-% It is required if the apparatus gathers together readings from different witnesses
-
-% * Evidenziazione, page 4
-% The @type attribute allows the encoder to classify readings in any convenient way
-
-% * Evidenziazione, page 4
-% substantive variants of the lemma
-
-% * Evidenziazione, page 5
-% substantive
-
-% * Evidenziazione, page 5
-% or as orthographic variants:
-
-% * Evidenziazione, page 5
-% The @varSeq and @cause attributes may be used to convey information on the sequence and cause of variation.
-
-% * Evidenziazione, page 5
-% the reading Eryment is tagged as sequential to (derived from) the reading Experiment, and the cause is given as loss of the abbreviation for per.
-
-% * Evidenziazione, page 5
-% <app> <rdg wit="#La" varSeq="1">Experiment</rdg> <rdg wit="#Ra2" cause="abbreviation_loss" varSeq="2">Eryment</rdg> </app>
-
-% * Evidenziazione, page 5
-% cause
-
-% * Evidenziazione, page 5
-% If a manuscript is written in several hands, and it is desired to report which hand wrote a particular reading, the @hand attribute should be used.
-
-% * Evidenziazione, page 5
-% in the Munich manuscript containing the Carmina Burana, the word alle has been changed to allen:
-
-% * Evidenziazione, page 5
-% <app> <rdg wit="#Mu" varSeq="1" hand="#m1">alle</rdg> <rdg wit="#Mu" cause="nachgetragen" varSeq="2" hand="#m2">allen</rdg> </app>
-
-% * Evidenziazione, page 5
-% Similarly, if a witness is hard to decipher, it may be desired to indicate responsibility for the claim that a particular reading is supported by a particular witness.
-
-% * Evidenziazione, page 5
-% the manuscript is read in different ways by different scholars
-
-% * Evidenziazione, page 5
-% records in the apparatus two different accounts of the manuscript reading
-
-% * Evidenziazione, page 5
-% <rdg wit="#ms" source="#Z">heaðo hlæwe</rdg> <rdg wit="#ms" source="#Cha">heaum hope</rdg>
-
-% * Evidenziazione, page 6
-% @hand attribute indicates a particular manuscript hand
+\end{frame}
 
 % * Evidenziazione, page 6
 % Where there is a greater weight of editorial discussion and interpretation
@@ -868,7 +718,16 @@
 % * Evidenziazione, page 6
 % the categories may blur: a scholar may produce an edition introducing readings for which he or she is responsible; that edition may itself become a witness in a later critical apparatus.
 
-% * Evidenziazione, page 6
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 6
 % Subvariation
 
 % * Evidenziazione, page 6
@@ -877,86 +736,227 @@
 % * Evidenziazione, page 6
 % they have identical values on one or more attributes, or because they are seen as forming a self-contained variant sequence, or for some other reason
 
-% * Evidenziazione, page 7
-% <rdgGrp>
+    \begin{block}{raggrupare diverse lezioni}
+        E' possibile raggrupare diverse lezioni con l'elemento \texttt{<rdgGrp>}
+    \end{block}
 
-% * Evidenziazione, page 7
-% reading group
+    \begin{itemize}
+        \item se più lezioni hanno identici valori per uno o più attributi
+        \item se più lezioni son in relazione d'ordine tra lavoro
+        \item se più lezioni hanno un qualche tipo di relazione
+    \end{itemize}
 
-% * Evidenziazione, page 7
-% groups two or more readings perceived to have a genetic relationship or other affinity
+\end{frame}
 
-% * Evidenziazione, page 7
-% The rdgGrp element is a member of class att.textCritical and therefore can carry the @wit, @type, @cause, @varSeq, @hand, and @resp attributes described in the preceding section.
 
-% * Evidenziazione, page 7
-% When values for any of these attributes are given on a rdgGrp element, the values given are inherited by the rdg or lem elements nested within the reading group
 
-% * Evidenziazione, page 7
-% To indicate that both Hg and La vary only orthographically from the lemma, one might tag both readings <rdg type='orthographic'>
 
-% * Evidenziazione, page 7
-% This fact can be expressed more perspicuously, however, by grouping their readings into a rdgGrp
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 7
-% <app> <lem wit="#El #Ra2">though</lem> <rdgGrp type="orthographic"> <rdg wit="#La">thogh</rdg> <rdg wit="#Hg">thouh</rdg> </rdgGrp> </app>
+    % * Evidenziazione, page 7
+    % <rdgGrp>
 
-% * Evidenziazione, page 7
-% Similarly, rdgGrp may be used to organize the substantive variants of an apparatus entry.
+    % * Evidenziazione, page 7
+    % reading group
 
-% * Evidenziazione, page 7
-% Editors may need to indicate that each of a group of witnesses may be taken as all supporting a particular reading
+    % * Evidenziazione, page 7
+    % groups two or more readings perceived to have a genetic relationship or other affinity
 
-% * Evidenziazione, page 7
-% manuscripts display many different spellings of these words
+    % * Evidenziazione, page 7
+    % The rdgGrp element is a member of class att.textCritical and therefore can carry the @wit, @type, @cause, @varSeq, @hand, and @resp attributes described in the preceding section.
 
-% * Evidenziazione, page 7
-% all these variant spellings and that these variant spellings actually support only the three regularized spelling forms
+   
 
-% * Evidenziazione, page 7
-% One may term these variant spellings as ‘subvariants’ of the regularized spelling forms.
+    \begin{block}{raggrupare diverse lezioni}
+        \item \texttt{<rdgGrp>} \textit{(reading group)} - within a textual variation, groups two or more readings perceived to have a genetic relationship or other affinity.
+    \end{block}
 
-% * Evidenziazione, page 7
-% This subvariation can be expressed within an app element by gathering the readings into three groups according to the normalized form of their reading.
+    \begin{center}
+       L'elemento \texttt{rdgGrp} può essere caratterizzato dagli stessi attributi dell'elemento \texttt{lem} e dell'elemento \texttt{rdg} \textit{@wit, @type, @cause, @varSeq, @hand, @source, @resp, @exclude}
+    \end{center}
 
-% * Evidenziazione, page 7
-% All the readings within each group may be accounted subvariants of the main reading for the group
+\end{frame}
 
-% * Evidenziazione, page 7
-% tagging it as a lem element or as <rdg type='groupBase'>
 
-% * Evidenziazione, page 7
-% In this example, the different subvariants on Experience, Experiment, and Eriment are held within three rdgGrp elements nested within the enclosing app element:
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 7
-% <app type="substantive"> <rdgGrp type="subvariants"> <lem wit="#El #Hg">Experience</lem> <rdg wit="#Ha4">Experiens</rdg> </rdgGrp> <rdgGrp type="subvariants"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </rdgGrp> <rdgGrp type="subvariants"> <lem resp="#ed2013">Eriment</lem>
+    % * Evidenziazione, page 7
+    % When values for any of these attributes are given on a rdgGrp element, the values given are inherited by the rdg or lem elements nested within the reading group
+   
 
-% * Evidenziazione, page 8
-% <rdg wit="#Ra2">Eryment</rdg> </rdgGrp> </app>
+    \begin{block}{raggrupare diverse lezioni}
+        I valori degli attributi se associati all'elemento \texttt{rdgGrp} vengono ereditati dagli elementi annidati nel gruppo \texttt{rdg} e \texttt{lem}.
+    \end{block}
 
-% * Evidenziazione, page 8
-% From this, one may deduce that the regularized reading Experience is supported by all three manuscripts El Hg Ha4, although the spelling differs in Ha4, and that the regularized reading Eriment is supported by Ra2, even though the form differs in that manuscript.
 
-% * Evidenziazione, page 8
-% Thus, Ha4 here supports the reading Experience found in El and Hg, even though it is spelt slightly differently in Ha4.
+\end{frame}
 
-% * Evidenziazione, page 8
-% Reading groups may nest recursively, so that variants can be classified to any desired depth.
+ 
 
-% * Evidenziazione, page 8
-% Because apparatus entries may also nest, the app element might also be used to group readings in the same way.
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 7
+    % To indicate that both Hg and La vary only orthographically from the lemma, one might tag both readings <rdg type='orthographic'>
 
-% * Evidenziazione, page 8
-% <app n="a1" type="substantive"> <rdg wit="#El #Hg #Ha4"> <app n="a2" type="orthographic"> <lem wit="#El #Hg">Experience</lem> <rdg wit="#Ha4">Experiens</rdg> </app> </rdg> <rdg wit="#Cp #Ld1 #La"> <app n="a3" type="orthographic"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </app> </rdg> <rdg wit="#Ra2"> <app n="a4" type="orthographic"> <lem resp="#ed2013">Eriment</lem> <rdg wit="#Ra2">Eryment</rdg> </app> </rdg> </app>
+    % * Evidenziazione, page 7
+    % This fact can be expressed more perspicuously, however, by grouping their readings into a rdgGrp
 
-% * Evidenziazione, page 8
-% this variation has three normalized readings, and that the first of these is supported by manuscripts El, Hg, and Ha4; the second by Cp, Ld1, and La; and the third by Ra2
+    % * Evidenziazione, page 7
+    % <app> <lem wit="#El #Ra2">though</lem> <rdgGrp type="orthographic"> <rdg wit="#La">thogh</rdg> <rdg wit="#Hg">thouh</rdg> </rdgGrp> </app>
 
-% * Evidenziazione, page 8
-% Reading groups may also be used to bring together variants which form an apparent developmental sequence
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/rdgGrp.png}
+    \end{center}
 
-% * Evidenziazione, page 9
-% <rdgGrp type="sequence"> <rdgGrp varSeq="1" type="subvariants"> <lem wit="#Cp #Ld1">Experiment</lem> <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> </rdgGrp> <rdgGrp varSeq="2" cause="abbreviation_loss"> <lem resp="#ed2013">Eriment</lem> <rdg wit="#Ra2">Eryment</rdg> </rdgGrp> </rdgGrp> </app>
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+
+   % * Evidenziazione, page 7
+    % Similarly, rdgGrp may be used to organize the substantive variants of an apparatus entry.
+
+    % * Evidenziazione, page 7
+    % Editors may need to indicate that each of a group of witnesses may be taken as all supporting a particular reading
+
+    % * Evidenziazione, page 7
+    % manuscripts display many different spellings of these words
+
+    % * Evidenziazione, page 7
+    % all these variant spellings and that these variant spellings actually support only the three regularized spelling forms
+
+    % * Evidenziazione, page 7
+    % One may term these variant spellings as ‘subvariants’ of the regularized spelling forms.
+
+    % * Evidenziazione, page 7
+    % This subvariation can be expressed within an app element by gathering the readings into three groups according to the normalized form of their reading.
+
+    % * Evidenziazione, page 7
+    % All the readings within each group may be accounted subvariants of the main reading for the group
+
+    % * Evidenziazione, page 7
+    % tagging it as a lem element or as <rdg type='groupBase'>
+
+
+    \begin{block}{raggrupare diverse lezioni}
+        \item \texttt{rgdGrp} può essere utilizzato per raggruppare varianti sostanziali e sottovarianti formali
+        \item indicare diverse varianti formali che supportano la stessa variante sostanziale
+        \item codificare ciascuna variante sostanziale con l'elemento \texttt{lem} e le varianti formali con l'elemento \texttt{rdg}, tutto all'interno di un elemento \texttt{rdgGrp}
+    \end{block}
+
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 7
+    % In this example, the different subvariants on Experience, Experiment, and Eriment are held within three rdgGrp elements nested within the enclosing app element:
+
+
+
+    % * Evidenziazione, page 8
+    % From this, one may deduce that the regularized reading Experience is supported by all three manuscripts El Hg Ha4, although the spelling differs in Ha4, and that the regularized reading Eriment is supported by Ra2, even though the form differs in that manuscript.
+
+    % * Evidenziazione, page 8
+    % Thus, Ha4 here supports the reading Experience found in El and Hg, even though it is spelt slightly differently in Ha4.
+
+    % * Evidenziazione, page 8
+    % Reading groups may nest recursively, so that variants can be classified to any desired depth.
+    
+
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/variant-subvariant.png}
+    \end{center}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+
+  
+    % * Evidenziazione, page 8
+    % Because apparatus entries may also nest, the app element might also be used to group readings in the same way.
+
+    \begin{block}{raggrupare diverse lezioni}
+       Le entrate di apparato, definite con l'elemento \texttt{<app>}  possono essere annidate l'una nell'altra.
+    \end{block}
+    \begin{block}{raggrupare diverse lezioni}
+        Anche l'elemento \texttt{<app>} può essere usato per raggruppare diverse letture seguendo qualche tipo di classificazione.
+     \end{block}
+
+
+\end{frame}
+
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 8
+    % this variation has three normalized readings, and that the first of these is supported by manuscripts El, Hg, and Ha4; the second by Cp, Ld1, and La; and the third by Ra2
+
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/nest-app.png}
+    \end{center}
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{raggruppamento di lezioni e subvariation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 8
+    % Reading groups may also be used to bring together variants which form an apparent developmental sequence
+
+
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/rdgGrp-seq.png}
+    \end{center}
+
+
+\end{frame}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 % * Evidenziazione, page 9
 % A given reading is associated with the set of witnesses attesting it by listing the witnesses in the @wit attribute on the rdg or lem element

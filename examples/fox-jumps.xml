@@ -76,5 +76,64 @@
         <rdg xml:id="C2" wit="#B" exclude="#C1">cat</rdg>
     </app>
     </listApp>
-    
+
+
+    <app> 
+        <lem wit="#El #Ra2">though</lem> 
+        <rdgGrp type="orthographic"> 
+            <rdg wit="#La">thogh</rdg> 
+            <rdg wit="#Hg">thouh</rdg> 
+        </rdgGrp> 
+    </app>
+
+
+    <app type="substantive"> 
+        <rdgGrp type="subvariants"> 
+            <lem wit="#El #Hg">Experience</lem> 
+            <rdg wit="#Ha4">Experiens</rdg> 
+        </rdgGrp> 
+        <rdgGrp type="subvariants"> 
+            <lem wit="#Cp #Ld1">Experiment</lem> 
+            <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> 
+        </rdgGrp> 
+        <rdgGrp type="subvariants"> 
+            <lem resp="#ed2013">Eriment</lem>
+            <rdg wit="#Ra2">Eryment</rdg> 
+        </rdgGrp> 
+    </app>
+
+    <app n="a1" type="substantive"> 
+        <rdg wit="#El #Hg #Ha4"> 
+            <app n="a2" type="orthographic"> 
+                <lem wit="#El #Hg">Experience</lem> 
+                <rdg wit="#Ha4">Experiens</rdg> 
+            </app> 
+        </rdg> 
+        <rdg wit="#Cp #Ld1 #La"> 
+            <app n="a3" type="orthographic"> 
+                <lem wit="#Cp #Ld1">Experiment</lem> 
+                <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> 
+            </app> 
+        </rdg> 
+        <rdg wit="#Ra2"> 
+            <app n="a4" type="orthographic"> 
+                <lem resp="#ed2013">Eriment</lem> 
+                <rdg wit="#Ra2">Eryment</rdg> 
+            </app> 
+        </rdg> 
+    </app>
+
+
+    <rdgGrp type="sequence"> 
+        <rdgGrp varSeq="1" type="subvariants"> 
+            <lem wit="#Cp #Ld1">Experiment</lem> 
+            <rdg wit="#La">Ex<g ref="#per"/>iment</rdg> 
+        </rdgGrp> 
+        <rdgGrp varSeq="2" cause="abbreviation_loss"> 
+            <lem resp="#ed2013">Eriment</lem> 
+            <rdg wit="#Ra2">Eryment</rdg> 
+        </rdgGrp> 
+    </rdgGrp>
+
+
 </tei-app-exemples>

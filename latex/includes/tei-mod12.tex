@@ -912,8 +912,6 @@
 
 
 
-
-
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
     \framesubtitle{raggruppamento di lezioni e subvariation}
@@ -937,7 +935,6 @@
     % * Evidenziazione, page 8
     % Reading groups may also be used to bring together variants which form an apparent developmental sequence
 
-
     \begin{center}
         \includegraphics[width=.95\textwidth]{imgs/rdgGrp-seq.png}
     \end{center}
@@ -947,192 +944,297 @@
 
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
 
+    \begin{block}{raggrupare diverse lezioni}
+      Le informazioni su singoli testimoni può riguardare:
+      \begin{itemize}
+          \item Associare specifiche informazioni relative ad un testimone tra quelli che concordano sulla stessa lezione
+          \item Trascrivere letteralmente le informazioni presenti su un testimone da un edizione di riferimento
+          \item Definire l'insieme (più o meno strutturato) dei testimoni recensiti
+      \end{itemize}
+    \end{block}
 
+\end{frame}
 
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
 
+    % * Evidenziazione, page 9
+    % A given reading is associated with the set of witnesses attesting it by listing the witnesses in the @wit attribute on the rdg or lem element
 
+    % * Evidenziazione, page 9
+    % associate annotation on a reading with one specific witness among several
 
+    % * Evidenziazione, page 9
+    % can be linked to both a reading and to one or more of the witnesses for that reading
 
 
+    \begin{block}{elemento \texttt{<witDetail>}}
+     \texttt{<witDetail>} \textit{(witness detail)} - gives further information about a particular witness, or witnesses, to a particular reading
+    \end{block}
 
-% * Evidenziazione, page 9
-% A given reading is associated with the set of witnesses attesting it by listing the witnesses in the @wit attribute on the rdg or lem element
+    \begin{block}{attributi dell'elemento \texttt{<witDetail>}}
+        \begin{itemize}
+            \item \texttt{@target} \textit{} - specifies the destination of the reference by supplying one or more URI References
+            \item \texttt{@wit} \textit{(witnesses)} - indicates the sigil or sigla identifying the witness or witnesses to which the detail refers
+        \end{itemize}
 
-% * Evidenziazione, page 9
-% associate annotation on a reading with one specific witness among several
+    \end{block}
 
-% * Evidenziazione, page 9
-% ranscribe witness information verbatim from a source edition
+\end{frame}
 
-% * Evidenziazione, page 9
-% identify the formal lists of witnesses typically provided in the front matter of critical editions
 
-% * Evidenziazione, page 9
-% give additional information about the reading of a particular witness or witnesses
 
-% * Evidenziazione, page 9
-% that information may be given in a witDetail element
 
-% * Evidenziazione, page 9
-% can be linked to both a reading and to one or more of the witnesses for that reading
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 8
+    % Reading groups may also be used to bring together variants which form an apparent developmental sequence
+    % * Evidenziazione, page 9
 
-% * Evidenziazione, page 9
-% The link to the reading
 
-% * Evidenziazione, page 9
-% made explicit by the @target attribute
+    % * Evidenziazione, page 9
+    % made explicit by the @target attribute
 
-% * Evidenziazione, page 9
-% the link to the witness, by the @wit attribute
+    % * Evidenziazione, page 9
+    % the link to the witness, by the @wit attribute
 
-% * Evidenziazione, page 9
-% @target specifies the destination of the reference
+    % * Evidenziazione, page 9
+    % @target specifies the destination of the reference
 
-% * Evidenziazione, page 9
-% <witDetail> (witness detail) gives further information about a particular witness, or witnesses, to a particular reading
+    % * Evidenziazione, page 9
+    % @wit (witnesses) indicates the sigil or sigla identifying the witness or witnesses to which the detail refers
 
-% * Evidenziazione, page 9
-% @wit (witnesses) indicates the sigil or sigla identifying the witness or witnesses to which the detail refers
+    % * Evidenziazione, page 9
+    % he witDetail refers to multiple readings, @target must be used to point to the reading(s) being annotated
+    
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/witDetails.png}
+    \end{center}
 
-% * Evidenziazione, page 9
-% he witDetail refers to multiple readings, @target must be used to point to the reading(s) being annotated
+    % * Evidenziazione, page 10
+    % may be used to record the specific wording of information in the source text
 
-% * Evidenziazione, page 10
-% <app type="substantive"> <lem wit="#El #Hg">Experience</lem> <witDetail wit="#El">Ornamental capital.</witDetail> <rdg wit="#Ha4">Experiens</rdg> </app>
+    % * Evidenziazione, page 10
+    % to record the wording of the note explaining that the variant reading adds n to the original in a second hand
 
-% * Evidenziazione, page 10
-% may be used to record the specific wording of information in the source text
+\end{frame}
 
-% * Evidenziazione, page 10
-% to record the wording of the note explaining that the variant reading adds n to the original in a second hand:
 
-% * Evidenziazione, page 10
-% <l> <app> <rdg wit="#Mu" hand="#m1">alle</rdg> <rdg wit="#Mu" hand="#m2">allen</rdg> <witDetail wit="#Mu"> <mentioned>n</mentioned> nachgetragen. </witDetail> </app> disen sumer gân. </l>
 
-% * Nota ancorata, page 10
-% nota sigla 
 
-% The Latin word siglum (sign), pl. sigla denotes the abbreviation used in a critical apparatus to indicate a particular witness
 
-% * Evidenziazione, page 10
-% lists of sigla
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 10
-% may be complex enough
 
-% * Evidenziazione, page 10
-% in the transcription of printed critical editions, it may be desirable to retain for future reference the exact form in which the source edition records the witnesses to a particular reading;
+    \begin{block}{Registrale informazioni sui testimoni}
+        \texttt{<wit>} \textit{} - contains a list of one or more sigla of witnesses attesting a given reading, in a textual variation.
+    \end{block}
 
-% * Evidenziazione, page 10
-% The wit element may be used to transcribe such lists of witnesses to a particular reading.
+    \begin{center}
+        \textit{Usare l'attributo \texttt{@wit} (assieme all'elemento \texttt{<witDetail>} quando necessario) è quasi sempre la scelta più conveniente}
+    \end{center}
+    
+    % * Evidenziazione, page 11
+    % @wit is more succinct,
 
-% * Evidenziazione, page 10
-% <wit> contains a list of one or more sigla of witnesses attesting a given reading, in a textual variation.
+    % * Evidenziazione, page 11
+    % using @wit (with witDetail when needed) is almost always to be preferred
+\end{frame}
 
-% * Evidenziazione, page 10
-% The wit list may appear following a rdg, rdgGrp, or lem element in any apparatus entry
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    % * Nota ancorata, page 10
+    % nota sigla 
 
-% * Evidenziazione, page 10
-% wit may be used in a way functionally equivalent to @wit if the sigla therein are wrapped in refs with @target attributes pointing to a predefined witness
+    %The Latin word siglum (sign), pl. sigla denotes the abbreviation used in a critical apparatus to indicate a particular witness
 
-% * Evidenziazione, page 11
-% <app> <lem>Nondum</lem> <rdg wit="#G #P" ana="#orthographical">nundum</rdg> <wit> <ref target="#G">G</ref>(corr. <ref target="#G1">G<hi rend="super">1</hi> </ref>)<ref target="#P">P</ref> </wit> </app>
+    % * Evidenziazione, page 10
+    % lists of sigla
 
-% * Evidenziazione, page 11
-% @wit is more succinct,
+    % * Evidenziazione, page 10
+    % may be complex enough
 
-% * Evidenziazione, page 11
-% using @wit (with witDetail when needed) is almost always to be preferred
+    % * Evidenziazione, page 10
+    % in the transcription of printed critical editions, it may be desirable to retain for future reference the exact form in which the source edition records the witnesses to a particular reading;
 
-% * Evidenziazione, page 11
-% A list of all identified witnesses should normally be supplied in the front matter of the edition, or in the sourceDesc element of its header
+    % * Evidenziazione, page 10
+    % The wit element may be used to transcribe such lists of witnesses to a particular reading.
 
-% * Evidenziazione, page 11
-% may be given either as a simple bibliographic list
+    % * Evidenziazione, page 10
+    % <wit> contains a list of one or more sigla of witnesses attesting a given reading, in a textual variation.
 
-% * Evidenziazione, page 11
-% or as a listWit element,
+    % * Evidenziazione, page 10
+    % The wit list may appear following a rdg, rdgGrp, or lem element in any apparatus entry
 
-% * Evidenziazione, page 11
-% which contains a series of witness elements
+    % * Evidenziazione, page 10
+    % wit may be used in a way functionally equivalent to @wit if the sigla therein are wrapped in refs with @target attributes pointing to a predefined witness
 
-% * Evidenziazione, page 11
-% Each witness element may contain a brief characterization of the witness, given as one or more prose paragraphs
+    
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/app-wit.png}
+    \end{center}
 
-% * Evidenziazione, page 11
-% nformation about a manuscript witness is available, it should be represented using the msDesc element provided by the msdescription module; a msDesc may appear within a listBibl.
+\end{frame}
 
-% * Evidenziazione, page 11
-% a unique siglum for this source should always be supplied,
 
-% * Evidenziazione, page 11
-% This identifier can then be used elsewhere to refer to this particular witness
 
-% * Evidenziazione, page 11
-% <listWit> (witness list) lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 11
-% <witness> contains either a description of a single witness referred to within the critical apparatus, or a list of witnesses which is to be referred to by a single sigil.
+    % * Evidenziazione, page 11
+    % A list of all identified witnesses should normally be supplied in the front matter of the edition, or in the sourceDesc element of its header
 
-% * Evidenziazione, page 11
-% <msDesc> (manuscript description) contains a description of a single identifiable manuscript or other text-bearing object such as early printed books.
+    % * Evidenziazione, page 11
+    % may be given either as a simple bibliographic list
 
-% * Evidenziazione, page 11
-% <bibl> (bibliographic citation) contains a loosely-structured bibliographic citation of which the sub-components may or may not be explicitly tagged.
+    % * Evidenziazione, page 11
+    % or as a listWit element,
 
-% * Evidenziazione, page 11
-% <listBibl> (citation list) contains a list of bibliographic citations of any kind.
+    % * Evidenziazione, page 11
+    % which contains a series of witness elements
 
-% * Evidenziazione, page 12
-% witness list is thus the set of sigla for all the witnesses named in the apparatus
+    % * Evidenziazione, page 11
+    % Each witness element may contain a brief characterization of the witness, given as one or more prose paragraphs
+    
+    \begin{block}{Insieme dei testimoni recensiti}
+        La lista dei testimoni recensita può essere registrata con l'elemento \texttt{<listWit>}
+    \end{block}
 
-% * Evidenziazione, page 12
-% <listWit> <witness xml:id="Chi3"/> <witness xml:id="Ha4"/> <witness xml:id="Ju"/> <witness xml:id="K"/> <witness xml:id="Kb"/> <witness xml:id="Kl"/> <witness xml:id="Kv"/> <witness xml:id="Ld"/> <witness xml:id="Ld1"/> <witness xml:id="Ln"/> <witness xml:id="Mu"/> <witness xml:id="Ry2"/> <witness xml:id="Wa"/> <witness xml:id="X"/> </listWit>
+    \begin{center}{...}
+        l'elemento \texttt{<listWit>} contiene a sua volta elementi \texttt{<witness>}. Ciascun elemento \texttt{witness} contiene una breve descrizione del testimone in una forma semi-strutturata. 
+    \end{center}
+    
+   
+\end{frame}
 
-% * Evidenziazione, page 12
-% each witness element should contain at least a brief prose description of the witness
 
-% * Evidenziazione, page 12
-% including a bibliographic citation
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 12
-% <witness xml:id="Ra2">Bodleian Library Rawlinson Poetic 149 (see further <ptr target="http://example.com/msDescs#MSRP149"/>)</witness>
+    
+    \begin{block}{elemento \texttt{<listWit>}}
+        \texttt{<listWit>} \textit{(witness list)} - lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
+    \end{block}
 
-% * Evidenziazione, page 12
-% the witness description here may be complemented by a reference to a full description of the manuscript supplied elsewhere, typically as the content of a msDesc or bibl element
+    \begin{center}{elemento \texttt{<witness>}}
+        \texttt{<witness>} contains either a description of a single witness referred to within the critical apparatus, or a list of witnesses which is to be referred to by a single sigil.
+    \end{center}
+    
+    \textit{La lista dei testimoni è quindi l'insieme delle sigle di tutti i testimoni recensiti e riferiti in apparato}
+   
+\end{frame}
 
-% * Evidenziazione, page 12
-% a whole paragraph of commentary for each witnes
 
-% * Evidenziazione, page 12
-% <witness xml:id="a">Bezeichnung <bibl> <author>Lachmann</author> </bibl>s für die von einer 2. Hand auf bl. 40–43 geschriebenen Strophen der Hs. A.</witness>
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/listWit-base.png}
+    \end{center}
 
-% * Evidenziazione, page 13
-% It would however generally be preferable to represent such detailed information using an appropriately structured msDesc element
+\end{frame}
 
-% * Evidenziazione, page 13
-% f the witnesses being recorded are not manuscripts but printed works, it may be preferable to document them using the standard bibl or biblStruct elements
 
-% * Evidenziazione, page 13
-% In text-critical work it is customary to refer to frequently occurring groups of witnesses by means of a single common siglum
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 12
+    % each witness element should contain at least a brief prose description of the witness
 
-% * Evidenziazione, page 13
-% ncluding a nested witness list within the witness list
+    % * Evidenziazione, page 12
+    % including a bibliographic citation
 
-% * Evidenziazione, page 13
-% uses the siglum for the group as its identifier
 
-% * Evidenziazione, page 13
-% supplies a fuller name for the group in its optional child head element
+    % * Evidenziazione, page 12
+    % the witness description here may be complemented by a reference to a full description of the manuscript supplied elsewhere, typically as the content of a msDesc or bibl element
 
-% * Evidenziazione, page 13
-% listWit> <witness xml:id="Ellesmere">Ellesmere, Huntingdon Library 26.C.9</witness> <!-- ... --> <listWit xml:id="Con"> <head>Constant Group C</head> <witness xml:id="Cp">Corpus Christi Oxford MS 198</witness> <witness xml:id="La">British Library Lansdowne 851</witness> <witness xml:id="Sl2">British Library Sloane MS 1686</witness> </listWit> </listWit>
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/witness-ref.png}
+    \end{center}
 
-% * Evidenziazione, page 13
-% <rdg wit="#Con">Experiment</rdg>
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/witness-bibl.png}
+    \end{center}
+
+    % * Evidenziazione, page 12
+    % a whole paragraph of commentary for each witnes
+
+    % * Evidenziazione, page 13
+    % It would however generally be preferable to represent such detailed information using an appropriately structured msDesc element
+
+    % * Evidenziazione, page 13
+    % if the witnesses being recorded are not manuscripts but printed works, it may be preferable to document them using the standard bibl or biblStruct elements
+
+\end{frame}
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{descrizione dei testimoni}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 13
+    % In text-critical work it is customary to refer to frequently occurring groups of witnesses by means of a single common siglum
+
+    % * Evidenziazione, page 13
+    % including a nested witness list within the witness list
+
+    % * Evidenziazione, page 13
+    % uses the siglum for the group as its identifier
+
+    % * Evidenziazione, page 13
+    % supplies a fuller name for the group in its optional child head element
+    
+    \begin{block}{famiglie di testimoni}
+        Spesso è utile raggruppare i testimoni in famiglie o in altri tipi di gruppi che riuniscano testimoni con attributi comuni.
+    \end{block}
+    \begin{block}{famiglie di testimoni}
+        Ciò è possibile realizzarlo annidando elementi \texttt{listWit} in altri elementi \texttt{listWit}
+    \end{block}
+   
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/listWit-nest.png}
+    \end{center}
+
+
+\end{frame}
 
 % * Evidenziazione, page 13
 % The more elaborate example below shows both multiple levels of nesting and a strategy for mapping the the @xml:id of the witness to the siglum which will be displayed to the reader of a derived visualisation
@@ -1161,6 +1263,8 @@
 % * Evidenziazione, page 15
 % The siglum for display is always contained in the abbr with @type ‘siglum’
 
+
+
 % * Evidenziazione, page 15
 % Situations commonly arise where there are many more or less fragmentary witnesses
 
@@ -1176,118 +1280,261 @@
 % * Evidenziazione, page 15
 % encoders may find it less error-prone to list all witnesses explicitly in each apparatus entry
 
-% * Evidenziazione, page 15
-% If a witness is incomplete
 
-% * Evidenziazione, page 15
-% record explicitly where its preserved portions begin and end
 
-% * Evidenziazione, page 15
-% tags, which may occur within any lem or rdg element
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    \begin{block}{Testimoni frammentari}
+       % \includegraphics[width=.95\textwidth]{imgs/listWit-nest.png}
+       Le linee guida della TEI definiscono alcuni elementi per registrare in apparato testimoni frammentari
+    \end{block}
 
-% * Evidenziazione, page 15
-% beginning or end of a fragmentary witness or of a lacuna
+    \begin{block}{Testimoni frammentari}
+        all'interno di elementi \texttt{lem} oppure elementi \texttt{rdg} si può registrare l'inizio o la fine di un testimone frammentario ovvero l'inizio o la fine di una lacuna
+     \end{block}
 
-% * Evidenziazione, page 15
-% <witStart> (fragmented witness start) indicates the beginning, or resumption, of the text of a fragmentary witness.
 
-% * Evidenziazione, page 15
-% <witEnd> (fragmented witness end) indicates the end, or suspension, of the text of a fragmentary witness.
+\end{frame}
 
-% * Evidenziazione, page 16
-% <lacunaStart> indicates the beginning of a lacuna in the text of a mostly complete textual witness.
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 16
-% <lacunaEnd> indicates the end of a lacuna in a mostly complete textual witness.
+    
+    \begin{block}{Testimoni frammentari}
+       % \includegraphics[width=.95\textwidth]{imgs/listWit-nest.png}
 
-% * Evidenziazione, page 16
-% In an apparatus this might appear thus, distinguished from the reading of other manuscripts by the presence of the lacunaEnd element:
+       \begin{itemize}
+           \item \texttt{<witStart>} \textit{(fragmented witness start)} - indicates the beginning, or resumption, of the text of a fragmentary witness.
+           \item \texttt{<witEnd>} \textit{(fragmented witness end)} -  indicates the end, or suspension, of the text of a fragmentary witness.
+           \item \texttt{<lacunaStart>} indicates the beginning of a lacuna in the text of a mostly complete textual witness.
+           \item \texttt{<lacunaEnd>} indicates the end of a lacuna in a mostly complete textual witness.
+       \end{itemize}
+      
+    \end{block}
 
-% * Evidenziazione, page 16
-% <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <lacunaEnd/>auctorite</rdg> </app>
 
-% * Evidenziazione, page 16
-% <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2 #X"> <lacunaEnd wit="#X"/>auctorite</rdg> </app>
+\end{frame}
 
-% * Evidenziazione, page 16
-% In some cases, the apparatus in the source may commence recording the readings for a particular witness without its being clear whether the previous absence of readings for this witness is due to a lacuna
 
-% * Evidenziazione, page 16
-% The witStart element may be used in this circumstance:
 
-% * Evidenziazione, page 16
-% <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <witStart/>auctorite</rdg> </app>
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 16
+    % In an apparatus this might appear thus, distinguished from the reading of other manuscripts by the presence of the lacunaEnd element:
 
-% * Evidenziazione, page 16
-% Three different methods may be used to link a critical apparatus to the text:
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <lacunaEnd/>auctorite</rdg> </app>
 
-% * Evidenziazione, page 16
-% the location-referenced method,
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2 #X"> <lacunaEnd wit="#X"/>auctorite</rdg> </app>
 
-% * Evidenziazione, page 16
-% the double-end-point-attached method
+    % * Evidenziazione, page 16
+    % In some cases, the apparatus in the source may commence recording the readings for a particular witness without its being clear whether the previous absence of readings for this witness is due to a lacuna
 
-% * Evidenziazione, page 16
-% the parallel segmentation method
+    % * Evidenziazione, page 16
+    % The witStart element may be used in this circumstance:
 
-% * Evidenziazione, page 16
-% the location-referenced and the double end-point methods may be used with either in-line or external apparatus
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <witStart/>auctorite</rdg> </app>
 
-% * Evidenziazione, page 16
-% former dispersed within the base text
+    \begin{block}{Testimoni frammentari}
+       \includegraphics[width=.95\textwidth]{imgs/rdg-lacunaEnd.png}
+    \end{block}
 
-% * Evidenziazione, page 16
-% latter held in some separate
+    \begin{block}{Testimoni frammentari}
+        \includegraphics[width=.95\textwidth]{imgs/rdg-witStart.png}
+     \end{block}
 
-% * Nota ancorata, page 16
-% Ci si riferisce al metodo inline
 
-% Ci si riferisce al metodo inline
+\end{frame}
 
-% * Evidenziazione, page 17
-% location
 
-% * Evidenziazione, page 17
-% within or outside the document with the base text
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text:}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 16
+    % the location-referenced method,
 
-% * Evidenziazione, page 17
-% The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
+    % * Evidenziazione, page 16
+    % the double-end-point-attached method
 
-% * Evidenziazione, page 17
-% Where an external apparatus is used, the listApp element provides a useful means of grouping together a series of app elements of a specific type, or from a particular source
+    % * Evidenziazione, page 16
+    % the parallel segmentation method
 
-% * Evidenziazione, page 17
-% <listApp>
+    
+    \begin{block}{Three different methods}
+       \begin{itemize}
+           \item the location-referenced method
+           \item the double-end-point-attached method
+           \item the parallel segmentation method
+       \end{itemize}
+     \end{block}
 
-% * Evidenziazione, page 17
-% ist of apparatus entries.
 
-% * Evidenziazione, page 17
-% attributes which can be used to classify or subclassify elements
+\end{frame}
 
-% * Evidenziazione, page 17
-% @type
 
-% * Evidenziazione, page 17
-% @subtype
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text}
+    \addtocounter{nframe}{1}
+    
+    \begin{block}{Three different methods}
+       \begin{itemize}
+           \item in-line or external apparatus
+           \begin{itemize}
+             \item All'interno oppure esternamente al documento che registra il testo di base
+             \item location-referenced & double-end-point-attached
+           \end{itemize}
+           \item  parallel segmentation method
+            \begin{itemize}
+                \item non ha il concetto di "testo base"
+                \item codifica solo in-line
+            \end{itemize}
+       \end{itemize}
+     \end{block}
 
-% * Evidenziazione, page 17
-% listApp elements would normally appear in the back of a document, but they may also be placed in any other convenient location.
+\end{frame}
 
-% * Evidenziazione, page 17
-% Any document containing app elements requires a variantEncoding declaration in the encodingDesc element of its TEI heade
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text}
+    \addtocounter{nframe}{1}
 
-% * Evidenziazione, page 17
-% <variantEncoding> declares the method used to encode text-critical variants.
+    % * Evidenziazione, page 16
+    % the location-referenced and the double end-point methods may be used with either in-line or external apparatus
 
-% * Evidenziazione, page 17
-% @method
+    % * Evidenziazione, page 16
+    % former dispersed within the base text
 
-% * Evidenziazione, page 17
-% @location
+    % * Evidenziazione, page 16
+    % latter held in some separate
 
-% * Evidenziazione, page 17
-% appears within the running text or external
+    % * Nota ancorata, page 16
+    % Ci si riferisce al metodo inline
+
+    % Ci si riferisce al metodo inline
+
+    % * Evidenziazione, page 17
+    % location
+
+    % * Evidenziazione, page 17
+    % within or outside the document with the base text
+
+    % * Evidenziazione, page 17
+    % The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
+    
+    \begin{block}{Three different methods}
+       \begin{itemize}
+           \item in-line or external apparatus
+           \begin{itemize}
+             \item All'interno oppure esternamente al documento che registra il testo di base
+             \item location-referenced & double-end-point-attached
+           \end{itemize}
+           \item  parallel segmentation method
+            \begin{itemize}
+                \item non ha il concetto di "testo base"
+                \item codifica solo in-line
+            \end{itemize}
+       \end{itemize}
+     \end{block}
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text}
+    \addtocounter{nframe}{1}
+  
+    \begin{block}{Three different methods}
+       \begin{itemize}
+           \item external apparatus
+           \begin{itemize}
+             \item \texttt{<listApp>} \textit{(list of apparatus entries)} - contains a list of apparatus entries. att.typed provides attributes which can be used to classify or subclassify elements in any way.
+             \item \texttt{@type} - characterizes the element in some sense, using any convenient classification scheme or typology
+             \item \texttt{@subtype} - provides a sub-categorization of the element, if needed
+           \end{itemize}
+       \end{itemize}
+     \end{block}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text}
+    \addtocounter{nframe}{1}
+  
+    % * Evidenziazione, page 17
+    % Any document containing app elements requires a variantEncoding declaration in the encodingDesc element of its TEI heade
+
+    % * Evidenziazione, page 17
+    % <variantEncoding> declares the method used to encode text-critical variants.
+
+    % * Evidenziazione, page 17
+    % @method
+
+    % * Evidenziazione, page 17
+    % @location
+
+    % * Evidenziazione, page 17
+    % appears within the running text or external
+
+    \begin{block}{Three different methods}
+       \begin{itemize}
+           \item Ciascun documento che presenta un elemento app richiede di dichiarare nell'intestazione del documento il metodo utilizzato per la codifica dell'apparato critico
+           \begin{itemize}
+             \item <variantEncoding> declares the method used to encode text-critical variants.
+             \item @method indicates which method is used to encode the apparatus of variants.
+             \item @location indicates whether the apparatus appears within the running text or external to it.
+           \end{itemize}
+       \end{itemize}
+     \end{block}
+
+\end{frame}
+
+%% ESEMPIO
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{link a critical apparatus to the text}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{location-referenced method}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
 
 % * Evidenziazione, page 17
 % The location-referenced method of encoding apparatus provides a convenient method for encoding printed apparatus
@@ -1350,6 +1597,23 @@
 
 % * Evidenziazione, page 19
 % simple location-reference methods are unlikely to be as successful as the other two methods, which allow the unambiguous reconstruction of the lemma from the encoding.
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
 
 % * Evidenziazione, page 19
 % In the double end-point attachment method, the beginning and end of the lemma in the base text are both explicitly indicated
@@ -1438,6 +1702,27 @@
 % * Evidenziazione, page 21
 % <app from="#WBP-A117.2" to="#WBP-A117.4"> <lem wit="#Hg">wys a wight</lem> <rdg wit="#El #Ha4">was a wight</rdg> </app>
 
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{parallel segmentation method}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
+
+
+
 % * Evidenziazione, page 21
 % The parallel segmentation method, to be discussed next, cannot handle overlaps among variants
 
@@ -1491,6 +1776,25 @@
 
 % * Evidenziazione, page 23
 % Parallel segmentation cannot, however, deal very gracefully with variants which overlap without nesting
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
+
 
 % * Evidenziazione, page 23
 % When an apparatus is provided it does not need to be given at the location in the transcription where the variation, emendation, attribution, or other apparatus observation occurs. Instead it may be stored in a separate place in the same file, or indeed in another file, and point to the location at which it is meant to be used
@@ -1546,6 +1850,23 @@
 % * Evidenziazione, page 24
 % In such a case a @to attribute is unnecessary.
 
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{record different transcriptions}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
 % * Evidenziazione, page 24
 % It is often desirable to record different transcriptions of one stretch of text.
 
@@ -1572,6 +1893,26 @@
 
 % * Evidenziazione, page 25
 % the markup may use the join element or the @next and @prev attributes defined by chapter
+
+
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Strategies for Encoding Variation}
+    \addtocounter{nframe}{1}
+    
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+    \end{center}
+
+\end{frame}
+
+
+
+
 
 % * Evidenziazione, page 25
 % Variation most frequently occurs at the phrase level, but is also common at higher structural levels, such as the verse line, paragraph, or chapter

@@ -135,5 +135,81 @@
         </rdgGrp> 
     </rdgGrp>
 
+    
+        <app> 
+            <rdg xml:id="rdg1" wit="#Mu" hand="#m1">alle</rdg> 
+            <rdg xml:id="rdg2" wit="#Mu" hand="#m2">allen</rdg> 
+            <witDetail wit="#Mu" target="#rdg2"> 
+                <mentioned>n</mentioned> nachgetragen. 
+            </witDetail> 
+        </app> 
+
+        <app> 
+            <lem>Nondum</lem> 
+            <rdg wit="#G #P" ana="#orthographical">nundum</rdg> 
+            <wit> 
+                <ref target="#G">G</ref>
+                (corr. <ref target="#G1">G<hi rend="super">1</hi> </ref>)
+                <ref target="#P">P</ref> 
+            </wit> 
+        </app>
+
+        <listWit> 
+            <witness xml:id="Chi3"/> 
+            <witness xml:id="Ha4"/> 
+            <witness xml:id="Ju"/> 
+            <witness xml:id="K"/> 
+            <witness xml:id="Kb"/> 
+            <witness xml:id="X"/> 
+        </listWit>
+
+    <witness xml:id="Ra2">
+        Bodleian Library Rawlinson Poetic 149 
+        (see further <ptr target="http://example.com/msDescs#MSRP149"/>)
+    </witness>
+
+    <witness xml:id="a">Bezeichnung 
+        <bibl> <author>Lachmann</author> </bibl>
+        s für die von einer 2. Hand auf bl. 40–43 geschriebenen Strophen der Hs. A.
+    </witness>
+
+    <listWit> 
+        <witness xml:id="Ellesmere">Ellesmere, Huntingdon Library 26.C.9</witness> 
+        <!-- ... --> 
+        <listWit xml:id="Con"> 
+            <head>Constant Group C</head> 
+            <witness xml:id="Cp">Corpus Christi Oxford MS 198</witness> 
+            <witness xml:id="La">British Library Lansdowne 851</witness> 
+            <witness xml:id="Sl2">British Library Sloane MS 1686</witness> 
+        </listWit> 
+    </listWit>
+
+    <app> 
+        <lem wit="#El #Hg">Auctoritee</lem> 
+        <rdg wit="#La #Ra2 #X"> 
+            <lacunaEnd wit="#X"/>auctorite
+        </rdg> 
+    </app>
+
+    <app> 
+        <lem wit="#El #Hg">Auctoritee</lem> 
+        <rdg wit="#La #Ra2">auctorite</rdg> 
+        <rdg wit="#X"> 
+            <witStart/>auctorite
+        </rdg> 
+    </app>
+
+    <variantEncoding 
+        method="location-referenced" 
+        location="external"/>
+
+    <variantEncoding 
+        method="location-referenced" 
+        location="internal"/>
+
+    <variantEncoding 
+        method="double-end-point" 
+        location="external"/> 
+        
 
 </tei-app-exemples>

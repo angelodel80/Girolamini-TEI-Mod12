@@ -1526,77 +1526,116 @@
     \framesubtitle{location-referenced method}
     \addtocounter{nframe}{1}
     
+    % * Evidenziazione, page 17
+    % The location-referenced method of encoding apparatus provides a convenient method for encoding printed apparatus
 
-    \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-    \end{center}
+    % * Evidenziazione, page 17
+    % the apparatus is linked to the base text by indicating explicitly only the block of text on which there is a variant
+
+    % * Evidenziazione, page 17
+    % usually by a canonical reference scheme, or by line number in the edition
+
+    \begin{block}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+        Il metodo \textit{location-referenced} fornisce un approccio utile a codificare un apparato critico \textit{derivante da edizioni a stampa} o simile al modello di apparato a stampa
+    \end{block}
+    \begin{block}
+         L'apparato è collegato al testo base indicando esplicitamente \textbf{solo il blocco di testo} (\textit{attraverso una forma canonica}) dove è presente la lettura divergente
+     \end{block}
 
 \end{frame}
 
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{location-referenced method}
+    \addtocounter{nframe}{1}
+    
+    
+        % * Evidenziazione, page 17
+        % If the location-referenced method is used for an apparatus stored externally to the base text, the TEI header must have the declaration
 
-% * Evidenziazione, page 17
-% The location-referenced method of encoding apparatus provides a convenient method for encoding printed apparatus
+        % * Evidenziazione, page 17
+        % <variantEncoding method="location-referenced" location="external"/>
 
-% * Evidenziazione, page 17
-% the apparatus is linked to the base text by indicating explicitly only the block of text on which there is a variant
+        % * Evidenziazione, page 17
+        % In the body of the document, the base text (here El) will appear
 
-% * Evidenziazione, page 17
-% usually by a canonical reference scheme, or by line number in the edition
+        % * Evidenziazione, page 18
+        % Elsewhere in the document, or in a separate file, the apparatus will appear
 
-% * Evidenziazione, page 17
-% If the location-referenced method is used for an apparatus stored externally to the base text, the TEI header must have the declaration
+        % * Evidenziazione, page 18
+        % On each app element, the @loc attribute should be specified to indicate where the variant occurs in the base text.
 
-% * Evidenziazione, page 17
-% <variantEncoding method="location-referenced" location="external"/>
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/location-referenced.png}
+    \end{center}
 
-% * Evidenziazione, page 17
-% In the body of the document, the base text (here El) will appear
+\end{frame}
 
-% * Evidenziazione, page 18
-% Elsewhere in the document, or in a separate file, the apparatus will appear
 
-% * Evidenziazione, page 18
-% On each app element, the @loc attribute should be specified to indicate where the variant occurs in the base text.
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{location-referenced method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 18
+    % encoded using in-line storage
 
-% * Evidenziazione, page 18
-% <app loc="WBP 1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app>
+    % * Evidenziazione, page 18
+    % apparatus is dispersed through the base text block to which it refers
 
-% * Evidenziazione, page 18
-% encoded using in-line storage
+    % * Evidenziazione, page 18
+    % In this case, the location of the variant can be read from the line in which it occurs
 
-% * Evidenziazione, page 18
-% apparatus is dispersed through the base text block to which it refers
+    % * Evidenziazione, page 18
+    % <variantEncoding method="location-referenced" location="internal"/>
 
-% * Evidenziazione, page 18
-% In this case, the location of the variant can be read from the line in which it occurs
+    % * Nota ancorata, page 18
+    % in-line location referenced method
 
-% * Evidenziazione, page 18
-% <variantEncoding method="location-referenced" location="internal"/>
+    % Quando si registrano le varianti inline, il testo base va riportato fuori dall'apparato
 
-% * Nota ancorata, page 18
-% in-line location referenced method
+    % * Evidenziazione, page 18
+    % Since the location is not required to be exact, the apparatus for a line might also appear at the end of the line:
 
-% Quando si registrano le varianti inline, il testo base va riportato fuori dall'apparato
+    % * Evidenziazione, page 18
+    % <l n="1">Experience though noon Auctoritee <app> <rdg wit="#La"> Experiment</rdg> <rdg wit="#Ra2"> Eryment</rdg> </app> </l>
 
-% * Evidenziazione, page 18
-% Since the location is not required to be exact, the apparatus for a line might also appear at the end of the line:
+    % * Evidenziazione, page 18
+    % it is not possible to find automatically the precise portion of text varied by the readings
 
-% * Evidenziazione, page 18
-% <l n="1">Experience though noon Auctoritee <app> <rdg wit="#La"> Experiment</rdg> <rdg wit="#Ra2"> Eryment</rdg> </app> </l>
+    % * Evidenziazione, page 18
+    % In order to show explicitly what portion of the base text is replaced by the variant readings, the lem element may be used:
 
-% * Evidenziazione, page 18
-% it is not possible to find automatically the precise portion of text varied by the readings
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/location-referenced-inline.png}
+    \end{center}
 
-% * Evidenziazione, page 18
-% In order to show explicitly what portion of the base text is replaced by the variant readings, the lem element may be used:
+\end{frame}
 
-% * Evidenziazione, page 19
-% no recommendations are made for conventions of abbreviating the lemma
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{location-referenced method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 19
+    % no recommendations are made for conventions of abbreviating the lemma
 
-% * Evidenziazione, page 19
-% simple location-reference methods are unlikely to be as successful as the other two methods, which allow the unambiguous reconstruction of the lemma from the encoding.
+    % * Evidenziazione, page 19
+    % simple location-reference methods are unlikely to be as successful as the other two methods, which allow the unambiguous reconstruction of the lemma from the encoding.
+
+    \begin{block}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       Il metodo location-referenced non è consigliato per codificare entrate di apparato se sono previste elaborazioni automatiche perché non prevede di esplicitare le letture divergenti con l'esatta porzione del testo base.
+    \end{block}
+
+    \begin{center}
+        \textit{gli altri due metodi (Double End-Point Attachment & Parallel Segmentation) sono più affidabili per successive elaborazioni}
+    \end{center}
+    
+\end{frame}
 
 
 
@@ -1605,77 +1644,154 @@
     \framesubtitle{double end-point attachment method}
     \addtocounter{nframe}{1}
     
+    % * Evidenziazione, page 19
+    % In the double end-point attachment method, the beginning and end of the lemma in the base text are both explicitly indicated
 
-    \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-    \end{center}
+    % * Evidenziazione, page 19
+    % Double end-point attachment permits unambiguous matching of each variant reading against its lemma
+
+    % * Evidenziazione, page 19
+    % where the apparatus is intended to enable full reconstruction of the text
+
+    \begin{block}{Estremi del lemma}
+      Il metodo double end-point attachment registra l'inizio e la fine del lemma all'interno del testo base
+    \end{block}
+    
+    \begin{block}{Associazione testo-varianti non ambigua}
+        Grazie al collegamento puntuale ciascuna entrata di apparato seleziona in modo preciso la porzione di testo in oggetto, permettendo in così la possibilità di ricostruire il testo di tutti i testimoni (apparato positivo).
+    \end{block}
 
 \end{frame}
 
 
 
 
-% * Evidenziazione, page 19
-% In the double end-point attachment method, the beginning and end of the lemma in the base text are both explicitly indicated
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+   % * Evidenziazione, page 19
+    % the @from and @to attributes of the app element are used to indicate the beginning and ending points of the reading in the base text:
 
-% * Evidenziazione, page 19
-% Double end-point attachment permits unambiguous matching of each variant reading against its lemma
+    % * Evidenziazione, page 19
+    % identifiers which occur at the locations in question
 
-% * Evidenziazione, page 19
-% where the apparatus is intended to enable full reconstruction of the text
+    % * Evidenziazione, page 19
+    % If no other markup is present there, the beginning and ending points should be marked using the anchor element
 
-% * Evidenziazione, page 19
-% the @from and @to attributes of the app element are used to indicate the beginning and ending points of the reading in the base text:
+    \begin{block}{}
+      
+    \end{block}
+    
+    \begin{block}{}
+       
+    \end{block}
 
-% * Evidenziazione, page 19
-% identifiers which occur at the locations in question
+\end{frame}
 
-% * Evidenziazione, page 19
-% If no other markup is present there, the beginning and ending points should be marked using the anchor element
 
-% * Evidenziazione, page 19
-% he beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 19
+    % The double end-point attachment method may be used with in-line or external apparatus
 
-% * Evidenziazione, page 19
-% The double end-point attachment method may be used with in-line or external apparatus
+    % * Evidenziazione, page 19
+    % the base text (here El) will appear with anchor elements inserted at every place where a variant begins or ends
 
-% * Evidenziazione, page 19
-% the base text (here El) will appear with anchor elements inserted at every place where a variant begins or ends
+    % * Evidenziazione, page 19
+    % unless some element with an identifier already begins or ends at that point
+   
 
-% * Evidenziazione, page 19
-% unless some element with an identifier already begins or ends at that point
+    \begin{block}{}
+      
+    \end{block}
+    
+    \begin{block}{}
+       
+    \end{block}
 
-% * Evidenziazione, page 19
-% <variantEncoding method="double-end-point" location="external"/> <!-- ... --> <div n="WBP" type="prologue"> <head>The Prologe ... </head> <l n="1" xml:id="WBP.1">Experience<anchor xml:id="WBP-A2"/> though noon Auctoritee</l> <l>Were in this world ...</l> </div>
+\end{frame}
 
-% * Evidenziazione, page 19
-% separately encoded
 
-% * Evidenziazione, page 19
-% <app from="#WBP.1" to="#WBP-A2"> <rdg wit="#La">Experiment</rdg>
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 19
+    % <variantEncoding method="double-end-point" location="external"/> <!-- ... --> <div n="WBP" type="prologue"> <head>The Prologe ... </head> <l n="1" xml:id="WBP.1">Experience<anchor xml:id="WBP-A2"/> though noon Auctoritee</l> <l>Were in this world ...</l> </div>
 
-% * Evidenziazione, page 20
-% <rdg wit="#Ra2">Eryment</rdg> </app>
+    % * Evidenziazione, page 19
+    % separately encoded
 
-% * Evidenziazione, page 20
-% No anchor element is needed at the beginning of the line, since the @from attribute can use the identifier for the line as a whole
+    % * Evidenziazione, page 19
+    % <app from="#WBP.1" to="#WBP-A2"> <rdg wit="#La">Experiment</rdg>
 
-% * Evidenziazione, page 20
-% the lemma is assumed to run from the beginning of the element indicated by the @from attribute, to the end of that indicated by the @to attribute
+    % * Evidenziazione, page 20
+    % <rdg wit="#Ra2">Eryment</rdg> </app>
 
-% * Evidenziazione, page 20
-% If no value is given for @to, the lemma runs from the beginning to the end of the element indicated by the @from attribute.
+    % * Evidenziazione, page 20
+    % No anchor element is needed at the beginning of the line, since the @from attribute can use the identifier for the line as a whole
 
-% * Evidenziazione, page 20
-% When the apparatus is encoded in-line, it is dispersed through the base text
+    % * Evidenziazione, page 20
+    % the lemma is assumed to run from the beginning of the element indicated by the @from attribute, to the end of that indicated by the @to attribute
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/}
+    \end{center}
 
-% * Evidenziazione, page 20
-% Only the beginning of the lemma need be marked with an anchor, since the app is inserted at the end of the lemma, and itself therefore marks the end of the lemma.
+\end{frame}
 
-% * Evidenziazione, page 20
-% <variantEncoding method="double-end-point" location="internal"/> <!-- ... --> <l n="1" xml:id="wbp.1">Experience <app from="#wbp.1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee</l> <l>Were in this world ...</l>
 
-% * Evidenziazione, page 20
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 20
+    % If no value is given for @to, the lemma runs from the beginning to the end of the element indicated by the @from attribute.
+
+    % * Evidenziazione, page 20
+    % When the apparatus is encoded in-line, it is dispersed through the base text
+
+    % * Evidenziazione, page 20
+    % Only the beginning of the lemma need be marked with an anchor, since the app is inserted at the end of the lemma, and itself therefore marks the end of the lemma.
+   
+
+    \begin{block}{}
+      
+    \end{block}
+    
+    \begin{block}{}
+       
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 20
+    % <variantEncoding method="double-end-point" location="internal"/> <!-- ... --> <l n="1" xml:id="wbp.1">Experience <app from="#wbp.1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee</l> <l>Were in this world ...</l>
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    % * Evidenziazione, page 20
 % The lemma need not be repeated within the app element in this method, as it may be extracted reliably from the base text
 
 % * Evidenziazione, page 20
@@ -1693,7 +1809,24 @@
 % * Evidenziazione, page 21
 % typically found in large and complex traditions
 
-% * Evidenziazione, page 21
+   
+
+    \begin{block}{}
+      
+    \end{block}
+    
+    \begin{block}{}
+       
+    \end{block}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 21
 % <l xml:id="WBP.117" n="117"> And <anchor xml:id="WBP-A117.1"/> of so parfit <anchor xml:id="WBP-A117.2"/> wys <anchor xml:id="WBP-A117.3"/> a wight <anchor xml:id="WBP-A117.4"/> ywroght
 
 % * Evidenziazione, page 21
@@ -1701,6 +1834,38 @@
 
 % * Evidenziazione, page 21
 % <app from="#WBP-A117.2" to="#WBP-A117.4"> <lem wit="#Hg">wys a wight</lem> <rdg wit="#El #Ha4">was a wight</rdg> </app>
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/}
+    \end{center}
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+
+
+% * Evidenziazione, page 19
+% he beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
+
+
+   
+
+    \begin{block}{}
+      
+    \end{block}
+    
+    \begin{block}{}
+       
+    \end{block}
+
+\end{frame}
+
 
 
 

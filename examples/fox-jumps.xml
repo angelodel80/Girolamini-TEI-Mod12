@@ -210,6 +210,41 @@
     <variantEncoding 
         method="double-end-point" 
         location="external"/> 
-        
+
+
+        <text> 
+            <body> 
+                <div n="WBP" type="prologue"> 
+                    <head>The Prologe of the Wyves Tale of Bathe</head> 
+                    <l n="1">Experience though noon Auctoritee</l> 
+                    <l n="2">Were in this world ...</l> 
+                </div>
+            </body> 
+        </text>
+        <!-- -->
+        <listApp>
+            <app loc="WBP 1"> 
+                <rdg wit="#La">Experiment</rdg> 
+                <rdg wit="#Ra2">Eryment</rdg> 
+            </app>
+        </listApp>
+
+        <l n="1">Experience though noon Auctoritee
+            <app> 
+                <rdg wit="#La">Experiment</rdg> 
+                <rdg wit="#Ra2">Eryment</rdg> 
+            </app> 
+        </l> 
+        <l n="2">Were in this world ...</l>
+        <!-- -->
+        <l n="1">Experience though noon Auctoritee 
+            <app> 
+                <lem wit="#El">Experience</lem> 
+                <rdg wit="#La">Experiment</rdg> 
+                <rdg wit="#Ra2">Eryment</rdg> 
+            </app> 
+        </l> 
+        <l n="2">Were in this world ...</l>
+
 
 </tei-app-exemples>

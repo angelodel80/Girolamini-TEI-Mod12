@@ -1535,6 +1535,9 @@
     % * Evidenziazione, page 17
     % usually by a canonical reference scheme, or by line number in the edition
 
+    % * Evidenziazione, page 23
+    % The location-referenced method can be used to point a position in a text using the @loc attribute and a canonical reference that is understood and documented in the context of the file where it is used
+
     \begin{block}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
         Il metodo \textit{location-referenced} fornisce un approccio utile a codificare un apparato critico \textit{derivante da edizioni a stampa} o simile al modello di apparato a stampa
@@ -1680,13 +1683,10 @@
     % * Evidenziazione, page 19
     % If no other markup is present there, the beginning and ending points should be marked using the anchor element
 
-    \begin{block}{}
-      
+    \begin{block}{Attributi \texttt{@from} e \texttt{@to} dell'elemento \texttt{<app>}}
+      Gli attributi \texttt{@from} e \texttt{@to} dell'elemento \texttt{<app>} sono usati per regitrare gli estremi (puntatori agli identificativi) di inizio e fine della lezione divergente rispetto alla lezione a testo
     \end{block}
     
-    \begin{block}{}
-       
-    \end{block}
 
 \end{frame}
 
@@ -1706,13 +1706,13 @@
     % unless some element with an identifier already begins or ends at that point
    
 
-    \begin{block}{}
-      
+    \begin{block}{apparato inline & external}
+      Il metodo double end-point può implementato codificando l'apparato sia in-line (intercalato al testo base) sia esternamente (separato dal testo base anche in altro file)  
     \end{block}
     
-    \begin{block}{}
-       
-    \end{block}
+    \begin{block}{Elemento \texttt{<anchor>}}
+        Se non sono presenti elementi di annotazione per delimitare gli estremi della lezione, allora si utilizza l'elemento \texttt{<anchor>} intercalato al testo base.
+     \end{block}
 
 \end{frame}
 
@@ -1741,7 +1741,7 @@
     % the lemma is assumed to run from the beginning of the element indicated by the @from attribute, to the end of that indicated by the @to attribute
    
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/}
+       \includegraphics[width=.95\textwidth]{imgs/double-end-point.png}
     \end{center}
 
 \end{frame}
@@ -1763,12 +1763,12 @@
     % Only the beginning of the lemma need be marked with an anchor, since the app is inserted at the end of the lemma, and itself therefore marks the end of the lemma.
    
 
-    \begin{block}{}
-      
+    \begin{block}{Attributi \texttt{@from} & \texttt{@to}}
+      Se non viene fornito alcun valore per l'attributo \texttt{@to}, allora il testo base selezionato è giudicato essere tutto il testo racchiuso nell'elemento indicato dall'attributo \texttt{@from}
     \end{block}
     
-    \begin{block}{}
-       
+    \begin{block}{in-line double end-point}
+       Se l'apparato è codificato inline, a quel punto solo l'inizio della lezione a testo deve essere contrassegnata: la fine è rappresentata dalla codifica dellìentrata di apparato.
     \end{block}
 
 \end{frame}
@@ -1782,7 +1782,7 @@
     % <variantEncoding method="double-end-point" location="internal"/> <!-- ... --> <l n="1" xml:id="wbp.1">Experience <app from="#wbp.1"> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee</l> <l>Were in this world ...</l>
    
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/}
+       \includegraphics[width=.95\textwidth]{imgs/inline-double-end-point.png}
     \end{center}
 
 \end{frame}
@@ -1792,55 +1792,59 @@
     \framesubtitle{double end-point attachment method}
     \addtocounter{nframe}{1}
     % * Evidenziazione, page 20
-% The lemma need not be repeated within the app element in this method, as it may be extracted reliably from the base text
+    % The lemma need not be repeated within the app element in this method, as it may be extracted reliably from the base text
 
-% * Evidenziazione, page 20
-% if it is desired to make an explicit record of the attestation of the base text, the lem element may be embedded within app, carrying the witnesses to the base
+    % * Evidenziazione, page 20
+    % if it is desired to make an explicit record of the attestation of the base text, the lem element may be embedded within app, carrying the witnesses to the base
 
-% * Evidenziazione, page 20
-% <app from="#WBP.1" to="#WBP-A2"> <lem wit="#El #Hg">Experience</lem>
+    % * Evidenziazione, page 20
+    % <app from="#WBP.1" to="#WBP-A2"> <lem wit="#El #Hg">Experience</lem>
 
-% * Evidenziazione, page 20
-% This method is designed to cope with ‘overlapping lemmata’
+    % * Evidenziazione, page 20
+    % This method is designed to cope with ‘overlapping lemmata’
 
-% * Evidenziazione, page 21
-% This method can readily cope with such difficult situations
+    % * Evidenziazione, page 21
+    % This method can readily cope with such difficult situations
 
-% * Evidenziazione, page 21
-% typically found in large and complex traditions
+    % * Evidenziazione, page 21
+    % typically found in large and complex traditions
 
-   
 
-    \begin{block}{}
-      
+    \begin{block}{Il lemma dell'apparato}
+        Il metodo double end-point attachment non ha necessità di registrare la lezione a testo come lemma di apparato per ricostruire il testo
     \end{block}
     
-    \begin{block}{}
-       
+    \begin{block}{gestione delle gerarchie sovrapposte}
+       Il metodo double end-point attachment è progettato per gestire al meglio le \textbf{gerarchie sovrapposte} che possono presentarsi in grandi e complesse tradizioni testuali
     \end{block}
 
 \end{frame}
+
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
     \framesubtitle{double end-point attachment method}
     \addtocounter{nframe}{1}
     
-    % * Evidenziazione, page 21
-% <l xml:id="WBP.117" n="117"> And <anchor xml:id="WBP-A117.1"/> of so parfit <anchor xml:id="WBP-A117.2"/> wys <anchor xml:id="WBP-A117.3"/> a wight <anchor xml:id="WBP-A117.4"/> ywroght
-
-% * Evidenziazione, page 21
-% <app from="#WBP-A117.1" to="#WBP-A117.3"> <lem wit="#Hg">of so parfit wys</lem> <rdg wit="#Ha4">in what wise was</rdg> </app>
-
-% * Evidenziazione, page 21
-% <app from="#WBP-A117.2" to="#WBP-A117.4"> <lem wit="#Hg">wys a wight</lem> <rdg wit="#El #Ha4">was a wight</rdg> </app>
+    %% Gerarchie Sovrapposte %%
    
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/}
+       \includegraphics[width=.95\textwidth]{imgs/Clavius-DH.png}
     \end{center}
 
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/end-point-attachment-overlap.png}
+    \end{center}
+
+\end{frame}
 
 
 \begin{frame}
@@ -1851,22 +1855,27 @@
 
 
 % * Evidenziazione, page 19
-% he beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
+% The beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
 
-
-   
-
-    \begin{block}{}
-      
+    \begin{block}{collegamento indiretto & stand-off}
+      Se il testo base non può essere modificato e non ha le ancore per collegare l'entrata d'apparato con la lezione a testo, c'è la possibilità di sfruttare tecniche di collegamento indiretto in modalità stand-off
     \end{block}
-    
-    \begin{block}{}
-       
-    \end{block}
+
+    \textit{La stand-off annotation è una tecnica per tenere distinti su documenti o parti di documento differenti il testo e il suo insieme di annotazioni così che il legame fra i due sia stabilito tramite riferimenti univoci dalle annotazioni ai passi in oggetto, anche tramite espressioni indirette}
 
 \end{frame}
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{double end-point attachment method}
+    \addtocounter{nframe}{1}
+    
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/indirected-standoff-app.png}
+    \end{center}
 
+\end{frame}
 
 
 
@@ -1877,71 +1886,128 @@
     \addtocounter{nframe}{1}
     
 
+    % The parallel segmentation method, to be discussed next, cannot handle overlaps among variants
+
+    % * Evidenziazione, page 21
+    % This method differs from the double end-point attachment method in that all variants at any point of the text are expressed as variants on one another.
+
+    % * Evidenziazione, page 22
+    % This method cannot be used with external apparatus
+
+    % * Evidenziazione, page 22
+    % it must be used in-line
+
+    % * Evidenziazione, page 21
+    % In this method, no two variations can overlap, although they may nest
+
+    \begin{block}{Gerarchia sovrapposte e annidamenti}
+      Il metodo parallel segmentation, a differenza degli altri metodi, gestisce tutti i luoghi del testo in cui si presentano lezioni divergenti come varianti l'una dell'altra registrate in-line.
+    \end{block}
+
+    \textbf{con il metodo parallel segmentation non è possibile gestire segmenti di testo divergente in sovrapposizione (overlap), ma i segmenti possono essere espressi tutt'al più con successive strutture gerarchiche perfettamente annidate}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{parallel segmentation method}
+    \addtocounter{nframe}{1}
+    
+    % The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
+
+    % * Evidenziazione, page 21
+    % The texts compared are divided into matching segments all synchronized with one another
+
+    % * Evidenziazione, page 21
+    % It is also very easy with this method for an application to extract the full text of any one witness from the apparatus
+
+    % * Evidenziazione, page 21
+    % It will however be less convenient for very complex traditions
+
+    % * Evidenziazione, page 21
+    % In the parallel segmentation method, each segment of text on which there is variation is marked by an app element
+
+    % * Evidenziazione, page 21
+    % If there is a preferred (or base) reading it is tagged with lem; each reading is given in a rdg element:
+
+    \begin{block}{segmenti e testo base}
+      Il metodo parallel segmentation non ha il concetto di testo base, ma tutte le attestazioni divergenti sono registrate in apparato attraverso una oculata segmentazione dei passi con varianti mantenuti tra loro sincronizzati.
+    \end{block}
+
+    \textit{E' possibile estrarre il contenuto testuale di ciascun testimone selezionando uno specifico percorso, comprese le lezioni accettate dall'editore}
+
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{parallel segmentation method}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 22
+    % the witnesses to the reading most widely attested need not be stated
+
+    % * Evidenziazione, page 22
+    % read a listWit declaring all the witnesses to the text and then calculate which witnesses have not been named
+
+    % * Evidenziazione, page 22
+    % To avoid confusion, however, witnesses may be omitted only for a single reading.
+
+    % * Evidenziazione, page 22
+    % <l n="1"> <app> <lem>Experience</lem> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee </l>
+
+   
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       \includegraphics[width=.95\textwidth]{imgs/parallel-segmentation.png}
     \end{center}
 
 \end{frame}
 
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{parallel segmentation method}
+    \addtocounter{nframe}{1}
+
+    % * Evidenziazione, page 22
+    % apparatus entries may nest in this method
+
+    % * Evidenziazione, page 22
+    % the variation on the individual words of the line would nest within that for the line as a whole:
 
 
+    % * Evidenziazione, page 23
+    % Parallel segmentation cannot, however, deal very gracefully with variants which overlap without nesting
+   
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/parallel-segmentation-nested.png}
+    \end{center}
 
-% * Evidenziazione, page 21
-% The parallel segmentation method, to be discussed next, cannot handle overlaps among variants
+\end{frame}
 
-% * Evidenziazione, page 21
-% This method differs from the double end-point attachment method in that all variants at any point of the text are expressed as variants on one another.
 
-% * Evidenziazione, page 21
-% In this method, no two variations can overlap, although they may nest
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 23
+    % When an apparatus is provided it does not need to be given at the location in the transcription where the variation, emendation, attribution, or other apparatus observation occurs. Instead it may be stored in a separate place in the same file, or indeed in another file, and point to the location at which it is meant to be used
 
-% * Evidenziazione, page 21
-% The texts compared are divided into matching segments all synchronized with one another
+    % * Evidenziazione, page 23
+    % The @from attribute is a data.pointer datatype and thus contains a URI as a value
 
-% * Evidenziazione, page 21
-% It is also very easy with this method for an application to extract the full text of any one witness from the apparatus
+    %directly to an @xml:id, an @xml:id in another local file, or indeed a file identified by any URL or URN
 
-% * Evidenziazione, page 21
-% It will however be less convenient for very complex traditions
+    \begin{block}{Collegamento dell'entrata di apparato con URI}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       L'attributo @from può assumere come valori tipi di dato riconducibili agli URI (Uniform Resurce Identifier)
+    \end{block}
+    \textbf{Collegamenti ad elementi tramite xml:id in uno stesso file, in file diversi in locale, in file diversi remoti con URL oppure URN}
 
-% * Evidenziazione, page 21
-% In the parallel segmentation method, each segment of text on which there is variation is marked by an app element
-
-% * Evidenziazione, page 21
-% If there is a preferred (or base) reading it is tagged with lem; each reading is given in a rdg element:
-
-% * Evidenziazione, page 22
-% This method cannot be used with external apparatus
-
-% * Evidenziazione, page 22
-% it must be used in-line
-
-% * Evidenziazione, page 22
-% the witnesses to the reading most widely attested need not be stated
-
-% * Evidenziazione, page 22
-% read a listWit declaring all the witnesses to the text and then calculate which witnesses have not been named
-
-% * Evidenziazione, page 22
-% To avoid confusion, however, witnesses may be omitted only for a single reading.
-
-% * Evidenziazione, page 22
-% <l n="1"> <app> <lem>Experience</lem> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> though noon Auctoritee </l>
-
-% * Evidenziazione, page 22
-% apparatus entries may nest in this method
-
-% * Evidenziazione, page 22
-% the variation on the individual words of the line would nest within that for the line as a whole:
-
-% * Evidenziazione, page 22
-% <rdg wit="#Chi3">Auctoritee, though none experience</rdg> <rdg> <app> <rdg wit="#El #Hg">Experience</rdg> <rdg wit="#La">Experiment</rdg> <rdg wit="#Ra2">Eryment</rdg> </app> <app> <rdg wit="#El #Ra2">though</rdg> <rdg wit="#Hg">thogh</rdg> <rdg wit="#La">thouh</rdg> </app> <app> <rdg wit="#El #Hg">noon Auctorite</rdg> <rdg wit="#La #Ra2">none auctorite</rdg> </app> </rdg>
-
-% * Evidenziazione, page 23
-% Parallel segmentation cannot, however, deal very gracefully with variants which overlap without nesting
-
+\end{frame}
 
 
 
@@ -1950,71 +2016,62 @@
     \framesubtitle{}
     \addtocounter{nframe}{1}
     
+    % * Evidenziazione, page 23
+    % Where possible it is recommended that other methods use the @from attribute to point to an @xml:id attribute on an anchor or other element at the location where the apparatus observation takes place
+
+    % * Evidenziazione, page 23
+    % The contents of an element pointed to are understood to be equivalent to a lem if none exists in the app, and if a lem does exist this should replace any content.
 
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       \includegraphics[width=.95\textwidth]{imgs/app-uri-png.png}
     \end{center}
+   
+\end{frame}
+
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 24
+    % In addition, URLs can contain XPointer schemes including xpath(), range(), and string-range() which can be used in providing the location of an app that is stored separately from the text to which it applies
+
+    % * Evidenziazione, page 24
+    % Both @from and @to can be used, as in the double end-point attachment method, to identify the starting and ending location for an apparatus using XPointer schemes described
+
+    \begin{block}{Collegamento con schemi XPointer}
+       Oltre ad impiegare identificativi URI è possibile selezionare la porzione di testo base sfruttando schemi Xpointer
+    \end{block}
+    \textbf{Funzioni XPointer quali xpath(), range(), and string-range()}
 
 \end{frame}
 
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{}
+    \addtocounter{nframe}{1}
 
+    % * Evidenziazione, page 24
+    % If only the @from attribute is provided then it should be understood that this supplies the location of the textual variance that the apparatus documents
 
-% * Evidenziazione, page 23
-% When an apparatus is provided it does not need to be given at the location in the transcription where the variation, emendation, attribution, or other apparatus observation occurs. Instead it may be stored in a separate place in the same file, or indeed in another file, and point to the location at which it is meant to be used
+    % * Evidenziazione, page 24
+    % If the @from attribute contains an XPointer scheme that identifies a range of text
 
-% * Evidenziazione, page 23
-% The location-referenced method can be used to point a position in a text using the @loc attribute and a canonical reference that is understood and documented in the context of the file where it is used
+    % * Evidenziazione, page 24
+    % record the starting and ending of the range
 
-% * Evidenziazione, page 23
-% Where possible it is recommended that other methods use the @from attribute to point to an @xml:id attribute on an anchor or other element at the location where the apparatus observation takes place
-
-% * Evidenziazione, page 23
-% The contents of an element pointed to are understood to be equivalent to a lem if none exists in the app, and if a lem does exist this should replace any content.
-
-% * Evidenziazione, page 23
-% The @from attribute is a data.pointer datatype and thus contains a URI as a value
-
-% * Evidenziazione, page 23
-% directly to an @xml:id, an @xml:id in another local file, or indeed a file identified by any URL or URN
-
-% * Evidenziazione, page 23
-% <app from="example.xml#WBP-so.1.1">
-
-% * Evidenziazione, page 23
-% could also be encoded as
-
-% * Evidenziazione, page 23
-% <anchor xml:id="WBP-so.1.1a"/>
-
-% * Evidenziazione, page 23
-% <app from="http://www.example.com/example.xml#WBP-so.1.1a"> <lem>Experience</lem>
-
-% * Evidenziazione, page 24
-% In addition, URLs can contain XPointer schemes including xpath(), range(), and string-range() which can be used in providing the location of an app that is stored separately from the text to which it applies
-
-% * Evidenziazione, page 24
-% Both @from and @to can be used, as in the double end-point attachment method, to identify the starting and ending location for an apparatus using XPointer schemes described
-
-% * Evidenziazione, page 24
-% <l n="1" xml:id="WP.1a">Experience though noon Auctoritee</l>
-
-% * Evidenziazione, page 24
-% <app from="example.xml#string-range(WP.1a, 0, 10)"> <lem>Experience</lem>
-
-% * Evidenziazione, page 24
-% If only the @from attribute is provided then it should be understood that this supplies the location of the textual variance that the apparatus documents
-
-% * Evidenziazione, page 24
-% If the @from attribute contains an XPointer scheme that identifies a range of text
-
-% * Evidenziazione, page 24
-% record the starting and ending of the range
-
-% * Evidenziazione, page 24
-% In such a case a @to attribute is unnecessary.
-
+    % * Evidenziazione, page 24
+    % In such a case a @to attribute is unnecessary.
+    
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/app-xpointer.png}
+    \end{center}
+   
+\end{frame}
 
 
 
@@ -2023,42 +2080,107 @@
     \framesubtitle{record different transcriptions}
     \addtocounter{nframe}{1}
     
+    % * Evidenziazione, page 24
+    % It is often desirable to record different transcriptions of one stretch of text.
+
+    % * Evidenziazione, page 24
+    % An application may then construct different ‘views’ of the transcription by extraction of the appropriate variant readings from the apparatus elements embedded in the transcription.
+
+    % * Evidenziazione, page 24
+    % For example, alternative expansions can be recorded in several different expan elements, all grouped within an app element
+
+    % * Evidenziazione, page 24
+    % which has been read in different ways by different scholars
+
+    % * Evidenziazione, page 25
+    % In most cases, elements used to indicate features of a primary textual source may be represented within an app structure simply by nesting them within its readings
+
+    % * Evidenziazione, page 25
+    % the markup may use the join element or the @next and @prev attributes defined by chapter
+
+
+    \begin{block}{Varianti in trascrizione}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       Spesso si vuole registrare diverse possibili trascrizioni di uno stesso passo testuale. In questo modo è possibile ricostruire diverse versioni di una stessa fonte primaria con diverse interpretazioni nella trascrizione.
+    \end{block}
+    \textit{Per esempio differenti versioni per lo scioglimento di abbreviazioni lette da diversi studiosi}
+
+\end{frame}
+
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{record different transcriptions}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 24
+    % This information may be held within an app structure
+
+    % * Evidenziazione, page 24
+    % <app> <rdg source="#ES">perfectio<am> <g ref="#ii"/> </am> </rdg> <rdg source="#FJF">perfectio<ex>u</ex>n</rdg> <rdg source="#PGR">perfectiou<ex>n</ex>
+
+    % * Evidenziazione, page 25
+    % Editorial notes may also be attached to app structures within transcriptions
 
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       \includegraphics[width=.95\textwidth]{imgs/app-trascrizion-note.png}
     \end{center}
 
 \end{frame}
 
 
 
-% * Evidenziazione, page 24
-% It is often desirable to record different transcriptions of one stretch of text.
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Strategies for Encoding Variation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 26
+    % Phenomena such as omissions and transpositions in witnesses will require some encoding strategies that differ from those in the examples above
 
-% * Evidenziazione, page 24
-% An application may then construct different ‘views’ of the transcription by extraction of the appropriate variant readings from the apparatus elements embedded in the transcription.
+    % * Evidenziazione, page 25
+    % some care must be taken in their encoding to ensure that TEI's Abstract Model is not being broken.
 
-% * Evidenziazione, page 24
-% For example, alternative expansions can be recorded in several different expan elements, all grouped within an app element
+    % * Evidenziazione, page 26
+    % Similarly, it is an error if the contents of an apparatus entry place a p inside another p or an l inside an l.
 
-% * Evidenziazione, page 24
-% which has been read in different ways by different scholars
+    \begin{block}{fenomeni critici}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       Fenomeni quali omissioni, trasposizioni, contaminazioni, omeoarchie necessitano di particolare cura per loro corretta codifica
+    \end{block}
+    \textbf{attenzione a non "\textit{rompere}" il modello astratto della struttura TEI (\textit{es. sostituire un paragrafo con un verso in una strofa di poesia})}
 
-% * Evidenziazione, page 24
-% This information may be held within an app structure
+\end{frame}
 
-% * Evidenziazione, page 24
-% <app> <rdg source="#ES">perfectio<am> <g ref="#ii"/> </am> </rdg> <rdg source="#FJF">perfectio<ex>u</ex>n</rdg> <rdg source="#PGR">perfectiou<ex>n</ex>
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Strategies for Encoding Variation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 25
+    % Variation most frequently occurs at the phrase level, but is also common at higher structural levels, such as the verse line, paragraph, or chapter
 
-% * Evidenziazione, page 25
-% Editorial notes may also be attached to app structures within transcriptions
+    % * Evidenziazione, page 26
+    % An editor wishing to signal an omission in one witness should encode the omission using an empty rdg
 
-% * Evidenziazione, page 25
-% In most cases, elements used to indicate features of a primary textual source may be represented within an app structure simply by nesting them within its readings
+    % * Evidenziazione, page 26
+    % <app xml:id="d1e372"> <lem xml:id="d1e373" source="#Heyworth"> <l n="18">Hypsipyle uacuo constitit in thalamo:</l> </lem> <rdg xml:id="d1e376" wit="#J" cause="homeoarchon"/> </app> 
+    %omeoarchia % contaminatio % interpolazione
 
-% * Evidenziazione, page 25
-% the markup may use the join element or the @next and @prev attributes defined by chapter
+    % * Evidenziazione, page 26
+    % Notice that in this example, the variation occurs at the unit of the verse line
 
+    % * Evidenziazione, page 26
+    % by mistake
+
+    % * Evidenziazione, page 26
+    % If a witness contains an interpolation that the editor does not wish to show in the base text, an empty lem should be used, in the same fashion.
+
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/app-omeoarchia.png}
+    \end{center}
+
+\end{frame}
 
 
 
@@ -2068,70 +2190,48 @@
     \framesubtitle{Strategies for Encoding Variation}
     \addtocounter{nframe}{1}
     
+    % * Evidenziazione, page 26
+    % Transpositions are harder to encode
 
-    \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-    \end{center}
+    % * Evidenziazione, page 26
+    % A single app will therefore not be sufficient
+
+    % * Evidenziazione, page 26
+    % and the variants must be linked.
+    
+    % * Evidenziazione, page 26
+    % Note that both apps are linked via the @exclude attribut
+    
+    % * Evidenziazione, page 26
+    % because they are mutually exclusive
+
+    \begin{block}{trasposizioni}
+       %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       Rappresentare in TEI le trasposizioni non è affatto banale. Generalmente bisogna ricorrere a strategie verbose e trucchetti.
+    \end{block}
+    \textbf{Usare più entrate d'apparato, copie di elementi e attributi di mutua esclusione}
 
 \end{frame}
 
 
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Strategies for Encoding Variation}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 26
+    % To avoid repetition, the second pair of lines can make use of the @copyOf attribute.
+
+    % * Evidenziazione, page 26
+    % Apparatus entries may nest when there is variation at both higher and lower structural levels
 
 
+    \begin{center}
+       \includegraphics[width=.95\textwidth]{imgs/app-transposition.png}
+    \end{center}
 
-% * Evidenziazione, page 25
-% Variation most frequently occurs at the phrase level, but is also common at higher structural levels, such as the verse line, paragraph, or chapter
+\end{frame}
 
-% * Evidenziazione, page 25
-% some care must be taken in their encoding to ensure that TEI's Abstract Model is not being broken.
-
-% * Evidenziazione, page 26
-% Similarly, it is an error if the contents of an apparatus entry place a p inside another p or an l inside an l.
-
-% * Evidenziazione, page 26
-% Phenomena such as omissions and transpositions in witnesses will require some encoding strategies that differ from those in the examples above
-
-% * Evidenziazione, page 26
-% An editor wishing to signal an omission in one witness should encode the omission using an empty rdg
-
-% * Evidenziazione, page 26
-% <app xml:id="d1e372"> <lem xml:id="d1e373" source="#Heyworth"> <l n="18">Hypsipyle uacuo constitit in thalamo:</l> </lem> <rdg xml:id="d1e376" wit="#J" cause="homeoarchon"/> </app>
-
-% * Evidenziazione, page 26
-% Notice that in this example, the variation occurs at the unit of the verse line
-
-% * Evidenziazione, page 26
-% by mistake
-
-% * Evidenziazione, page 26
-% If a witness contains an interpolation that the editor does not wish to show in the base text, an empty lem should be used, in the same fashion.
-
-% * Evidenziazione, page 26
-% Transpositions are harder to encode
-
-% * Evidenziazione, page 26
-% A single app will therefore not be sufficient
-
-% * Evidenziazione, page 26
-% and the variants must be linked.
-
-% * Evidenziazione, page 26
-% <app xml:id="app-lem-l25-l26" exclude="#app-rdg-Housman-l25-26"> <lem xml:id="d1e462" source="#Heyworth"> <l n="25" xml:id="l25">desine iam reuocare tuis periuria verbis,</l> <l n="26" xml:id="l26">Cynthia, et oblitos parce movere deos;</l> </lem> </app>
-
-% * Evidenziazione, page 26
-% <app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26"> <rdg xml:id="d1e603" source="#Housman"> <l copyOf="#l25"/> <l copyOf="#l26"/> </rdg> <note target="#d1e603">Housman put these lines after 32.</note> </app>
-
-% * Evidenziazione, page 26
-% Note that both apps are linked via the @exclude attribut
-
-% * Evidenziazione, page 26
-% because they are mutually exclusive
-
-% * Evidenziazione, page 26
-% To avoid repetition, the second pair of lines can make use of the @copyOf attribute.
-
-% * Evidenziazione, page 26
-% Apparatus entries may nest when there is variation at both higher and lower structural levels
 
 % * Evidenziazione, page 27
 % <app xml:id="d1e275"> <lem xml:id="d1e277" source="#Heyworth"> <l n="8"> <app xml:id="d1e280"> <lem xml:id="d1e281" wit="#N #Λ">ut</lem> <rdg xml:id="d1e283" wit="#A">et</rdg> <rdg xml:id="d1e285" source="#Nodell">ac</rdg> <note target="#d1e287">perhaps</note> <rdg xml:id="d1e287" source="#Heyworth" cert="low">quam</rdg> </app> formosa nouo quae parat ire uiro.</l> <l n="9"> <app xml:id="d1e294"> <lem xml:id="d1e295">at</lem> <rdg xml:id="d1e297" wit="#A">et</rdg> </app> non sic, Ithaci digressu <app xml:id="d1e300"> <lem xml:id="d1e301">mota</lem> <rdg xml:id="d1e303" source="#Graevius">immota</rdg> </app>, Calypso</l> <l n="10">desertis olim fleuerat aequoribus:</l> <l n="11">multos illa dies incomptis maesta capillis</l> </lem> <rdg xml:id="d1e314" wit="#C" cause="homoeoteleuton"/> <note target="#d1e314">omits lines 8-11 because of homoeoteleuton.</note> </app>

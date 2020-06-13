@@ -247,4 +247,164 @@
         <l n="2">Were in this world ...</l>
 
 
+        <div n="WBP" type="prologue">
+            <head>The Prologe ... </head> 
+            <l n="1" xml:id="WBP.1">Experience 
+            <anchor xml:id="WBP-A2"/>though noon Auctoritee</l> 
+            <l>Were in this world ...</l> 
+        </div>
+        <!-- -->
+        <app from="#WBP.1" to="#WBP-A2"> 
+            <rdg wit="#La">Experiment</rdg> 
+            <rdg wit="#Ra2">Eryment</rdg> 
+        </app>
+
+
+       <l n="1" xml:id="wbp.1">Experience 
+            <app from="#wbp.1"> 
+               <rdg wit="#La">Experiment</rdg> 
+               <rdg wit="#Ra2">Eryment</rdg> 
+            </app>
+            though noon Auctoritee</l> 
+        <l>Were in this world ...</l>
+
+
+
+        <p>The quick brown fox jumps over the lazy dog.</p>
+        ...
+        <listApp>
+          <app from="#match(//p[1],'fox')">
+            <lem wit="#A">fox</lem>
+            <rdg wit="#B">mouse</rdg>
+            <rdg xml:id="C1" wit="#C" exclude="#C2">cat</rdg>
+          </app>
+          <app from="#match(//p[1],'dog')">
+            <lem wit="#C">dog</lem>
+            <rdg xml:id="C2" wit="#B" exclude="#C1">cat</rdg>
+          </app>
+        </listApp>
+
+
+
+        <l xml:id="WBP.117" n="117"> And 
+        <anchor xml:id="WBP-A117.1"/> of so parfit 
+        <anchor xml:id="WBP-A117.2"/> wys 
+        <anchor xml:id="WBP-A117.3"/> a wight 
+        <anchor xml:id="WBP-A117.4"/> ywroght 
+        </l>
+        <!-- -->
+        <listApp>
+            <app from="#WBP-A117.1" to="#WBP-A117.3"> 
+                <lem wit="#Hg">of so parfit wys</lem> 
+                <rdg wit="#Ha4">in what wise was</rdg> 
+            </app> 
+            <app from="#WBP-A117.2" to="#WBP-A117.4"> 
+                <lem wit="#Hg">wys a wight</lem> 
+                <rdg wit="#El #Ha4">was a wight</rdg> 
+            </app>
+        </listApp>
+    
+        <l n="1"> 
+            <app>
+                <lem wit="#El #Hg">Experience</lem> 
+                <rdg wit="#La">Experiment</rdg> 
+                <rdg wit="#Ra2">Eryment</rdg> 
+            </app> 
+            though noon Auctoritee 
+        </l> 
+        <l n="2">Were in this world ...</l>
+
+
+    <l n="1"> 
+        <app>
+            <rdg wit="#Chi3">Auctoritee, though none experience</rdg> 
+            <rdg> 
+                <app> 
+                    <rdg wit="#El #Hg">Experience</rdg> 
+                    <rdg wit="#La">Experiment</rdg> 
+                    <rdg wit="#Ra2">Eryment</rdg> 
+                </app> 
+                <app> 
+                    <rdg wit="#El #Ra2">though</rdg> 
+                    <rdg wit="#Hg">thogh</rdg> 
+                    <rdg wit="#La">thouh</rdg> 
+                </app> 
+                <app> 
+                    <rdg wit="#El #Hg">noon Auctorite</rdg> 
+                    <rdg wit="#La #Ra2">none auctorite</rdg> 
+                </app> 
+            </rdg>
+        </app> 
+    </l>
+
+
+    <l n="1"> 
+        <anchor xml:id="WBP-so.1.1a"/> though noon Auctoritee 
+    </l> 
+    <!--  -->
+    <listApp> 
+        <app from="http://www.example.com/example.xml#WBP-so.1.1a"> 
+            <lem>Experience</lem> 
+            <rdg wit="#La">Experiment</rdg> 
+            <rdg wit="#Ra2">Eryment</rdg> 
+        </app>
+    </listApp>
+
+
+    <l n="1" xml:id="WP.1a">
+        Experience though noon Auctoritee
+    </l> 
+    <!--  -->
+    <listApp> 
+        <app from="example.xml#string-range(WP.1a, 0, 10)"> 
+            <lem>Experience</lem> 
+            <rdg wit="#La">Experiment</rdg> 
+            <rdg wit="#Ra2">Eryment</rdg> 
+        </app>
+    </listApp>
+
+
+    Virginite is grete
+    <app> 
+        <rdg source="#ES">
+            perfecti<am><g ref="#ii"/></am> 
+        </rdg> 
+        <rdg xml:id="f105" source="#FJF">
+            perfectio<ex>u</ex>n
+        </rdg> 
+        <rdg xml:id="r105" source="#PGR">
+            perfectiou<ex>n</ex> 
+        </rdg> 
+    </app> 
+    <!-- -->
+    <note target="#r105 #f105">
+        Furnivall's expansion implies that the [...]. 
+        Ruggiers' expansion is to be accepted.
+    </note>
+
+
+    <app xml:id="d1e372"> 
+        <lem xml:id="d1e373" source="#Heyworth"> 
+            <l n="18">Hypsipyle uacuo constitit in thalamo:</l> 
+        </lem> 
+        <rdg xml:id="d1e376" wit="#J" cause="homeoarchon"/> 
+    </app>
+
+
+    <app xml:id="app-lem-l25-l26" exclude="#app-rdg-Housman-l25-26"> 
+        <lem xml:id="d1e462" source="#Heyworth"> 
+            <l n="25" xml:id="l25">desine iam reuocare tuis periuria verbis,</l> 
+            <l n="26" xml:id="l26">Cynthia, et oblitos parce movere deos;</l> 
+        </lem> 
+    </app>
+    <!-- -->
+    <app xml:id="app-rdg-Housman-l25-26" exclude="#app-lem-l25-l26"> 
+        <rdg xml:id="d1e603" source="#Housman"> 
+            <l copyOf="#l25"/> 
+            <l copyOf="#l26"/> 
+        </rdg> 
+        <note target="#d1e603">Housman put these lines after 32.</note> 
+    </app>
+
+
 </tei-app-exemples>

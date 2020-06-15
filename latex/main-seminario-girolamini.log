@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.6)  15 JUN 2020 19:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2015.5.6)  15 JUN 2020 20:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2217,483 +2217,197 @@ Overfull \vbox (10.75679pt too high) detected at line 243
 
 [13
 
-] (./includes/tei-mod12.tex [14
+] (./main-seminario-girolamini.toc)
+Overfull \vbox (10.75679pt too high) detected at line 246
+ []
 
-]
-<imgs/Edizione-Critica-apparato.png, id=588, 771.88374pt x 778.91pt>
-File: imgs/Edizione-Critica-apparato.png Graphic file (type png)
+[14
 
-<use imgs/Edizione-Critica-apparato.png>
-Package pdftex.def Info: imgs/Edizione-Critica-apparato.png used on input line 
-53.
-(pdftex.def)             Requested size: 203.51895pt x 205.36427pt.
- [15
+] (./includes/strumenti.tex [15
 
- <./imgs/Edizione-Critica-apparato.png>] [16
+] [16
 
-] <imgs/image.png, id=658, 488.90656pt x 274.80667pt>
-File: imgs/image.png Graphic file (type png)
+] [17
 
-<use imgs/image.png>
-Package pdftex.def Info: imgs/image.png used on input line 89.
-(pdftex.def)             Requested size: 276.2046pt x 155.25766pt.
- [17
+] [18
 
- <./imgs/image.png>] [18
+] [19
 
-]
-<imgs/testo-divergente.png, id=728, 1353.055pt x 438.63875pt>
-File: imgs/testo-divergente.png Graphic file (type png)
+] [20
 
-<use imgs/testo-divergente.png>
-Package pdftex.def Info: imgs/testo-divergente.png used on input line 119.
-(pdftex.def)             Requested size: 276.2046pt x 89.54001pt.
- [19
-
- <./imgs/testo-divergente.png>] [20
-
-]
-[21
+] [21
 
 ] [22
 
 ] [23
 
-] [24
-
-] [25
-
-] [26
-
-] [27
-
-] [28
-
 ]
-<imgs/fox-jumps.png, id=1078, 547.04375pt x 348.30125pt>
-File: imgs/fox-jumps.png Graphic file (type png)
+<imgs/collatex.png, id=905, 1008.76875pt x 756.8275pt>
+File: imgs/collatex.png Graphic file (type png)
+ <use imgs/collatex.png>
+Package pdftex.def Info: imgs/collatex.png used on input line 180.
+(pdftex.def)             Requested size: 276.2046pt x 207.22166pt.
 
-<use imgs/fox-jumps.png>
-Package pdftex.def Info: imgs/fox-jumps.png used on input line 457.
-(pdftex.def)             Requested size: 276.2046pt x 175.86151pt.
- [29
+Overfull \vbox (20.51251pt too high) detected at line 180
+ []
 
- <./imgs/fox-jumps.png>] [30
+[24
 
-]
+ <./imgs/collatex.png>]
+<imgs/variance-viewer.png, id=943, 1433.355pt x 791.95876pt>
+File: imgs/variance-viewer.png Graphic file (type png)
 
-LaTeX Font Warning: Font shape `OT1/cmss/bx/it' undefined
-(Font)              using `OT1/cmss/bx/n' instead on input line 530.
+<use imgs/variance-viewer.png>
+Package pdftex.def Info: imgs/variance-viewer.png used on input line 192.
+(pdftex.def)             Requested size: 276.2046pt x 152.60056pt.
+ [25
 
-[31
+ <./imgs/variance-viewer.png>]
+<imgs/juxtaweb.png, id=982, 908.79526pt x 379.4175pt>
+File: imgs/juxtaweb.png Graphic file (type png)
+ <use imgs/juxtaweb.png>
+Package pdftex.def Info: imgs/juxtaweb.png used on input line 204.
+(pdftex.def)             Requested size: 276.2046pt x 115.31401pt.
 
-] [32
+[26
 
-] <imgs/app-rdg.png, id=1219, 748.7975pt x 180.675pt>
-File: imgs/app-rdg.png Graphic file (type png)
+ <./imgs/juxtaweb.png (PNG copy)>]
+<imgs/stemmaweb.png, id=1019, 1154.3125pt x 682.55pt>
+File: imgs/stemmaweb.png Graphic file (type png)
+ <use imgs/stemmaweb.png>
+Package pdftex.def Info: imgs/stemmaweb.png used on input line 216.
+(pdftex.def)             Requested size: 276.2046pt x 163.31543pt.
 
-<use imgs/app-rdg.png>
-Package pdftex.def Info: imgs/app-rdg.png used on input line 571.
-(pdftex.def)             Requested size: 276.2046pt x 66.64468pt.
+[27
+
+ <./imgs/stemmaweb.png>]
+<imgs/tustep.png, id=1056, 925.4575pt x 704.6325pt>
+File: imgs/tustep.png Graphic file (type png)
+ <use imgs/tustep.png>
+Package pdftex.def Info: imgs/tustep.png used on input line 228.
+(pdftex.def)             Requested size: 276.2046pt x 210.2947pt.
+
+Overfull \vbox (50.78555pt too high) detected at line 228
+ []
+
+[28
+
+ <./imgs/tustep.png>] <imgs/medite.png, id=1095, 869.2475pt x 792.9625pt>
+File: imgs/medite.png Graphic file (type png)
+
+<use imgs/medite.png>
+Package pdftex.def Info: imgs/medite.png used on input line 240.
+(pdftex.def)             Requested size: 276.2046pt x 251.96243pt.
+
+Overfull \vbox (78.85329pt too high) detected at line 240
+ []
+
+[29
+
+ <./imgs/medite.png>] <imgs/cte.png, id=1133, 803.0pt x 611.28375pt>
+File: imgs/cte.png Graphic file (type png)
+
+<use imgs/cte.png>
+Package pdftex.def Info: imgs/cte.png used on input line 253.
+(pdftex.def)             Requested size: 276.2046pt x 210.26817pt.
+
+Overfull \vbox (23.55902pt too high) detected at line 253
+ []
+
+[30
+
+ <./imgs/cte.png (PNG copy)>]
+<imgs/teipublisher.png, id=1169, 1378.14874pt x 679.53876pt>
+File: imgs/teipublisher.png Graphic file (type png)
+
+<use imgs/teipublisher.png>
+Package pdftex.def Info: imgs/teipublisher.png used on input line 265.
+(pdftex.def)             Requested size: 276.2046pt x 136.1853pt.
+ [31
+
+ <./imgs/teipublisher.png>]
+<imgs/evt.png, id=1208, 1403.2425pt x 770.88pt>
+File: imgs/evt.png Graphic file (type png)
+ <use imgs/evt.png>
+Package pdftex.def Info: imgs/evt.png used on input line 277.
+(pdftex.def)             Requested size: 276.2046pt x 151.72662pt.
+ [32
+
+ <./imgs/evt.png>] <imgs/textualcommunities.png, id=1245, 1302.8675pt x 710.655
+pt>
+File: imgs/textualcommunities.png Graphic file (type png)
+
+<use imgs/textualcommunities.png>
+Package pdftex.def Info: imgs/textualcommunities.png used on input line 289.
+(pdftex.def)             Requested size: 276.2046pt x 150.65163pt.
  [33
 
- <./imgs/app-rdg.png>] [34
-
-] [35
-
-]
-Overfull \vbox (0.345pt too high) detected at line 632
- []
-
-[36
-
-] [37
-
-] [38
-
-] [39
-
-] <imgs/1-rdg-type.png, id=1462, 775.89874pt x 163.61125pt>
-File: imgs/1-rdg-type.png Graphic file (type png)
-
-<use imgs/1-rdg-type.png>
-Package pdftex.def Info: imgs/1-rdg-type.png used on input line 719.
-(pdftex.def)             Requested size: 276.2046pt x 58.24341pt.
- [40
-
- <./imgs/1-rdg-type.png>]
-<imgs/2-lem-rdg.png, id=1498, 866.23625pt x 213.79875pt>
-File: imgs/2-lem-rdg.png Graphic file (type png)
-
-<use imgs/2-lem-rdg.png>
-Package pdftex.def Info: imgs/2-lem-rdg.png used on input line 729.
-(pdftex.def)             Requested size: 276.2046pt x 68.16905pt.
- [41
-
- <./imgs/2-lem-rdg.png>]
-<imgs/3-app-cause-varSeq.png, id=1535, 1092.08pt x 175.65625pt>
-File: imgs/3-app-cause-varSeq.png Graphic file (type png)
-
-<use imgs/3-app-cause-varSeq.png>
-Package pdftex.def Info: imgs/3-app-cause-varSeq.png used on input line 739.
-(pdftex.def)             Requested size: 276.2046pt x 44.42589pt.
- [42
-
- <./imgs/3-app-cause-varSeq.png>]
-<imgs/4-nachgetragen-aggiunta.png, id=1571, 1116.17pt x 152.57pt>
-File: imgs/4-nachgetragen-aggiunta.png Graphic file (type png)
-
-<use imgs/4-nachgetragen-aggiunta.png>
-Package pdftex.def Info: imgs/4-nachgetragen-aggiunta.png used on input line 74
-9.
-(pdftex.def)             Requested size: 276.2046pt x 37.75362pt.
- [43
-
- <./imgs/4-nachgetragen-aggiunta.png>] <imgs/5-rdg-source.png, id=1608, 766.865
-pt x 195.73125pt>
-File: imgs/5-rdg-source.png Graphic file (type png)
-
-<use imgs/5-rdg-source.png>
-Package pdftex.def Info: imgs/5-rdg-source.png used on input line 759.
-(pdftex.def)             Requested size: 276.2046pt x 70.49603pt.
- [44
-
- <./imgs/5-rdg-source.png>] [45
-
-] [46
-
-] [47
-
-]
-<imgs/rdgGrp.png, id=1748, 584.1825pt x 278.03876pt>
-File: imgs/rdgGrp.png Graphic file (type png)
- <use imgs/rdgGrp.png>
-Package pdftex.def Info: imgs/rdgGrp.png used on input line 879.
-(pdftex.def)             Requested size: 276.2046pt x 131.46309pt.
-
-[48
-
- <./imgs/rdgGrp.png>] [49
-
-]
-<imgs/variant-subvariant.png, id=1819, 801.99625pt x 538.01pt>
-File: imgs/variant-subvariant.png Graphic file (type png)
-
-<use imgs/variant-subvariant.png>
-Package pdftex.def Info: imgs/variant-subvariant.png used on input line 949.
-(pdftex.def)             Requested size: 276.2046pt x 185.29347pt.
- [50
-
- <./imgs/variant-subvariant.png>] [51
-
-]
-<imgs/nest-app.png, id=1890, 729.72626pt x 641.39626pt>
-File: imgs/nest-app.png Graphic file (type png)
-
-<use imgs/nest-app.png>
-Package pdftex.def Info: imgs/nest-app.png used on input line 987.
-(pdftex.def)             Requested size: 232.59499pt x 204.43867pt.
- [52
-
- <./imgs/nest-app.png>]
-<imgs/rdgGrp-seq.png, id=1926, 690.58pt x 347.2975pt>
-File: imgs/rdgGrp-seq.png Graphic file (type png)
-
-<use imgs/rdgGrp-seq.png>
-Package pdftex.def Info: imgs/rdgGrp-seq.png used on input line 1002.
-(pdftex.def)             Requested size: 276.2046pt x 138.90593pt.
- [53
-
- <./imgs/rdgGrp-seq.png>] [54
-
-] [55
-
-]
-<imgs/witDetails.png, id=2032, 723.70375pt x 235.88126pt>
-File: imgs/witDetails.png Graphic file (type png)
-
-<use imgs/witDetails.png>
-Package pdftex.def Info: imgs/witDetails.png used on input line 1090.
-(pdftex.def)             Requested size: 276.2046pt x 90.02452pt.
- [56
-
- <./imgs/witDetails.png>] [57
-
-]
-<imgs/app-wit.png, id=2103, 849.1725pt x 292.09125pt>
-File: imgs/app-wit.png Graphic file (type png)
- <use imgs/app-wit.png>
-Package pdftex.def Info: imgs/app-wit.png used on input line 1153.
-(pdftex.def)             Requested size: 276.2046pt x 95.00429pt.
-
-[58
-
- <./imgs/app-wit.png>] [59
-
-] [60
-
-]
-<imgs/listWit-base.png, id=2208, 398.48875pt x 280.04625pt>
-File: imgs/listWit-base.png Graphic file (type png)
-
-<use imgs/listWit-base.png>
-Package pdftex.def Info: imgs/listWit-base.png used on input line 1218.
-(pdftex.def)             Requested size: 276.2046pt x 194.11665pt.
- [61
-
- <./imgs/listWit-base.png>]
-<imgs/witness-ref.png, id=2245, 878.28125pt x 149.55875pt>
-File: imgs/witness-ref.png Graphic file (type png)
-
-<use imgs/witness-ref.png>
-Package pdftex.def Info: imgs/witness-ref.png used on input line 1253.
-(pdftex.def)             Requested size: 276.2046pt x 47.03366pt.
-
-<imgs/witness-bibl.png, id=2246, 1020.81375pt x 141.52875pt>
-File: imgs/witness-bibl.png Graphic file (type png)
-
-<use imgs/witness-bibl.png>
-Package pdftex.def Info: imgs/witness-bibl.png used on input line 1253.
-(pdftex.def)             Requested size: 276.2046pt x 38.29317pt.
- [62
-
- <./imgs/witness-ref.png> <./imgs/witness-bibl.png>] [63
-
-] <imgs/listWit-nest.png, id=2318, 1024.82875pt x 332.24126pt>
-File: imgs/listWit-nest.png Graphic file (type png)
-
-<use imgs/listWit-nest.png>
-Package pdftex.def Info: imgs/listWit-nest.png used on input line 1295.
-(pdftex.def)             Requested size: 276.2046pt x 89.5441pt.
- [64
-
- <./imgs/listWit-nest.png>] [65
-
-] [66
-
-]
-<imgs/rdg-lacunaEnd.png, id=2423, 644.4075pt x 241.90375pt>
-File: imgs/rdg-lacunaEnd.png Graphic file (type png)
-
-<use imgs/rdg-lacunaEnd.png>
-Package pdftex.def Info: imgs/rdg-lacunaEnd.png used on input line 1412.
-(pdftex.def)             Requested size: 276.2046pt x 103.68806pt.
- [67
-
- <./imgs/rdg-lacunaEnd.png>]
-<imgs/rdg-witStart.png, id=2460, 623.32875pt x 274.02374pt>
-File: imgs/rdg-witStart.png Graphic file (type png)
-
-<use imgs/rdg-witStart.png>
-Package pdftex.def Info: imgs/rdg-witStart.png used on input line 1443.
-(pdftex.def)             Requested size: 276.2046pt x 121.42378pt.
- [68
-
- <./imgs/rdg-witStart.png>] [69
-
-] [70
-
-] [71
-
-]
-[72
-
-] [73
-
-] <imgs/variantEncoding.png, id=2669, 553.06625pt x 448.67625pt>
-File: imgs/variantEncoding.png Graphic file (type png)
-
-<use imgs/variantEncoding.png>
-Package pdftex.def Info: imgs/variantEncoding.png used on input line 1606.
-(pdftex.def)             Requested size: 247.133pt x 200.48528pt.
- [74
-
- <./imgs/variantEncoding.png>] [75
-
-]
-<imgs/location-referenced.png, id=2740, 994.71625pt x 628.3475pt>
-File: imgs/location-referenced.png Graphic file (type png)
-
-<use imgs/location-referenced.png>
-Package pdftex.def Info: imgs/location-referenced.png used on input line 1664.
-(pdftex.def)             Requested size: 276.2046pt x 174.47874pt.
- [76
-
- <./imgs/location-referenced.png>]
-<imgs/location-referenced-inline.png, id=2776, 700.6175pt x 622.325pt>
-File: imgs/location-referenced-inline.png Graphic file (type png)
-
-<use imgs/location-referenced-inline.png>
-Package pdftex.def Info: imgs/location-referenced-inline.png used on input line
- 1705.
-(pdftex.def)             Requested size: 247.133pt x 219.51677pt.
-
-Overfull \vbox (7.77428pt too high) detected at line 1705
- []
-
-[77
-
- <./imgs/location-referenced-inline.png>] [78
-
-] [79
-
-] [80
-
-] [81
-
-]
-<imgs/double-end-point.png, id=2951, 1029.8475pt x 510.90875pt>
-File: imgs/double-end-point.png Graphic file (type png)
-
-<use imgs/double-end-point.png>
-Package pdftex.def Info: imgs/double-end-point.png used on input line 1833.
-(pdftex.def)             Requested size: 276.2046pt x 137.0195pt.
- [82
-
- <./imgs/double-end-point.png>] [83
-
-]
-<imgs/inline-double-end-point.png, id=3022, 746.79pt x 329.23pt>
-File: imgs/inline-double-end-point.png Graphic file (type png)
-
-<use imgs/inline-double-end-point.png>
-Package pdftex.def Info: imgs/inline-double-end-point.png used on input line 18
-74.
-(pdftex.def)             Requested size: 276.2046pt x 121.76797pt.
- [84
-
- <./imgs/inline-double-end-point.png>] [85
-
-] <imgs/Clavius-DH.png, id=3093, 217.2918pt x 120.6909pt>
-File: imgs/Clavius-DH.png Graphic file (type png)
-
-<use imgs/Clavius-DH.png>
-Package pdftex.def Info: imgs/Clavius-DH.png used on input line 1921.
-(pdftex.def)             Requested size: 276.2046pt x 153.41937pt.
- [86
-
- <./imgs/Clavius-DH.png>]
-<imgs/end-point-attachment-overlap.png, id=3130, 884.30376pt x 782.925pt>
-File: imgs/end-point-attachment-overlap.png Graphic file (type png)
-
-<use imgs/end-point-attachment-overlap.png>
-Package pdftex.def Info: imgs/end-point-attachment-overlap.png used on input li
-ne 1933.
-(pdftex.def)             Requested size: 247.133pt x 218.79938pt.
-
-Overfull \vbox (7.05688pt too high) detected at line 1933
- []
-
-[87
-
- <./imgs/end-point-attachment-overlap.png>] [88
-
-]
-<imgs/indirected-standoff-app.png, id=3200, 999.735pt x 600.2425pt>
-File: imgs/indirected-standoff-app.png Graphic file (type png)
-
-<use imgs/indirected-standoff-app.png>
-Package pdftex.def Info: imgs/indirected-standoff-app.png used on input line 19
-64.
-(pdftex.def)             Requested size: 276.2046pt x 165.83197pt.
- [89
-
- <./imgs/indirected-standoff-app.png>] [90
-
-] [91
-
-] <imgs/parallel-segmentation.png, id=3306, 836.12375pt x 429.605pt>
-File: imgs/parallel-segmentation.png Graphic file (type png)
-
-<use imgs/parallel-segmentation.png>
-Package pdftex.def Info: imgs/parallel-segmentation.png used on input line 2051
-.
-(pdftex.def)             Requested size: 276.2046pt x 141.91429pt.
- [92
-
- <./imgs/parallel-segmentation.png>]
-<imgs/parallel-segmentation-nested.png, id=3342, 1225.57875pt x 936.49875pt>
-File: imgs/parallel-segmentation-nested.png Graphic file (type png)
-
-<use imgs/parallel-segmentation-nested.png>
-Package pdftex.def Info: imgs/parallel-segmentation-nested.png used on input li
-ne 2074.
-(pdftex.def)             Requested size: 261.66658pt x 199.9429pt.
- [93
-
- <./imgs/parallel-segmentation-nested.png>] [94
-
-] <imgs/app-uri-png.png, id=3413, 1186.4325pt x 525.965pt>
-File: imgs/app-uri-png.png Graphic file (type png)
-
-<use imgs/app-uri-png.png>
-Package pdftex.def Info: imgs/app-uri-png.png used on input line 2115.
-(pdftex.def)             Requested size: 276.2046pt x 122.4461pt.
- [95
-
- <./imgs/app-uri-png.png>] [96
-
-]
-<imgs/app-xpointer.png, id=3484, 1060.96375pt x 524.96124pt>
-File: imgs/app-xpointer.png Graphic file (type png)
-
-<use imgs/app-xpointer.png>
-Package pdftex.def Info: imgs/app-xpointer.png used on input line 2160.
-(pdftex.def)             Requested size: 276.2046pt x 136.66292pt.
- [97
-
- <./imgs/app-xpointer.png>] [98
-
-]
-<imgs/app-trascrizion-note.png, id=3555, 959.585pt x 791.95876pt>
-File: imgs/app-trascrizion-note.png Graphic file (type png)
-
-<use imgs/app-trascrizion-note.png>
-Package pdftex.def Info: imgs/app-trascrizion-note.png used on input line 2215.
-
-(pdftex.def)             Requested size: 247.133pt x 203.95885pt.
- [99
-
- <./imgs/app-trascrizion-note.png>]
-[100
-
-] <imgs/app-omeoarchia.png, id=3626, 1107.13625pt x 286.06876pt>
-File: imgs/app-omeoarchia.png Graphic file (type png)
-
-<use imgs/app-omeoarchia.png>
-Package pdftex.def Info: imgs/app-omeoarchia.png used on input line 2269.
-(pdftex.def)             Requested size: 276.2046pt x 71.36423pt.
- [101
-
- <./imgs/app-omeoarchia.png>] [102
-
-]
-<imgs/app-transposition.png, id=3696, 1414.28375pt x 651.43375pt>
-File: imgs/app-transposition.png Graphic file (type png)
-
-<use imgs/app-transposition.png>
-Package pdftex.def Info: imgs/app-transposition.png used on input line 2319.
-(pdftex.def)             Requested size: 276.2046pt x 127.2229pt.
- [103
-
- <./imgs/app-transposition.png>])
+ <./imgs/textualcommunities.png>]
+<imgs/v-machine.png, id=1282, 1172.38pt x 598.235pt>
+File: imgs/v-machine.png Graphic file (type png)
+ <use imgs/v-machine.png>
+Package pdftex.def Info: imgs/v-machine.png used on input line 301.
+(pdftex.def)             Requested size: 276.2046pt x 140.93211pt.
+
+[34
+
+ <./imgs/v-machine.png>]
+<imgs/lara.png, id=1320, 1399.2275pt x 761.84625pt>
+File: imgs/lara.png Graphic file (type png)
+ <use imgs/lara.png>
+Package pdftex.def Info: imgs/lara.png used on input line 313.
+(pdftex.def)             Requested size: 276.2046pt x 150.37871pt.
+
+[35
+
+ <./imgs/lara.png>]
+<imgs/TEI-critical-app-toolbox.png, id=1357, 1415.2875pt x 796.9775pt>
+File: imgs/TEI-critical-app-toolbox.png Graphic file (type png)
+
+<use imgs/TEI-critical-app-toolbox.png>
+Package pdftex.def Info: imgs/TEI-critical-app-toolbox.png used on input line 3
+25.
+(pdftex.def)             Requested size: 276.2046pt x 155.52551pt.
+ [36
+
+ <./imgs/TEI-critical-app-toolbox.png>] <imgs/reledmac-test.png, id=1394, 225.4
+824pt x 126.4725pt>
+File: imgs/reledmac-test.png Graphic file (type png)
+
+<use imgs/reledmac-test.png>
+Package pdftex.def Info: imgs/reledmac-test.png used on input line 337.
+(pdftex.def)             Requested size: 276.2046pt x 154.93112pt.
+ [37
+
+ <./imgs/reledmac-test.png>]
+<imgs/traviz.png, id=1433, 1312.905pt x 751.80875pt>
+File: imgs/traviz.png Graphic file (type png)
+ <use imgs/traviz.png>
+Package pdftex.def Info: imgs/traviz.png used on input line 349.
+(pdftex.def)             Requested size: 276.2046pt x 158.1598pt.
+
+[38
+
+ <./imgs/traviz.png>] <imgs/euporia.png, id=1469, 1404.24625pt x 750.805pt>
+File: imgs/euporia.png Graphic file (type png)
+
+<use imgs/euporia.png>
+Package pdftex.def Info: imgs/euporia.png used on input line 363.
+(pdftex.def)             Requested size: 276.2046pt x 147.6723pt.
+ [39
+
+ <./imgs/euporia.png>])
 (./main-seminario-girolamini.toc)
-Overfull \vbox (10.75679pt too high) detected at line 246
- []
-
-[104
-
-] (./main-seminario-girolamini.toc)
 Overfull \vbox (10.75679pt too high) detected at line 249
  []
 
-[105
+[40
 
 ] (./main-seminario-girolamini.toc)
 Overfull \vbox (10.75679pt too high) detected at line 252
  []
 
-[106
+[41
 
 ]
 \tf@nav=\write6
@@ -2718,19 +2432,16 @@ ed.
 LaTeX Font Warning: Size substitutions with differences
 (Font)              up to 1.0pt have occurred.
 
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
  ) 
 Here is how much of TeX's memory you used:
- 26879 strings out of 493117
- 515811 string characters out of 6135434
+ 26480 strings out of 493117
+ 509235 string characters out of 6135434
  593670 words of memory out of 5000000
- 29417 multiletter control sequences out of 15000+600000
- 17838 words of font info for 64 fonts, out of 8000000 for 9000
+ 29170 multiletter control sequences out of 15000+600000
+ 17146 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 58i,16n,69p,1367b,612s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 58i,16n,69p,927b,576s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmitt10.pf
 b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
@@ -2738,12 +2449,11 @@ b></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
 usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></us
 r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
 sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on main-seminario-girolamini.pdf (106 pages, 2967994 bytes).
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on main-seminario-girolamini.pdf (41 pages, 4195665 bytes).
 PDF statistics:
- 3936 PDF objects out of 4296 (max. 8388607)
- 3695 compressed objects within 37 object streams
- 220 named destinations out of 1000 (max. 500000)
- 300 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1636 PDF objects out of 1728 (max. 8388607)
+ 1525 compressed objects within 16 object streams
+ 90 named destinations out of 1000 (max. 500000)
+ 195 words of extra memory for PDF output out of 10000 (max. 10000000)
 

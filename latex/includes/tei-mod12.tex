@@ -609,7 +609,6 @@
     \addtocounter{nframe}{1}
 
       
-	
     \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
         \begin{itemize}
             \item \texttt{@hand}: \textit{} - points to a handNote element describing the hand considered responsible for the content of the element concerned
@@ -684,17 +683,54 @@
 
 %%%% ESEMPI IMMAGINI %%%%
 %%                     %%
+
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
     \addtocounter{nframe}{1}
-    
-
-    \textbf{ESEMPI IMMAGINI!}
-    
+        
     \begin{center}
-        \includegraphics[width=.95\textwidth]{imgs/app-rdg.png}
+        \includegraphics[width=.95\textwidth]{imgs/1-rdg-type.png}
     \end{center}
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+        
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/2-lem-rdg.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+        
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/3-app-cause-varSeq.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+        
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/4-nachgetragen-aggiunta.png}
+    \end{center}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \addtocounter{nframe}{1}
+        
+    \begin{center}
+        \includegraphics[width=.95\textwidth]{imgs/5-rdg-source.png}
+    \end{center}
 
 \end{frame}
 
@@ -771,7 +807,7 @@
    
 
     \begin{block}{raggrupare diverse lezioni}
-        \item \texttt{<rdgGrp>} \textit{(reading group)} - within a textual variation, groups two or more readings perceived to have a genetic relationship or other affinity.
+        \texttt{<rdgGrp>} \textit{(reading group)} - within a textual variation, groups two or more readings perceived to have a genetic relationship or other affinity.
     \end{block}
 
     \begin{center}
@@ -853,11 +889,12 @@
 
 
     \begin{block}{raggrupare diverse lezioni}
-        \item \texttt{rgdGrp} può essere utilizzato per raggruppare varianti sostanziali e sottovarianti formali
-        \item indicare diverse varianti formali che supportano la stessa variante sostanziale
-        \item codificare ciascuna variante sostanziale con l'elemento \texttt{lem} e le varianti formali con l'elemento \texttt{rdg}, tutto all'interno di un elemento \texttt{rdgGrp}
+        \begin{itemize}
+            \item \texttt{rgdGrp} può essere utilizzato per raggruppare varianti sostanziali e sottovarianti formali
+            \item indicare diverse varianti formali che supportano la stessa variante sostanziale
+            \item codificare ciascuna variante sostanziale con l'elemento \texttt{lem} e le varianti formali con l'elemento \texttt{rdg}, tutto all'interno di un elemento \texttt{rdgGrp}
+        \end{itemize}
     \end{block}
-
 
 \end{frame}
 
@@ -1394,7 +1431,7 @@
            \item in-line or external apparatus
            \begin{itemize}
              \item All'interno oppure esternamente al documento che registra il testo di base
-             \item location-referenced & double-end-point-attached
+             \item location-referenced e double-end-point-attached
            \end{itemize}
            \item  parallel segmentation method
             \begin{itemize}
@@ -1439,7 +1476,7 @@
            \item in-line or external apparatus
            \begin{itemize}
              \item All'interno oppure esternamente al documento che registra il testo di base
-             \item location-referenced & double-end-point-attached
+             \item location-referenced e double-end-point-attached
            \end{itemize}
            \item  parallel segmentation method
             \begin{itemize}
@@ -1635,7 +1672,7 @@
     \end{block}
 
     \begin{center}
-        \textit{gli altri due metodi (Double End-Point Attachment & Parallel Segmentation) sono più affidabili per successive elaborazioni}
+        \textit{gli altri due metodi (Double End-Point Attachment e Parallel Segmentation) sono più affidabili per successive elaborazioni}
     \end{center}
     
 \end{frame}
@@ -1706,7 +1743,7 @@
     % unless some element with an identifier already begins or ends at that point
    
 
-    \begin{block}{apparato inline & external}
+    \begin{block}{apparato inline e external}
       Il metodo double end-point può implementato codificando l'apparato sia in-line (intercalato al testo base) sia esternamente (separato dal testo base anche in altro file)  
     \end{block}
     
@@ -1763,7 +1800,7 @@
     % Only the beginning of the lemma need be marked with an anchor, since the app is inserted at the end of the lemma, and itself therefore marks the end of the lemma.
    
 
-    \begin{block}{Attributi \texttt{@from} & \texttt{@to}}
+    \begin{block}{Attributi \texttt{@from} e \texttt{@to}}
       Se non viene fornito alcun valore per l'attributo \texttt{@to}, allora il testo base selezionato è giudicato essere tutto il testo racchiuso nell'elemento indicato dall'attributo \texttt{@from}
     \end{block}
     
@@ -1857,7 +1894,7 @@
 % * Evidenziazione, page 19
 % The beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
 
-    \begin{block}{collegamento indiretto & stand-off}
+    \begin{block}{collegamento indiretto e stand-off}
       Se il testo base non può essere modificato e non ha le ancore per collegare l'entrata d'apparato con la lezione a testo, c'è la possibilità di sfruttare tecniche di collegamento indiretto in modalità stand-off
     \end{block}
 

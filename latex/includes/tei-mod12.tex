@@ -16,18 +16,6 @@
 % * Evidenziazione, page 1
 % Ra2
 
-\begin{frame}
-    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{Getting started}
-    \addtocounter{nframe}{1}
-    
-    \begin{block}{Main Discipline}
-    \end{block}
-
-    \begin{block}{Main Goal}
-    \end{block}
-
-\end{frame}
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
@@ -317,7 +305,16 @@
 
     \begin{block}{L'elemento \texttt{<app>}}
 
-        TODO
+        L'elemento distintivo per la codifica delle entrate di apparato nel vocabolario TEI-XML è l'elemento \texttt{app}
+
+    \end{block}
+    \begin{block}{L'elemento \texttt{<app>}}
+
+        \begin{itemize}
+            \item codificare il contenuto testuale di una fonte in più versioni
+            \item codificare variazioni testuali
+            \item riunire tutte le lezioni di uno stesso passo testuale
+        \end{itemize}
 
     \end{block}
 
@@ -429,7 +426,7 @@
     % * Evidenziazione, page 2
     % The attributes @loc, @from, and @to, are used to link the apparatus entry to the base text
 
-    \begin{block}{Attributi significativi dell'elemento <app>}
+    \begin{block}{Attributi significativi dell'elemento \texttt{<app>}}
         \begin{itemize}
             \item \texttt{@type}: \textit{classifies the variation contained in this element according to some convenient typology}
             \item \texttt{@from}: \textit{identifies the beginning of the lemma in the base text.}
@@ -548,10 +545,10 @@
     % * Evidenziazione, page 3
     % may prefer not to use it at all
 
-    \begin{block}{L'elemento texttt{<lem>}}
+    \begin{block}{L'elemento \texttt{<lem>}}
         
         \begin{itemize}
-            \item Usato per registrare il testo di base riportato nella edizione di riferimento
+            \item Usato per registrare il testo di base riportato nell'edizione di riferimento
             \item Usato per registrare le lezioni del testimone base di collazione
             \item Usato per registrare la lezione accolta a testo dall'editore dell'edizione critica digitale
             \item Usato per per indicare in modo puntuale a quale porzione del testo principale le letture divergenti si riferiscono
@@ -589,18 +586,31 @@
     \framesubtitle{Apparatus, Readings, Witnesses}
     \addtocounter{nframe}{1}
 
-    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{<lem>}}
         \begin{itemize}
             \item \texttt{@wit}: \textit{(witness or witnesses)} - contains a space-delimited list of one or more pointers indicating the witnesses which attest to a given reading
             \item \texttt{@type}: \textit{} - classifies the reading according to some useful typology. Sample values include: 1] \textit{substantive}; 2] \textit{orthographic}
+        \end{itemize}
+    \end{block}
+
+    \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{<lem>}}
+        \begin{itemize}
             \item \texttt{@cause}: \textit{} - classifies the cause for the variant reading, according to any appropriate typology of possible origins. Sample values include: 1] \textit{homeoteleuton}; 2] \textit{homeoarchy}; 3] \textit{paleographicConfusion}; 4] \textit{haplography}; 5] \textit{dittography}; 6] \textit{falseEmendation}
             \item \texttt{@varSeq}: \textit{(variant sequence)} - provides a number indicating the position of this reading in a sequence, when there is reason to presume a sequence to the variants.
         \end{itemize}
     \end{block}
 
     \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
-
-
+    
 \end{frame}
 
 \begin{frame}
@@ -613,14 +623,28 @@
         \begin{itemize}
             \item \texttt{@hand}: \textit{} - points to a handNote element describing the hand considered responsible for the content of the element concerned
             \item \texttt{@resp}: \textit{(responsible party)} - indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber
-            \item \texttt{@cert}: \textit{(certainty)} - signifies the degree of certainty associated with the intervention or interpretation
             \item \texttt{@source}: \textit{} - specifies the source from which some aspect of this element is drawn
-            \item \texttt{@exclude}	\textit{} - points to elements that are in exclusive alternation with the current element.
         \end{itemize}
     \end{block}
 
     \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
 
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Apparatus, Readings, Witnesses}
+    \addtocounter{nframe}{1}
+
+      
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+        \begin{itemize}
+            \item \texttt{@cert}: \textit{(certainty)} - signifies the degree of certainty associated with the intervention or interpretation
+            \item \texttt{@exclude}	\textit{} - points to elements that are in exclusive alternation with the current element.
+        \end{itemize}
+    \end{block}
+
+    \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
 
 \end{frame}
 
@@ -772,19 +796,17 @@
 % * Evidenziazione, page 6
 % they have identical values on one or more attributes, or because they are seen as forming a self-contained variant sequence, or for some other reason
 
-    \begin{block}{raggrupare diverse lezioni}
-        E' possibile raggrupare diverse lezioni con l'elemento \texttt{<rdgGrp>}
+    \begin{block}{raggruppare diverse lezioni}
+        E' possibile raggruppare diverse lezioni con l'elemento \texttt{<rdgGrp>}
     \end{block}
 
     \begin{itemize}
         \item se più lezioni hanno identici valori per uno o più attributi
-        \item se più lezioni son in relazione d'ordine tra lavoro
+        \item se più lezioni sono in relazione d'ordine tra lavoro
         \item se più lezioni hanno un qualche tipo di relazione
     \end{itemize}
 
 \end{frame}
-
-
 
 
 \begin{frame}
@@ -806,7 +828,7 @@
 
    
 
-    \begin{block}{raggrupare diverse lezioni}
+    \begin{block}{raggruppare diverse lezioni}
         \texttt{<rdgGrp>} \textit{(reading group)} - within a textual variation, groups two or more readings perceived to have a genetic relationship or other affinity.
     \end{block}
 
@@ -826,7 +848,7 @@
     % When values for any of these attributes are given on a rdgGrp element, the values given are inherited by the rdg or lem elements nested within the reading group
    
 
-    \begin{block}{raggrupare diverse lezioni}
+    \begin{block}{raggruppare diverse lezioni}
         I valori degli attributi se associati all'elemento \texttt{rdgGrp} vengono ereditati dagli elementi annidati nel gruppo \texttt{rdg} e \texttt{lem}.
     \end{block}
 
@@ -888,7 +910,7 @@
     % tagging it as a lem element or as <rdg type='groupBase'>
 
 
-    \begin{block}{raggrupare diverse lezioni}
+    \begin{block}{raggruppare diverse lezioni}
         \begin{itemize}
             \item \texttt{rgdGrp} può essere utilizzato per raggruppare varianti sostanziali e sottovarianti formali
             \item indicare diverse varianti formali che supportano la stessa variante sostanziale
@@ -937,10 +959,10 @@
     % * Evidenziazione, page 8
     % Because apparatus entries may also nest, the app element might also be used to group readings in the same way.
 
-    \begin{block}{raggrupare diverse lezioni}
+    \begin{block}{raggruppare diverse lezioni}
        Le entrate di apparato, definite con l'elemento \texttt{<app>}  possono essere annidate l'una nell'altra.
     \end{block}
-    \begin{block}{raggrupare diverse lezioni}
+    \begin{block}{raggruppare diverse lezioni}
         Anche l'elemento \texttt{<app>} può essere usato per raggruppare diverse letture seguendo qualche tipo di classificazione.
      \end{block}
 
@@ -958,7 +980,7 @@
     % this variation has three normalized readings, and that the first of these is supported by manuscripts El, Hg, and Ha4; the second by Cp, Ld1, and La; and the third by Ra2
 
     \begin{center}
-        \includegraphics[width=.95\textwidth]{imgs/nest-app.png}
+        \includegraphics[width=.80\textwidth]{imgs/nest-app.png}
     \end{center}
 
 
@@ -986,8 +1008,7 @@
     \framesubtitle{descrizione dei testimoni}
     \addtocounter{nframe}{1}
 
-    \begin{block}{raggrupare diverse lezioni}
-      Le informazioni su singoli testimoni può riguardare:
+    \begin{block}{informazioni su singoli testimoni}
       \begin{itemize}
           \item Associare specifiche informazioni relative ad un testimone tra quelli che concordano sulla stessa lezione
           \item Trascrivere letteralmente le informazioni presenti su un testimone da un edizione di riferimento
@@ -1386,6 +1407,34 @@
        \includegraphics[width=.95\textwidth]{imgs/rdg-lacunaEnd.png}
     \end{block}
 
+
+
+\end{frame}
+
+\begin{frame}
+    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+    \framesubtitle{Informazioni sui testimoni}
+    \addtocounter{nframe}{1}
+    
+    % * Evidenziazione, page 16
+    % In an apparatus this might appear thus, distinguished from the reading of other manuscripts by the presence of the lacunaEnd element:
+
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <lacunaEnd/>auctorite</rdg> </app>
+
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2 #X"> <lacunaEnd wit="#X"/>auctorite</rdg> </app>
+
+    % * Evidenziazione, page 16
+    % In some cases, the apparatus in the source may commence recording the readings for a particular witness without its being clear whether the previous absence of readings for this witness is due to a lacuna
+
+    % * Evidenziazione, page 16
+    % The witStart element may be used in this circumstance:
+
+    % * Evidenziazione, page 16
+    % <app> <lem wit="#El #Hg">Auctoritee</lem> <rdg wit="#La #Ra2">auctorite</rdg> <rdg wit="#X"> <witStart/>auctorite</rdg> </app>
+
+
     \begin{block}{Testimoni frammentari}
         \includegraphics[width=.95\textwidth]{imgs/rdg-witStart.png}
      \end{block}
@@ -1396,7 +1445,7 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text:}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
     
     % * Evidenziazione, page 16
@@ -1409,7 +1458,7 @@
     % the parallel segmentation method
 
     
-    \begin{block}{Three different methods}
+    \begin{block}{Three diversi metodi per codificare un apparato critico}
        \begin{itemize}
            \item the location-referenced method
            \item the double-end-point-attached method
@@ -1426,14 +1475,14 @@
     \framesubtitle{link a critical apparatus to the text}
     \addtocounter{nframe}{1}
     
-    \begin{block}{Three different methods}
+    \begin{block}{Tre metodi per codificare l'apparato critico}
        \begin{itemize}
-           \item in-line or external apparatus
+           \item \textit{in-line or external apparatus}
            \begin{itemize}
              \item All'interno oppure esternamente al documento che registra il testo di base
              \item location-referenced e double-end-point-attached
            \end{itemize}
-           \item  parallel segmentation method
+           \item  \textit{parallel segmentation method}
             \begin{itemize}
                 \item non ha il concetto di "testo base"
                 \item codifica solo in-line
@@ -1445,7 +1494,7 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
 
     % * Evidenziazione, page 16
@@ -1471,7 +1520,7 @@
     % * Evidenziazione, page 17
     % The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
     
-    \begin{block}{Three different methods}
+    \begin{block}{Tre metodi per codificare l'apparato critico}
        \begin{itemize}
            \item in-line or external apparatus
            \begin{itemize}
@@ -1492,10 +1541,10 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
   
-    \begin{block}{Three different methods}
+    \begin{block}{Tre metodi per codificare l'apparato critico}
        \begin{itemize}
            \item external apparatus
            \begin{itemize}
@@ -1511,7 +1560,7 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
   
     % * Evidenziazione, page 17
@@ -1529,11 +1578,11 @@
     % * Evidenziazione, page 17
     % appears within the running text or external
 
-    \begin{block}{Three different methods}
+    \begin{block}{Tre metodi per codificare l'apparato critico}
        \begin{itemize}
-           \item Ciascun documento che presenta un elemento app richiede di dichiarare nell'intestazione del documento il metodo utilizzato per la codifica dell'apparato critico
+           \item Ciascun documento che presenta un elemento \texttt{<app>} richiede di dichiarare nell'intestazione del documento il metodo utilizzato per la codifica dell'apparato critico
            \begin{itemize}
-             \item <variantEncoding> declares the method used to encode text-critical variants.
+             \item \texttt{<variantEncoding>} declares the method used to encode text-critical variants.
              \item @method indicates which method is used to encode the apparatus of variants.
              \item @location indicates whether the apparatus appears within the running text or external to it.
            \end{itemize}
@@ -1546,12 +1595,12 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
     
 
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
+       \includegraphics[width=.85\textwidth]{imgs/variantEncoding.png}
     \end{center}
 
 \end{frame}
@@ -1575,11 +1624,11 @@
     % * Evidenziazione, page 23
     % The location-referenced method can be used to point a position in a text using the @loc attribute and a canonical reference that is understood and documented in the context of the file where it is used
 
-    \begin{block}
+    \begin{block}{rappresentazione dell'apparato critico}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
         Il metodo \textit{location-referenced} fornisce un approccio utile a codificare un apparato critico \textit{derivante da edizioni a stampa} o simile al modello di apparato a stampa
     \end{block}
-    \begin{block}
+    \begin{block}{rappresentazione dell'apparato critico}
          L'apparato è collegato al testo base indicando esplicitamente \textbf{solo il blocco di testo} (\textit{attraverso una forma canonica}) dove è presente la lettura divergente
      \end{block}
 
@@ -1650,7 +1699,7 @@
     % In order to show explicitly what portion of the base text is replaced by the variant readings, the lem element may be used:
 
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/location-referenced-inline.png}
+       \includegraphics[width=.85\textwidth]{imgs/location-referenced-inline.png}
     \end{center}
 
 \end{frame}
@@ -1666,13 +1715,13 @@
     % * Evidenziazione, page 19
     % simple location-reference methods are unlikely to be as successful as the other two methods, which allow the unambiguous reconstruction of the lemma from the encoding.
 
-    \begin{block}
+    \begin{block}{Codifica dell'apparato critico}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-       Il metodo location-referenced non è consigliato per codificare entrate di apparato se sono previste elaborazioni automatiche perché non prevede di esplicitare le letture divergenti con l'esatta porzione del testo base.
+       Il metodo location-referenced non è consigliato per codificare entrate di apparato se sono previste elaborazioni automatiche poiché non prevede di esplicitare le letture divergenti collegandole all'esatta porzione del testo base.
     \end{block}
 
     \begin{center}
-        \textit{gli altri due metodi (Double End-Point Attachment e Parallel Segmentation) sono più affidabili per successive elaborazioni}
+        \textit{I metodi Double End-Point Attachment e Parallel Segmentation sono più affidabili per eseguire successive elaborazioni sulle informazioni di apparato}
     \end{center}
     
 \end{frame}
@@ -1694,11 +1743,11 @@
     % where the apparatus is intended to enable full reconstruction of the text
 
     \begin{block}{Estremi del lemma}
-      Il metodo double end-point attachment registra l'inizio e la fine del lemma all'interno del testo base
+      Il metodo double end-point attachment \textbf{registra l'inizio e la fine del lemma all'interno del testo base}
     \end{block}
     
     \begin{block}{Associazione testo-varianti non ambigua}
-        Grazie al collegamento puntuale ciascuna entrata di apparato seleziona in modo preciso la porzione di testo in oggetto, permettendo in così la possibilità di ricostruire il testo di tutti i testimoni (apparato positivo).
+        Grazie al collegamento puntuale ciascuna entrata di apparato seleziona in modo preciso la porzione di testo in oggetto, permettendo così la possibilità di ricostruire il testo di tutti i testimoni (\textit{apparato positivo}).
     \end{block}
 
 \end{frame}
@@ -1744,7 +1793,7 @@
    
 
     \begin{block}{apparato inline e external}
-      Il metodo double end-point può implementato codificando l'apparato sia in-line (intercalato al testo base) sia esternamente (separato dal testo base anche in altro file)  
+      Il metodo double end-point può essere implementato codificando l'apparato sia \textbf{in-line} (intercalato al testo base) sia \textbf{esternamente} (separato dal testo base anche in altro file)  
     \end{block}
     
     \begin{block}{Elemento \texttt{<anchor>}}
@@ -1805,7 +1854,7 @@
     \end{block}
     
     \begin{block}{in-line double end-point}
-       Se l'apparato è codificato inline, a quel punto solo l'inizio della lezione a testo deve essere contrassegnata: la fine è rappresentata dalla codifica dellìentrata di apparato.
+       Se l'apparato è codificato inline, a quel punto solo l'inizio della lezione a testo deve essere contrassegnata: la fine è rappresentata dalla codifica dell'entrata di apparato.
     \end{block}
 
 \end{frame}
@@ -1878,7 +1927,7 @@
     \addtocounter{nframe}{1}
    
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/end-point-attachment-overlap.png}
+       \includegraphics[width=.85\textwidth]{imgs/end-point-attachment-overlap.png}
     \end{center}
 
 \end{frame}
@@ -2019,7 +2068,7 @@
     % Parallel segmentation cannot, however, deal very gracefully with variants which overlap without nesting
    
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/parallel-segmentation-nested.png}
+       \includegraphics[width=.90\textwidth]{imgs/parallel-segmentation-nested.png}
     \end{center}
 
 \end{frame}
@@ -2160,7 +2209,7 @@
     % Editorial notes may also be attached to app structures within transcriptions
 
     \begin{center}
-       \includegraphics[width=.95\textwidth]{imgs/app-trascrizion-note.png}
+       \includegraphics[width=.85\textwidth]{imgs/app-trascrizion-note.png}
     \end{center}
 
 \end{frame}
@@ -2183,7 +2232,7 @@
 
     \begin{block}{fenomeni critici}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-       Fenomeni quali omissioni, trasposizioni, contaminazioni, omeoarchie necessitano di particolare cura per loro corretta codifica
+       Fenomeni quali omissioni, trasposizioni, contaminazioni, omeoarchie necessitano di particolare cura per la loro corretta codifica
     \end{block}
     \textbf{attenzione a non "\textit{rompere}" il modello astratto della struttura TEI (\textit{es. sostituire un paragrafo con un verso in una strofa di poesia})}
 

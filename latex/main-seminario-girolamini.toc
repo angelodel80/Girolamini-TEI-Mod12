@@ -2,8 +2,8 @@
 \select@language {british}
 \beamer@sectionintoc {1}{Presentazione}{3}{0}{1}
 \beamer@sectionintoc {2}{Panoramica Text Encoding Initiative}{13}{0}{2}
-\beamer@sectionintoc {3}{Panoramica eXtensible Markup Language}{14}{0}{3}
-\beamer@sectionintoc {4}{TEI: Codifica Apparato Critico}{15}{0}{4}
-\beamer@sectionintoc {5}{Strumenti per edizioni critiche}{104}{0}{5}
-\beamer@sectionintoc {6}{Considerazioni Finali}{105}{0}{6}
-\beamer@sectionintoc {7}{References}{106}{0}{7}
+\beamer@sectionintoc {3}{Panoramica eXtensible Markup Language}{97}{0}{3}
+\beamer@sectionintoc {4}{TEI: Codifica Apparato Critico}{98}{0}{4}
+\beamer@sectionintoc {5}{Strumenti per edizioni critiche}{99}{0}{5}
+\beamer@sectionintoc {6}{Considerazioni Finali}{100}{0}{6}
+\beamer@sectionintoc {7}{References}{101}{0}{7}

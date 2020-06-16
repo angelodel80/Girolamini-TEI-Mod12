@@ -1,9 +1,8 @@
 \beamer@endinputifotherversion {3.33pt}
 \select@language {british}
 \beamer@sectionintoc {1}{Presentazione}{3}{0}{1}
-\beamer@sectionintoc {2}{Panoramica Text Encoding Initiative}{11}{0}{2}
-\beamer@sectionintoc {3}{Panoramica eXtensible Markup Language}{12}{0}{3}
-\beamer@sectionintoc {4}{TEI: Codifica Apparato Critico}{13}{0}{4}
-\beamer@sectionintoc {5}{Strumenti per edizioni critiche}{14}{0}{5}
-\beamer@sectionintoc {6}{Considerazioni Finali}{40}{0}{6}
-\beamer@sectionintoc {7}{References}{41}{0}{7}
+\beamer@sectionintoc {2}{Panoramica Text Encoding Initiative}{8}{0}{2}
+\beamer@sectionintoc {3}{Panoramica eXtensible Markup Language}{47}{0}{3}
+\beamer@sectionintoc {4}{TEI: Codifica Apparato Critico}{108}{0}{4}
+\beamer@sectionintoc {5}{Strumenti per edizioni critiche}{199}{0}{5}
+\beamer@sectionintoc {6}{Considerazioni Finali}{225}{0}{6}

@@ -171,9 +171,9 @@
 
     \begin{block}{Modulo 12 delle linee guida TEI}
         \begin{itemize}
-            \item registrare contenuto di testimoni frammentari
-            \item registrare le entrate di apparato intercalandole al testo principale (embedded/inline)
-            \item registrare le entrate di apparato separate dal testo principale (apparato esterno)
+            \item registrare contenuto di \textbf{testimoni frammentari}
+            \item registrare le entrate di apparato intercalandole al testo principale (\textbf{embedded/inline})
+            \item registrare le entrate di apparato separate dal testo principale (\textbf{apparato esterno})
         \end{itemize}
     \end{block}
 
@@ -217,10 +217,10 @@
 
     \begin{block}{Elementi fondamentali per la codifica di un testo critico}
         \begin{itemize}
-            \item Le singole entrate di apparato sono rappresentate dall'elemento \texttt{<app>}
-            \item Le differenti letture sono registrate con l'elemento \texttt{<rdg>}
-            \item La lettura accolta a testo è registrata con l'elemento \texttt{<lemma>}
-            \item I testimoni sono registrati con l'elemento \texttt{<witness>}
+            \item Le \textbf{singole entrate} di apparato sono rappresentate dall'elemento \texttt{<app>}
+            \item Le \textbf{differenti letture} sono registrate con l'elemento \texttt{<rdg>}
+            \item La \textbf{lettura accolta a testo} è registrata con l'elemento \texttt{<lemma>}
+            \item I \textbf{testimoni} sono registrati con l'elemento \texttt{<witness>}
         \end{itemize}
        
     \end{block}
@@ -266,9 +266,9 @@
 
     \begin{block}{Elementi fondamentali per la codifica di un testo critico}
         \begin{itemize}
-            \item Le varianti possono essere raggruppate con l'elemento \texttt{<rgdGrp>}
-            \item La tradizione dei testimoni considerati sono raggruppati nell'elemento \texttt{<listWit>}
-            \item I testimoni possono essere indicati anche accanto alla variante con l'elemento \texttt{<wit>}
+            \item Le varianti possono essere \textbf{raggruppate} con l'elemento \texttt{<rgdGrp>}
+            \item La \textbf{tradizione} dei testimoni considerati sono raggruppati nell'elemento \texttt{<listWit>}
+            \item \textit{I testimoni possono essere indicati anche accanto alla variante con l'elemento} \texttt{<wit>}
         \end{itemize}
        
     \end{block}
@@ -311,9 +311,9 @@
     \begin{block}{L'elemento \texttt{<app>}}
 
         \begin{itemize}
-            \item codificare il contenuto testuale di una fonte in più versioni
-            \item codificare variazioni testuali
-            \item riunire tutte le lezioni di uno stesso passo testuale
+            \item codificare il contenuto testuale di una fonte in \textbf{più versioni}
+            \item codificare \textbf{divergenze testuali} (\textit{varianti})
+            \item riunire \textbf{tutte le lezioni} di uno stesso passo testuale
         \end{itemize}
 
     \end{block}
@@ -334,7 +334,7 @@
         \begin{itemize}
             \item location-referenced method
             \item double-end-point-attached method
-            \item the parallel segmentation method
+            \item parallel segmentation method
         \end{itemize}
 
        
@@ -479,11 +479,11 @@
 
 
     \begin{block}{Registrazione delle diverse lezioni}
-        Registrare le singole letture conservate nei singoli testimoni del testo tramandato è l'attività principale per realizzare un apparato delle varianti scientificamente curato 
+        Registrare le singole letture conservate nei singoli testimoni del testo tramandato è l'attività principale per \textbf{realizzare un apparato delle varianti scientificamente curato} 
     \end{block}
 
     \begin{block}{Registrazione delle diverse lezioni}
-        Il vocabolario XML-TEI definisce due elementi per registrare le singole letture 
+        Il vocabolario XML-TEI definisce \textbf{due elementi} per registrare le singole letture 
     \end{block}
 
 
@@ -548,11 +548,11 @@
     \begin{block}{L'elemento \texttt{<lem>}}
         
         \begin{itemize}
-            \item Usato per registrare il testo di base riportato nell'edizione di riferimento
-            \item Usato per registrare le lezioni del testimone base di collazione
-            \item Usato per registrare la lezione accolta a testo dall'editore dell'edizione critica digitale
-            \item Usato per per indicare in modo puntuale a quale porzione del testo principale le letture divergenti si riferiscono
-            \item Potrebbe non essere utilizzato affatto
+            \item Usato per \textbf{registrare il testo di base} riportato nell'edizione di riferimento
+            \item Usato per registrare le \textbf{lezioni del testimone base di collazione}
+            \item Usato per registrare la \textbf{lezione accolta a testo dall'editore} dell'edizione critica digitale
+            \item Usato per per indicare in modo puntuale a quale \textbf{porzione del testo principale} le letture divergenti si riferiscono
+            \item \textit{Potrebbe non essere utilizzato affatto}
         \end{itemize}
 
     \end{block}
@@ -619,15 +619,13 @@
     \addtocounter{nframe}{1}
 
       
-    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{<lem>}}
         \begin{itemize}
             \item \texttt{@hand}: \textit{} - points to a handNote element describing the hand considered responsible for the content of the element concerned
             \item \texttt{@resp}: \textit{(responsible party)} - indicates the agency responsible for the intervention or interpretation, for example an editor or transcriber
             \item \texttt{@source}: \textit{} - specifies the source from which some aspect of this element is drawn
         \end{itemize}
     \end{block}
-
-    \textit{le classi di attributi particolarmente utili sono att.witnessed, att.textCritical, att.global.responsibilit, att.global.source, att.written}
 
 \end{frame}
 
@@ -637,7 +635,7 @@
     \addtocounter{nframe}{1}
 
       
-    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{lem}}
+    \begin{block}{Attributi significativi dell'elemento \texttt{<rdg>} e \texttt{<lem>}}
         \begin{itemize}
             \item \texttt{@cert}: \textit{(certainty)} - signifies the degree of certainty associated with the intervention or interpretation
             \item \texttt{@exclude}	\textit{} - points to elements that are in exclusive alternation with the current element.
@@ -912,11 +910,12 @@
 
     \begin{block}{raggruppare diverse lezioni}
         \begin{itemize}
-            \item \texttt{rgdGrp} può essere utilizzato per raggruppare varianti sostanziali e sottovarianti formali
-            \item indicare diverse varianti formali che supportano la stessa variante sostanziale
-            \item codificare ciascuna variante sostanziale con l'elemento \texttt{lem} e le varianti formali con l'elemento \texttt{rdg}, tutto all'interno di un elemento \texttt{rdgGrp}
+            \item \texttt{rgdGrp} può essere utilizzato per \textbf{raggruppare varianti sostanziali o sottovarianti formali}
+            \item indicare diverse \textbf{varianti formali che supportano la stessa variante sostanziale}
         \end{itemize}
     \end{block}
+
+    \textit{codificare ciascuna variante sostanziale con l'elemento \texttt{lem} e le varianti formali con l'elemento \texttt{rdg}, tutto all'interno di un elemento \texttt{rdgGrp}}
 
 \end{frame}
 
@@ -960,10 +959,10 @@
     % Because apparatus entries may also nest, the app element might also be used to group readings in the same way.
 
     \begin{block}{raggruppare diverse lezioni}
-       Le entrate di apparato, definite con l'elemento \texttt{<app>}  possono essere annidate l'una nell'altra.
+       Le entrate di apparato, definite con l'elemento \texttt{<app>}  possono essere \textbf{annidate l'una nell'altra}.
     \end{block}
     \begin{block}{raggruppare diverse lezioni}
-        Anche l'elemento \texttt{<app>} può essere usato per raggruppare diverse letture seguendo qualche tipo di classificazione.
+        Anche l'elemento \texttt{<app>} può essere usato per \textbf{raggruppare diverse letture} seguendo qualche tipo di classificazione.
      \end{block}
 
 
@@ -1010,9 +1009,9 @@
 
     \begin{block}{informazioni su singoli testimoni}
       \begin{itemize}
-          \item Associare specifiche informazioni relative ad un testimone tra quelli che concordano sulla stessa lezione
-          \item Trascrivere letteralmente le informazioni presenti su un testimone da un edizione di riferimento
-          \item Definire l'insieme (più o meno strutturato) dei testimoni recensiti
+          \item Associare specifiche \textbf{informazioni relative ad un testimone} tra quelli che concordano sulla stessa lezione
+          \item \textbf{Trascrivere letteralmente} le informazioni presenti su un testimone da un edizione di riferimento
+          \item Definire l'\textbf{insieme} (più o meno strutturato) dei \textbf{testimoni recensiti}
       \end{itemize}
     \end{block}
 
@@ -1175,10 +1174,10 @@
     % Each witness element may contain a brief characterization of the witness, given as one or more prose paragraphs
     
     \begin{block}{Insieme dei testimoni recensiti}
-        La lista dei testimoni recensita può essere registrata con l'elemento \texttt{<listWit>}
+        La \textbf{lista dei testimoni recensita} può essere registrata con l'elemento \texttt{<listWit>}
     \end{block}
 
-    \begin{center}{...}
+    \begin{center}
         l'elemento \texttt{<listWit>} contiene a sua volta elementi \texttt{<witness>}. Ciascun elemento \texttt{witness} contiene una breve descrizione del testimone in una forma semi-strutturata. 
     \end{center}
     
@@ -1196,9 +1195,9 @@
         \texttt{<listWit>} \textit{(witness list)} - lists definitions for all the witnesses referred to by a critical apparatus, optionally grouped hierarchically.
     \end{block}
 
-    \begin{center}{elemento \texttt{<witness>}}
+    \begin{block}{elemento \texttt{<witness>}}
         \texttt{<witness>} contains either a description of a single witness referred to within the critical apparatus, or a list of witnesses which is to be referred to by a single sigil.
-    \end{center}
+    \end{block}
     
     \textit{La lista dei testimoni è quindi l'insieme delle sigle di tutti i testimoni recensiti e riferiti in apparato}
    
@@ -1458,7 +1457,7 @@
     % the parallel segmentation method
 
     
-    \begin{block}{Three diversi metodi per codificare un apparato critico}
+    \begin{block}{diversi metodi per codificare un apparato critico}
        \begin{itemize}
            \item the location-referenced method
            \item the double-end-point-attached method
@@ -1472,7 +1471,7 @@
 
 \begin{frame}
     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{link a critical apparatus to the text}
+    \framesubtitle{Collegare l'apparato critico al testo}
     \addtocounter{nframe}{1}
     
     \begin{block}{Tre metodi per codificare l'apparato critico}
@@ -1492,50 +1491,50 @@
 
 \end{frame}
 
-\begin{frame}
-    \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
-    \framesubtitle{Collegare l'apparato critico al testo}
-    \addtocounter{nframe}{1}
+% \begin{frame}
+%     \frametitle{TEI Modulo 12 - Codifica Edizioni Critiche}
+%     \framesubtitle{Collegare l'apparato critico al testo}
+%     \addtocounter{nframe}{1}
 
-    % * Evidenziazione, page 16
-    % the location-referenced and the double end-point methods may be used with either in-line or external apparatus
+%     % * Evidenziazione, page 16
+%     % the location-referenced and the double end-point methods may be used with either in-line or external apparatus
 
-    % * Evidenziazione, page 16
-    % former dispersed within the base text
+%     % * Evidenziazione, page 16
+%     % former dispersed within the base text
 
-    % * Evidenziazione, page 16
-    % latter held in some separate
+%     % * Evidenziazione, page 16
+%     % latter held in some separate
 
-    % * Nota ancorata, page 16
-    % Ci si riferisce al metodo inline
+%     % * Nota ancorata, page 16
+%     % Ci si riferisce al metodo inline
 
-    % Ci si riferisce al metodo inline
+%     % Ci si riferisce al metodo inline
 
-    % * Evidenziazione, page 17
-    % location
+%     % * Evidenziazione, page 17
+%     % location
 
-    % * Evidenziazione, page 17
-    % within or outside the document with the base text
+%     % * Evidenziazione, page 17
+%     % within or outside the document with the base text
 
-    % * Evidenziazione, page 17
-    % The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
+%     % * Evidenziazione, page 17
+%     % The parallel segmentation method does not use the concept of a base text and may only be used for in-line apparatus
     
-    \begin{block}{Tre metodi per codificare l'apparato critico}
-       \begin{itemize}
-           \item in-line or external apparatus
-           \begin{itemize}
-             \item All'interno oppure esternamente al documento che registra il testo di base
-             \item location-referenced e double-end-point-attached
-           \end{itemize}
-           \item  parallel segmentation method
-            \begin{itemize}
-                \item non ha il concetto di "testo base"
-                \item codifica solo in-line
-            \end{itemize}
-       \end{itemize}
-     \end{block}
+%     \begin{block}{Tre metodi per codificare l'apparato critico}
+%        \begin{itemize}
+%            \item in-line or external apparatus
+%            \begin{itemize}
+%              \item All'interno oppure esternamente al documento che registra il testo di base
+%              \item location-referenced e double-end-point-attached
+%            \end{itemize}
+%            \item  parallel segmentation method
+%             \begin{itemize}
+%                 \item non ha il concetto di "testo base"
+%                 \item codifica solo in-line
+%             \end{itemize}
+%        \end{itemize}
+%      \end{block}
 
-\end{frame}
+% \end{frame}
 
 
 
@@ -1580,7 +1579,7 @@
 
     \begin{block}{Tre metodi per codificare l'apparato critico}
        \begin{itemize}
-           \item Ciascun documento che presenta un elemento \texttt{<app>} richiede di dichiarare nell'intestazione del documento il metodo utilizzato per la codifica dell'apparato critico
+           \item Ciascun documento che presenta un elemento \texttt{<app>} richiede di dichiarare nell'intestazione del documento il \textbf{metodo utilizzato per la codifica dell'apparato critico}
            \begin{itemize}
              \item \texttt{<variantEncoding>} declares the method used to encode text-critical variants.
              \item @method indicates which method is used to encode the apparatus of variants.
@@ -1699,7 +1698,7 @@
     % In order to show explicitly what portion of the base text is replaced by the variant readings, the lem element may be used:
 
     \begin{center}
-       \includegraphics[width=.85\textwidth]{imgs/location-referenced-inline.png}
+       \includegraphics[width=.75\textwidth]{imgs/location-referenced-inline.png}
     \end{center}
 
 \end{frame}
@@ -1717,7 +1716,7 @@
 
     \begin{block}{Codifica dell'apparato critico}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-       Il metodo location-referenced non è consigliato per codificare entrate di apparato se sono previste elaborazioni automatiche poiché non prevede di esplicitare le letture divergenti collegandole all'esatta porzione del testo base.
+       Il metodo location-referenced \textbf{non è consigliato} per codificare entrate di apparato se sono previste \textbf{elaborazioni automatiche} poiché non prevede di esplicitare le letture divergenti collegandole all'esatta porzione del testo base.
     \end{block}
 
     \begin{center}
@@ -1797,7 +1796,7 @@
     \end{block}
     
     \begin{block}{Elemento \texttt{<anchor>}}
-        Se non sono presenti elementi di annotazione per delimitare gli estremi della lezione, allora si utilizza l'elemento \texttt{<anchor>} intercalato al testo base.
+        Se non sono presenti elementi di annotazione per delimitare gli estremi della lezione, allora si utilizza l'elemento \texttt{<anchor>} \textbf{intercalato al testo base}.
      \end{block}
 
 \end{frame}
@@ -1927,7 +1926,7 @@
     \addtocounter{nframe}{1}
    
     \begin{center}
-       \includegraphics[width=.85\textwidth]{imgs/end-point-attachment-overlap.png}
+       \includegraphics[width=.75\textwidth]{imgs/end-point-attachment-overlap.png}
     \end{center}
 
 \end{frame}
@@ -1944,7 +1943,7 @@
 % The beginning and end of the lemma may be indicated by using the ‘indirect pointing’ mechanisms
 
     \begin{block}{collegamento indiretto e stand-off}
-      Se il testo base non può essere modificato e non ha le ancore per collegare l'entrata d'apparato con la lezione a testo, c'è la possibilità di sfruttare tecniche di collegamento indiretto in modalità stand-off
+      Se il testo base non può essere modificato e non ha le ancore per collegare l'entrata d'apparato con la lezione a testo, c'è la \textbf{possibilità di sfruttare tecniche di collegamento indiretto in modalità stand-off}
     \end{block}
 
     \textit{La stand-off annotation è una tecnica per tenere distinti su documenti o parti di documento differenti il testo e il suo insieme di annotazioni così che il legame fra i due sia stabilito tramite riferimenti univoci dalle annotazioni ai passi in oggetto, anche tramite espressioni indirette}
@@ -1987,10 +1986,10 @@
     % In this method, no two variations can overlap, although they may nest
 
     \begin{block}{Gerarchia sovrapposte e annidamenti}
-      Il metodo parallel segmentation, a differenza degli altri metodi, gestisce tutti i luoghi del testo in cui si presentano lezioni divergenti come varianti l'una dell'altra registrate in-line.
+      Il metodo \textbf{parallel segmentation}, a differenza degli altri metodi, gestisce tutti i luoghi del testo in cui si presentano lezioni divergenti come varianti l'una dell'altra registrate in-line.
     \end{block}
 
-    \textbf{con il metodo parallel segmentation non è possibile gestire segmenti di testo divergente in sovrapposizione (overlap), ma i segmenti possono essere espressi tutt'al più con successive strutture gerarchiche perfettamente annidate}
+    \textit{con il metodo parallel segmentation non è possibile gestire segmenti di testo divergente in sovrapposizione (overlap), ma i segmenti possono essere espressi tutt'al più con successive strutture gerarchiche perfettamente annidate}
 
 \end{frame}
 
@@ -2017,7 +2016,7 @@
     % If there is a preferred (or base) reading it is tagged with lem; each reading is given in a rdg element:
 
     \begin{block}{segmenti e testo base}
-      Il metodo parallel segmentation non ha il concetto di testo base, ma tutte le attestazioni divergenti sono registrate in apparato attraverso una oculata segmentazione dei passi con varianti mantenuti tra loro sincronizzati.
+      Il metodo parallel segmentation \textbf{non ha il concetto di testo base}, ma \textit{tutte le attestazioni divergenti sono registrate in apparato} attraverso una oculata segmentazione dei passi con varianti mantenuti tra loro sincronizzati.
     \end{block}
 
     \textit{E' possibile estrarre il contenuto testuale di ciascun testimone selezionando uno specifico percorso, comprese le lezioni accettate dall'editore}
@@ -2128,7 +2127,7 @@
     % Both @from and @to can be used, as in the double end-point attachment method, to identify the starting and ending location for an apparatus using XPointer schemes described
 
     \begin{block}{Collegamento con schemi XPointer}
-       Oltre ad impiegare identificativi URI è possibile selezionare la porzione di testo base sfruttando schemi Xpointer
+       Oltre ad impiegare identificativi URI è possibile selezionare la porzione di testo base sfruttando \textit{schemi Xpointer}
     \end{block}
     \textbf{Funzioni XPointer quali xpath(), range(), and string-range()}
 
@@ -2187,7 +2186,7 @@
 
     \begin{block}{Varianti in trascrizione}
        %\includegraphics[width=.95\textwidth]{imgs/variantEncoding.png}
-       Spesso si vuole registrare diverse possibili trascrizioni di uno stesso passo testuale. In questo modo è possibile ricostruire diverse versioni di una stessa fonte primaria con diverse interpretazioni nella trascrizione.
+       Spesso si vuole \textbf{registrare diverse possibili trascrizioni} di uno stesso passo testuale. In questo modo è possibile ricostruire diverse versioni di una stessa fonte primaria con \textbf{diverse interpretazioni nella trascrizione}.
     \end{block}
     \textit{Per esempio differenti versioni per lo scioglimento di abbreviazioni lette da diversi studiosi}
 

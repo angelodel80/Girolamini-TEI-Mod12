@@ -3,7 +3,7 @@
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {1}{Presentazione}{3}{Presentazione}{0}}
+\headcommand {\sectionentry {1}{Introduzione personale}{3}{Introduzione personale}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
 \headcommand {\slideentry {1}{0}{3}{3/3}{}{0}}
@@ -85,17 +85,17 @@
 \headcommand {\beamer@framepages {41}{41}}
 \headcommand {\slideentry {2}{0}{40}{42/42}{}{0}}
 \headcommand {\beamer@framepages {42}{42}}
-\headcommand {\slideentry {2}{0}{41}{43/43}{}{0}}
+\headcommand {\sectionentry {3}{Panoramica eXtensible Markup Language}{43}{Panoramica eXtensible Markup Language}{0}}
+\headcommand {\beamer@sectionpages {8}{42}}
+\headcommand {\beamer@subsectionpages {8}{42}}
+\headcommand {\slideentry {3}{0}{41}{43/43}{}{0}}
 \headcommand {\beamer@framepages {43}{43}}
-\headcommand {\slideentry {2}{0}{42}{44/44}{}{0}}
+\headcommand {\slideentry {3}{0}{42}{44/44}{}{0}}
 \headcommand {\beamer@framepages {44}{44}}
-\headcommand {\slideentry {2}{0}{43}{45/45}{}{0}}
+\headcommand {\slideentry {3}{0}{43}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\slideentry {2}{0}{44}{46/46}{}{0}}
+\headcommand {\slideentry {3}{0}{44}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\sectionentry {3}{Panoramica eXtensible Markup Language}{47}{Panoramica eXtensible Markup Language}{0}}
-\headcommand {\beamer@sectionpages {8}{46}}
-\headcommand {\beamer@subsectionpages {8}{46}}
 \headcommand {\slideentry {3}{0}{45}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
 \headcommand {\slideentry {3}{0}{46}{48/48}{}{0}}
@@ -208,19 +208,19 @@
 \headcommand {\beamer@framepages {101}{101}}
 \headcommand {\slideentry {3}{0}{100}{102/102}{}{0}}
 \headcommand {\beamer@framepages {102}{102}}
-\headcommand {\slideentry {3}{0}{101}{103/103}{}{0}}
+\headcommand {\sectionentry {4}{TEI: Codifica Apparato Critico}{103}{TEI: Codifica Apparato Critico}{0}}
+\headcommand {\beamer@sectionpages {43}{102}}
+\headcommand {\beamer@subsectionpages {43}{102}}
+\headcommand {\slideentry {4}{0}{101}{103/103}{}{0}}
 \headcommand {\beamer@framepages {103}{103}}
-\headcommand {\slideentry {3}{0}{102}{104/104}{}{0}}
+\headcommand {\slideentry {4}{0}{102}{104/104}{}{0}}
 \headcommand {\beamer@framepages {104}{104}}
-\headcommand {\slideentry {3}{0}{103}{105/105}{}{0}}
+\headcommand {\slideentry {4}{0}{103}{105/105}{}{0}}
 \headcommand {\beamer@framepages {105}{105}}
-\headcommand {\slideentry {3}{0}{104}{106/106}{}{0}}
+\headcommand {\slideentry {4}{0}{104}{106/106}{}{0}}
 \headcommand {\beamer@framepages {106}{106}}
-\headcommand {\slideentry {3}{0}{105}{107/107}{}{0}}
+\headcommand {\slideentry {4}{0}{105}{107/107}{}{0}}
 \headcommand {\beamer@framepages {107}{107}}
-\headcommand {\sectionentry {4}{TEI: Codifica Apparato Critico}{108}{TEI: Codifica Apparato Critico}{0}}
-\headcommand {\beamer@sectionpages {47}{107}}
-\headcommand {\beamer@subsectionpages {47}{107}}
 \headcommand {\slideentry {4}{0}{106}{108/108}{}{0}}
 \headcommand {\beamer@framepages {108}{108}}
 \headcommand {\slideentry {4}{0}{107}{109/109}{}{0}}
@@ -393,19 +393,19 @@
 \headcommand {\beamer@framepages {192}{192}}
 \headcommand {\slideentry {4}{0}{191}{193/193}{}{0}}
 \headcommand {\beamer@framepages {193}{193}}
-\headcommand {\slideentry {4}{0}{192}{194/194}{}{0}}
+\headcommand {\sectionentry {5}{Strumenti per edizioni critiche}{194}{Strumenti per edizioni critiche}{0}}
+\headcommand {\beamer@sectionpages {103}{193}}
+\headcommand {\beamer@subsectionpages {103}{193}}
+\headcommand {\slideentry {5}{0}{192}{194/194}{}{0}}
 \headcommand {\beamer@framepages {194}{194}}
-\headcommand {\slideentry {4}{0}{193}{195/195}{}{0}}
+\headcommand {\slideentry {5}{0}{193}{195/195}{}{0}}
 \headcommand {\beamer@framepages {195}{195}}
-\headcommand {\slideentry {4}{0}{194}{196/196}{}{0}}
+\headcommand {\slideentry {5}{0}{194}{196/196}{}{0}}
 \headcommand {\beamer@framepages {196}{196}}
-\headcommand {\slideentry {4}{0}{195}{197/197}{}{0}}
+\headcommand {\slideentry {5}{0}{195}{197/197}{}{0}}
 \headcommand {\beamer@framepages {197}{197}}
-\headcommand {\slideentry {4}{0}{196}{198/198}{}{0}}
+\headcommand {\slideentry {5}{0}{196}{198/198}{}{0}}
 \headcommand {\beamer@framepages {198}{198}}
-\headcommand {\sectionentry {5}{Strumenti per edizioni critiche}{199}{Strumenti per edizioni critiche}{0}}
-\headcommand {\beamer@sectionpages {108}{198}}
-\headcommand {\beamer@subsectionpages {108}{198}}
 \headcommand {\slideentry {5}{0}{197}{199/199}{}{0}}
 \headcommand {\beamer@framepages {199}{199}}
 \headcommand {\slideentry {5}{0}{198}{200/200}{}{0}}
@@ -450,23 +450,15 @@
 \headcommand {\beamer@framepages {219}{219}}
 \headcommand {\slideentry {5}{0}{218}{220/220}{}{0}}
 \headcommand {\beamer@framepages {220}{220}}
-\headcommand {\slideentry {5}{0}{219}{221/221}{}{0}}
+\headcommand {\sectionentry {6}{Considerazioni Finali}{221}{Considerazioni Finali}{0}}
+\headcommand {\beamer@sectionpages {194}{220}}
+\headcommand {\beamer@subsectionpages {194}{220}}
+\headcommand {\slideentry {6}{0}{219}{221/221}{}{0}}
 \headcommand {\beamer@framepages {221}{221}}
-\headcommand {\slideentry {5}{0}{220}{222/222}{}{0}}
+\headcommand {\slideentry {6}{0}{220}{222/222}{}{0}}
 \headcommand {\beamer@framepages {222}{222}}
-\headcommand {\slideentry {5}{0}{221}{223/223}{}{0}}
-\headcommand {\beamer@framepages {223}{223}}
-\headcommand {\slideentry {5}{0}{222}{224/224}{}{0}}
-\headcommand {\beamer@framepages {224}{224}}
-\headcommand {\sectionentry {6}{Considerazioni Finali}{225}{Considerazioni Finali}{0}}
-\headcommand {\beamer@sectionpages {199}{224}}
-\headcommand {\beamer@subsectionpages {199}{224}}
-\headcommand {\slideentry {6}{0}{223}{225/225}{}{0}}
-\headcommand {\beamer@framepages {225}{225}}
-\headcommand {\slideentry {6}{0}{224}{226/226}{}{0}}
-\headcommand {\beamer@framepages {226}{226}}
-\headcommand {\beamer@partpages {1}{226}}
-\headcommand {\beamer@subsectionpages {225}{226}}
-\headcommand {\beamer@sectionpages {225}{226}}
-\headcommand {\beamer@documentpages {226}}
-\headcommand {\def \inserttotalframenumber {224}}
+\headcommand {\beamer@partpages {1}{222}}
+\headcommand {\beamer@subsectionpages {221}{222}}
+\headcommand {\beamer@sectionpages {221}{222}}
+\headcommand {\beamer@documentpages {222}}
+\headcommand {\def \inserttotalframenumber {220}}

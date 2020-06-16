@@ -391,11 +391,11 @@
 \headcommand {\beamer@framepages {191}{191}}
 \headcommand {\slideentry {4}{0}{190}{192/192}{}{0}}
 \headcommand {\beamer@framepages {192}{192}}
-\headcommand {\slideentry {4}{0}{191}{193/193}{}{0}}
+\headcommand {\sectionentry {5}{Strumenti per edizioni critiche}{193}{Strumenti per edizioni critiche}{0}}
+\headcommand {\beamer@sectionpages {103}{192}}
+\headcommand {\beamer@subsectionpages {103}{192}}
+\headcommand {\slideentry {5}{0}{191}{193/193}{}{0}}
 \headcommand {\beamer@framepages {193}{193}}
-\headcommand {\sectionentry {5}{Strumenti per edizioni critiche}{194}{Strumenti per edizioni critiche}{0}}
-\headcommand {\beamer@sectionpages {103}{193}}
-\headcommand {\beamer@subsectionpages {103}{193}}
 \headcommand {\slideentry {5}{0}{192}{194/194}{}{0}}
 \headcommand {\beamer@framepages {194}{194}}
 \headcommand {\slideentry {5}{0}{193}{195/195}{}{0}}
@@ -448,17 +448,15 @@
 \headcommand {\beamer@framepages {218}{218}}
 \headcommand {\slideentry {5}{0}{217}{219/219}{}{0}}
 \headcommand {\beamer@framepages {219}{219}}
-\headcommand {\slideentry {5}{0}{218}{220/220}{}{0}}
+\headcommand {\sectionentry {6}{Considerazioni Finali}{220}{Considerazioni Finali}{0}}
+\headcommand {\beamer@sectionpages {193}{219}}
+\headcommand {\beamer@subsectionpages {193}{219}}
+\headcommand {\slideentry {6}{0}{218}{220/220}{}{0}}
 \headcommand {\beamer@framepages {220}{220}}
-\headcommand {\sectionentry {6}{Considerazioni Finali}{221}{Considerazioni Finali}{0}}
-\headcommand {\beamer@sectionpages {194}{220}}
-\headcommand {\beamer@subsectionpages {194}{220}}
 \headcommand {\slideentry {6}{0}{219}{221/221}{}{0}}
 \headcommand {\beamer@framepages {221}{221}}
-\headcommand {\slideentry {6}{0}{220}{222/222}{}{0}}
-\headcommand {\beamer@framepages {222}{222}}
-\headcommand {\beamer@partpages {1}{222}}
-\headcommand {\beamer@subsectionpages {221}{222}}
-\headcommand {\beamer@sectionpages {221}{222}}
-\headcommand {\beamer@documentpages {222}}
-\headcommand {\def \inserttotalframenumber {220}}
+\headcommand {\beamer@partpages {1}{221}}
+\headcommand {\beamer@subsectionpages {220}{221}}
+\headcommand {\beamer@sectionpages {220}{221}}
+\headcommand {\beamer@documentpages {221}}
+\headcommand {\def \inserttotalframenumber {219}}
